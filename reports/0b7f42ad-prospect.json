@@ -1,0 +1,76 @@
+﻿{
+    "url":  "https://sagewestport.ie/",
+    "businessName":  "Sage Restaurant Westport",
+    "benchmark":  "",
+    "emailText":  "Hi there,\r\n\r\nI came across the Sage Restaurant Westport website and wanted to share some honest observations. No pitch.\r\n\r\n========================================\r\nWebsite Health Check - Score: 61/100\r\n========================================\r\n\r\nPlatform: WordPress\r\n\r\nIssues found: 8\r\n\r\nHIGH PRIORITY\r\n--------------------\r\n- 4 HTTP resources (mixed content)\r\n  Assets loading over HTTP on an HTTPS page trigger browser security warnings.\r\n\r\nHIGH PRIORITY\r\n--------------------\r\n- 33 external scripts\r\n  33 script tags means 3-5+ seconds of load time on standard connections.\r\n\r\nMEDIUM PRIORITY\r\n--------------------\r\n- 15 inline style blocks\r\n  Inline style tags cannot be cached. Moving to external CSS speeds up repeat visits.\r\n\r\nMEDIUM PRIORITY\r\n--------------------\r\n- 18 broken image(s)\r\n  Images that fail to load show blank boxes or broken icons.\r\n\r\nMEDIUM PRIORITY\r\n--------------------\r\n- Contact form hidden on subpage\r\n  The homepage lacks a contact form. There is one on /contact, /contact-us, but visitors reaching the homepage may not find it.\r\n\r\nLOW PRIORITY\r\n--------------------\r\n- Placeholder/low-quality images detected\r\n  Some images appear to be placeholders (very small dimensions).\r\n\r\nLOW PRIORITY\r\n--------------------\r\n- Missing Content Security Policy\r\n  CSP helps prevent XSS attacks by controlling which resources can load.\r\n\r\nLOW PRIORITY\r\n--------------------\r\n- Missing X-Frame-Options header\r\n  Without this, your site could be embedded in an iframe on another site (clickjacking risk).\r\n\r\nWHAT IS WORKING WELL\r\n--------------------\r\n+ Page title is set\r\n+ Meta description present\r\n+ Uses H1 heading\r\n+ 47 images on the page\r\n+ Analytics active\r\n+ Good page size (153.3KB)\r\n+ Clean sans-serif body font\r\n+ Uses modern CSS layout (Flexbox/Grid)\r\n+ Viewport meta tag present (mobile-friendly setup)\r\n+ Uses modern rounded corners / cards\r\n+ Uses shadows for visual depth\r\n+ Contact form/page found on: /contact, /contact-us, /book, /booking\r\n+ SSL certificate valid ÔÇö 84 days remaining\r\n+ HSTS (HTTP Strict Transport Security) is set\r\n+ X-Content-Type-Options: nosniff is set\r\n+ Built with WordPress\r\n+ Contact form found on: /contact, /contact-us\r\n+ Built with WordPress\r\n+ Built with WordPress\r\n+ Built with WordPress\r\n+ Built with WordPress\r\n\r\n========================================\r\n\r\nYour current website provider should be flagging things like this for you.\r\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\r\n\r\nBest,\r\nDavid\r\nDS Studios\r\nWebsites for small businesses in Ireland.",
+    "businessType":  "restaurant",
+    "score":  61,
+    "location":  "Westport",
+    "platform":  "WordPress",
+    "issues":  [
+                   {
+                       "detail":  "Assets loading over HTTP on an HTTPS page trigger browser security warnings.",
+                       "label":  "4 HTTP resources (mixed content)",
+                       "check":  "Click the lock icon in the address bar. If it says \u0027Not Secure\u0027 or shows a warning, mixed content is present.",
+                       "type":  "security",
+                       "siteHint":  "Visitors may get browser warnings and leave your site.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Inline style tags cannot be cached. Moving to external CSS speeds up repeat visits.",
+                       "label":  "15 inline style blocks",
+                       "check":  "View page source. Count the style tags. More than 3-4 is unwieldy.",
+                       "type":  "perf",
+                       "siteHint":  "Slower repeat visits, harder code maintenance.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "33 script tags means 3-5+ seconds of load time on standard connections.",
+                       "label":  "33 external scripts",
+                       "check":  "Open DevTools Network tab. Filter by JS. Count how many files load.",
+                       "type":  "perf",
+                       "siteHint":  "Slow sites lose ~40% of visitors who expect under 3 second load times.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Images that fail to load show blank boxes or broken icons.",
+                       "label":  "18 broken image(s)",
+                       "check":  "Scroll through the page. Do you see any broken image icons?",
+                       "type":  "design",
+                       "siteHint":  "Broken images look unprofessional. Each one should load properly.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Some images appear to be placeholders (very small dimensions).",
+                       "label":  "Placeholder/low-quality images detected",
+                       "check":  "Do any images look like grey boxes or low-res blurs where real images should be?",
+                       "type":  "design",
+                       "siteHint":  "Replace placeholder images with actual photography or graphics.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "CSP helps prevent XSS attacks by controlling which resources can load.",
+                       "label":  "Missing Content Security Policy",
+                       "check":  "Check DevTools Console for CSP-related warnings.",
+                       "type":  "preflight",
+                       "siteHint":  "A basic CSP blocks most common script injection attacks.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Without this, your site could be embedded in an iframe on another site (clickjacking risk).",
+                       "label":  "Missing X-Frame-Options header",
+                       "check":  "Check if the site has X-Frame-Options: DENY or SAMEORIGIN in response headers.",
+                       "type":  "preflight",
+                       "siteHint":  "Without this, others could embed your site on malicious pages.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The homepage lacks a contact form. There is one on /contact, /contact-us, but visitors reaching the homepage may not find it.",
+                       "label":  "Contact form hidden on subpage",
+                       "check":  "Look at the top-level navigation. Is \"Contact\" easy to find from the homepage?",
+                       "type":  "preflight",
+                       "siteHint":  "A visible contact form on the main page can increase inquiries by 30-50%. Visitors should not have to hunt for it.",
+                       "severity":  "medium"
+                   }
+               ]
+}

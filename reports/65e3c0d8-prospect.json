@@ -1,0 +1,44 @@
+﻿{
+    "url":  "https://www.thetwelvehotel.ie/",
+    "businessName":  "The Twelve Hotel",
+    "benchmark":  "",
+    "emailText":  "Hi there,\r\n\r\nI came across the The Twelve Hotel website and wanted to share some honest observations. No pitch.\r\n\r\n========================================\r\nWebsite Health Check - Score: 82/100\r\n========================================\r\n\r\nPlatform: WordPress\r\n\r\nIssues found: 4\r\n\r\nHIGH PRIORITY\r\n--------------------\r\n- 2 HTTP resources (mixed content)\r\n  Assets loading over HTTP on an HTTPS page trigger browser security warnings.\r\n\r\nMEDIUM PRIORITY\r\n--------------------\r\n- 20 broken image(s)\r\n  Images that fail to load show blank boxes or broken icons.\r\n\r\nLOW PRIORITY\r\n--------------------\r\n- Placeholder/low-quality images detected\r\n  Some images appear to be placeholders (very small dimensions).\r\n\r\nLOW PRIORITY\r\n--------------------\r\n- Missing HSTS header\r\n  HTTP Strict Transport Security tells browsers to always use HTTPS. Without it, a downgrade attack is possible.\r\n\r\nWHAT IS WORKING WELL\r\n--------------------\r\n+ Page title is set\r\n+ Meta description present\r\n+ Uses H1 heading\r\n+ 22 images on the page\r\n+ Efficient CSS setup\r\n+ Light script load (3 scripts)\r\n+ Analytics active\r\n+ Good page size (57.9KB)\r\n+ Clean sans-serif body font\r\n+ Uses modern CSS layout (Flexbox/Grid)\r\n+ Viewport meta tag present (mobile-friendly setup)\r\n+ Uses modern rounded corners / cards\r\n+ Uses shadows for visual depth\r\n+ Contact form/page found on: /contact-us, /reservations\r\n+ SSL certificate valid ÔÇö 63 days remaining\r\n+ Content Security Policy (CSP) is configured\r\n+ X-Frame-Options prevents clickjacking\r\n+ X-Content-Type-Options: nosniff is set\r\n+ Built with WordPress\r\n+ Contact form found on: /contact-us, /reservations\r\n+ Built with WordPress\r\n+ Built with WordPress\r\n\r\n========================================\r\n\r\nYour current website provider should be flagging things like this for you.\r\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\r\n\r\nBest,\r\nDavid\r\nDS Studios\r\nWebsites for small businesses in Ireland.",
+    "businessType":  "hotel",
+    "score":  82,
+    "location":  "Galway",
+    "platform":  "WordPress",
+    "issues":  [
+                   {
+                       "detail":  "Assets loading over HTTP on an HTTPS page trigger browser security warnings.",
+                       "label":  "2 HTTP resources (mixed content)",
+                       "check":  "Click the lock icon in the address bar. If it says \u0027Not Secure\u0027 or shows a warning, mixed content is present.",
+                       "type":  "security",
+                       "siteHint":  "Visitors may get browser warnings and leave your site.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Images that fail to load show blank boxes or broken icons.",
+                       "label":  "20 broken image(s)",
+                       "check":  "Scroll through the page. Do you see any broken image icons?",
+                       "type":  "design",
+                       "siteHint":  "Broken images look unprofessional. Each one should load properly.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Some images appear to be placeholders (very small dimensions).",
+                       "label":  "Placeholder/low-quality images detected",
+                       "check":  "Do any images look like grey boxes or low-res blurs where real images should be?",
+                       "type":  "design",
+                       "siteHint":  "Replace placeholder images with actual photography or graphics.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "HTTP Strict Transport Security tells browsers to always use HTTPS. Without it, a downgrade attack is possible.",
+                       "label":  "Missing HSTS header",
+                       "check":  "Open DevTools ÔåÆ Network ÔåÆ click the first request ÔåÆ look for \"strict-transport-security\".",
+                       "type":  "preflight",
+                       "siteHint":  "HSTS is a simple config that hardens your site against protocol downgrade attacks.",
+                       "severity":  "low"
+                   }
+               ]
+}

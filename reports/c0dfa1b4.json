@@ -1,0 +1,28 @@
+﻿{
+    "issues":  [
+                   {
+                       "detail":  "The website at https://www.thecoachhousehotelsligo.ie/ could not be reached. DNS resolution failed.",
+                       "label":  "Website is offline or unreachable",
+                       "check":  "Try visiting https://www.thecoachhousehotelsligo.ie/ in a browser.",
+                       "type":  "business",
+                       "siteHint":  "Your website is down, costing you customers. Contact your hosting provider immediately.",
+                       "severity":  "critical"
+                   }
+               ],
+    "id":  "c0dfa1b4",
+    "low":  0,
+    "high":  0,
+    "medium":  0,
+    "location":  "Sligo",
+    "critical":  1,
+    "url":  "https://www.thecoachhousehotelsligo.ie/",
+    "benchmark":  "",
+    "businessName":  "The Coach House Hotel",
+    "businessType":  "hotel",
+    "platform":  "",
+    "score":  0,
+    "analyzedAt":  "2026-05-01 06:01",
+    "positives":  [
+
+                  ]
+}

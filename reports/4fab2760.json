@@ -1,0 +1,119 @@
+﻿{
+    "issues":  [
+                   {
+                       "detail":  "Assets loading over HTTP on an HTTPS page trigger browser security warnings.",
+                       "label":  "5 HTTP resources (mixed content)",
+                       "check":  "Click the lock icon in the address bar. If it says \u0027Not Secure\u0027 or shows a warning, mixed content is present.",
+                       "type":  "security",
+                       "siteHint":  "Visitors may get browser warnings and leave your site.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Alt text helps screen readers and helps Google understand your images.",
+                       "label":  "13 images missing alt text",
+                       "check":  "Right-click an image and inspect. Check if it has an \u0027alt\u0027 attribute.",
+                       "type":  "a11y",
+                       "siteHint":  "Blind visitors cannot use your site. Google also gets weaker signals from images.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Schema helps Google show your hours, reviews, and events in search results.",
+                       "label":  "No schema markup",
+                       "check":  "Search for your business on Google. Does it show a Knowledge Panel with hours and reviews?",
+                       "type":  "seo",
+                       "siteHint":  "Detailed search results get higher click-through rates.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Some images appear to be placeholders (very small dimensions).",
+                       "label":  "Placeholder/low-quality images detected",
+                       "check":  "Do any images look like grey boxes or low-res blurs where real images should be?",
+                       "type":  "design",
+                       "siteHint":  "Replace placeholder images with actual photography or graphics.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Browser tabs show a blank icon instead of your brand.",
+                       "label":  "No favicon",
+                       "check":  "Look at the browser tab. Is there a small icon next to the page title?",
+                       "type":  "design",
+                       "siteHint":  "A favicon reinforces brand identity and makes tabs recognizable.",
+                       "severity":  "low"
+                   }
+               ],
+    "id":  "4fab2760",
+    "low":  3,
+    "high":  1,
+    "medium":  1,
+    "location":  "Westport",
+    "critical":  0,
+    "url":  "https://www.castlecourthotel.ie/",
+    "benchmark":  "",
+    "businessName":  "The Castlecourt Hotel",
+    "businessType":  "hotel",
+    "platform":  "",
+    "score":  79,
+    "analyzedAt":  "2026-05-01 05:43",
+    "positives":  [
+                      {
+                          "detail":  "Page title is set"
+                      },
+                      {
+                          "detail":  "Meta description present"
+                      },
+                      {
+                          "detail":  "Uses H1 heading"
+                      },
+                      {
+                          "detail":  "38 images on the page"
+                      },
+                      {
+                          "detail":  "Efficient CSS setup"
+                      },
+                      {
+                          "detail":  "Light script load (4 scripts)"
+                      },
+                      {
+                          "detail":  "Analytics active"
+                      },
+                      {
+                          "detail":  "Good page size (81.5KB)"
+                      },
+                      {
+                          "detail":  "Clean sans-serif body font"
+                      },
+                      {
+                          "detail":  "Uses modern CSS layout (Flexbox/Grid)"
+                      },
+                      {
+                          "detail":  "Viewport meta tag present (mobile-friendly setup)"
+                      },
+                      {
+                          "detail":  "Uses modern rounded corners / cards"
+                      },
+                      {
+                          "detail":  "Uses shadows for visual depth"
+                      },
+                      {
+                          "detail":  "Contact form/page found on: /contact-us"
+                      },
+                      {
+                          "detail":  "SSL certificate valid ÔÇö 82 days remaining"
+                      },
+                      {
+                          "detail":  "HSTS (HTTP Strict Transport Security) is set"
+                      },
+                      {
+                          "detail":  "Content Security Policy (CSP) is configured"
+                      },
+                      {
+                          "detail":  "X-Frame-Options prevents clickjacking"
+                      },
+                      {
+                          "detail":  "X-Content-Type-Options: nosniff is set"
+                      },
+                      {
+                          "detail":  "Contact form found on: /contact-us, /about-us"
+                      }
+                  ]
+}

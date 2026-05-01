@@ -1,0 +1,60 @@
+﻿{
+    "url":  "https://www.yeatscountryhotel.com/",
+    "businessName":  "Yeats Country Hotel, Spa \u0026 Leisure Club",
+    "benchmark":  "",
+    "emailText":  "Hi there,\r\n\r\nI came across the Yeats Country Hotel, Spa \u0026 Leisure Club website and wanted to share some honest observations. No pitch.\r\n\r\n========================================\r\nWebsite Health Check - Score: 85/100\r\n========================================\r\n\r\nIssues found: 6\r\n\r\nMEDIUM PRIORITY\r\n--------------------\r\n- No analytics tracking\r\n  Without analytics, you cannot see how visitors find you or what they do on your site.\r\n\r\nLOW PRIORITY\r\n--------------------\r\n- No schema markup\r\n  Schema helps Google show your hours, reviews, and events in search results.\r\n\r\nLOW PRIORITY\r\n--------------------\r\n- Contact info may be behind a custom URL\r\n  The navbar links to a contact page, but none of the common paths (/contact, /contact-us) resolved.\r\n\r\nLOW PRIORITY\r\n--------------------\r\n- SSL certificate expires in 41 days\r\n  SSL cert renews on Jun 12 02:39:56 2026 GMT. Mark your calendar.\r\n\r\nLOW PRIORITY\r\n--------------------\r\n- Missing Content Security Policy\r\n  CSP helps prevent XSS attacks by controlling which resources can load.\r\n\r\nLOW PRIORITY\r\n--------------------\r\n- Missing X-Frame-Options header\r\n  Without this, your site could be embedded in an iframe on another site (clickjacking risk).\r\n\r\nWHAT IS WORKING WELL\r\n--------------------\r\n+ Page title is set\r\n+ Meta description present\r\n+ Uses H1 heading\r\n+ No mixed content\r\n+ 17 images on the page\r\n+ Efficient CSS setup\r\n+ Light script load (8 scripts)\r\n+ Good page size (49.3KB)\r\n+ Clean sans-serif body font\r\n+ Uses modern CSS layout (Flexbox/Grid)\r\n+ Viewport meta tag present (mobile-friendly setup)\r\n+ Uses modern rounded corners / cards\r\n+ Uses shadows for visual depth\r\n+ HSTS (HTTP Strict Transport Security) is set\r\n+ X-Content-Type-Options: nosniff is set\r\n\r\n========================================\r\n\r\nYour current website provider should be flagging things like this for you.\r\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\r\n\r\nBest,\r\nDavid\r\nDS Studios\r\nWebsites for small businesses in Ireland.",
+    "businessType":  "hotel",
+    "score":  85,
+    "location":  "Sligo",
+    "platform":  "",
+    "issues":  [
+                   {
+                       "detail":  "Schema helps Google show your hours, reviews, and events in search results.",
+                       "label":  "No schema markup",
+                       "check":  "Search for your business on Google. Does it show a Knowledge Panel with hours and reviews?",
+                       "type":  "seo",
+                       "siteHint":  "Detailed search results get higher click-through rates.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Without analytics, you cannot see how visitors find you or what they do on your site.",
+                       "label":  "No analytics tracking",
+                       "check":  "Check the page source for references to gtag, analytics.js, or fbq.",
+                       "type":  "business",
+                       "siteHint":  "You are flying blind - no data on what pages work or where traffic comes from.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "The navbar links to a contact page, but none of the common paths (/contact, /contact-us) resolved.",
+                       "label":  "Contact info may be behind a custom URL",
+                       "check":  "Click the Contact link in the navigation to verify it works.",
+                       "type":  "ux",
+                       "siteHint":  "Unusual contact page URLs can confuse visitors and search engines.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "SSL cert renews on Jun 12 02:39:56 2026 GMT. Mark your calendar.",
+                       "label":  "SSL certificate expires in 41 days",
+                       "check":  "Check the lock icon in the address bar.",
+                       "type":  "preflight",
+                       "siteHint":  "Just a reminder ÔÇö easy to forget until it is too late.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "CSP helps prevent XSS attacks by controlling which resources can load.",
+                       "label":  "Missing Content Security Policy",
+                       "check":  "Check DevTools Console for CSP-related warnings.",
+                       "type":  "preflight",
+                       "siteHint":  "A basic CSP blocks most common script injection attacks.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Without this, your site could be embedded in an iframe on another site (clickjacking risk).",
+                       "label":  "Missing X-Frame-Options header",
+                       "check":  "Check if the site has X-Frame-Options: DENY or SAMEORIGIN in response headers.",
+                       "type":  "preflight",
+                       "siteHint":  "Without this, others could embed your site on malicious pages.",
+                       "severity":  "low"
+                   }
+               ]
+}

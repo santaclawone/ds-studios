@@ -1,0 +1,115 @@
+﻿{
+    "issues":  [
+                   {
+                       "detail":  "Without analytics, you cannot see how visitors find you or what they do on your site.",
+                       "label":  "No analytics tracking",
+                       "check":  "Check the page source for references to gtag, analytics.js, or fbq.",
+                       "type":  "business",
+                       "siteHint":  "You are flying blind - no data on what pages work or where traffic comes from.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Some images appear to be placeholders (very small dimensions).",
+                       "label":  "Placeholder/low-quality images detected",
+                       "check":  "Do any images look like grey boxes or low-res blurs where real images should be?",
+                       "type":  "design",
+                       "siteHint":  "Replace placeholder images with actual photography or graphics.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "HTTP Strict Transport Security tells browsers to always use HTTPS. Without it, a downgrade attack is possible.",
+                       "label":  "Missing HSTS header",
+                       "check":  "Open DevTools ÔåÆ Network ÔåÆ click the first request ÔåÆ look for \"strict-transport-security\".",
+                       "type":  "preflight",
+                       "siteHint":  "HSTS is a simple config that hardens your site against protocol downgrade attacks.",
+                       "severity":  "low"
+                   }
+               ],
+    "id":  "0ac4e1d3",
+    "low":  2,
+    "high":  0,
+    "medium":  1,
+    "location":  "Westport",
+    "critical":  0,
+    "url":  "https://www.knockrannyhousehotel.ie/",
+    "benchmark":  "",
+    "businessName":  "Knockranny House Hotel",
+    "businessType":  "hotel",
+    "platform":  "WordPress",
+    "score":  91,
+    "analyzedAt":  "2026-05-01 05:53",
+    "positives":  [
+                      {
+                          "detail":  "Page title is set"
+                      },
+                      {
+                          "detail":  "Meta description present"
+                      },
+                      {
+                          "detail":  "Uses H1 heading"
+                      },
+                      {
+                          "detail":  "No mixed content"
+                      },
+                      {
+                          "detail":  "16 images on the page"
+                      },
+                      {
+                          "detail":  "Efficient CSS setup"
+                      },
+                      {
+                          "detail":  "Light script load (1 scripts)"
+                      },
+                      {
+                          "detail":  "Good page size (42.1KB)"
+                      },
+                      {
+                          "detail":  "Clean sans-serif body font"
+                      },
+                      {
+                          "detail":  "Uses modern CSS layout (Flexbox/Grid)"
+                      },
+                      {
+                          "detail":  "Viewport meta tag present (mobile-friendly setup)"
+                      },
+                      {
+                          "detail":  "Uses modern rounded corners / cards"
+                      },
+                      {
+                          "detail":  "Uses shadows for visual depth"
+                      },
+                      {
+                          "detail":  "Contact form/page found on: /contact, /contact-us, /contactus"
+                      },
+                      {
+                          "detail":  "SSL certificate valid ÔÇö 61 days remaining"
+                      },
+                      {
+                          "detail":  "Content Security Policy (CSP) is configured"
+                      },
+                      {
+                          "detail":  "X-Frame-Options prevents clickjacking"
+                      },
+                      {
+                          "detail":  "X-Content-Type-Options: nosniff is set"
+                      },
+                      {
+                          "detail":  "Built with WordPress"
+                      },
+                      {
+                          "detail":  "Contact form found on: /contact, /contact-us, /contactus, /about-us"
+                      },
+                      {
+                          "detail":  "Built with WordPress"
+                      },
+                      {
+                          "detail":  "Built with WordPress"
+                      },
+                      {
+                          "detail":  "Built with WordPress"
+                      },
+                      {
+                          "detail":  "Built with WordPress"
+                      }
+                  ]
+}

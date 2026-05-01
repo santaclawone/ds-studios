@@ -1,0 +1,36 @@
+﻿{
+    "url":  "https://www.knockrannyhousehotel.ie/",
+    "businessName":  "Knockranny House Hotel",
+    "benchmark":  "",
+    "emailText":  "Hi there,\r\n\r\nI came across the Knockranny House Hotel website and wanted to share some honest observations. No pitch.\r\n\r\n========================================\r\nWebsite Health Check - Score: 91/100\r\n========================================\r\n\r\nPlatform: WordPress\r\n\r\nIssues found: 3\r\n\r\nMEDIUM PRIORITY\r\n--------------------\r\n- No analytics tracking\r\n  Without analytics, you cannot see how visitors find you or what they do on your site.\r\n\r\nLOW PRIORITY\r\n--------------------\r\n- Placeholder/low-quality images detected\r\n  Some images appear to be placeholders (very small dimensions).\r\n\r\nLOW PRIORITY\r\n--------------------\r\n- Missing HSTS header\r\n  HTTP Strict Transport Security tells browsers to always use HTTPS. Without it, a downgrade attack is possible.\r\n\r\nWHAT IS WORKING WELL\r\n--------------------\r\n+ Page title is set\r\n+ Meta description present\r\n+ Uses H1 heading\r\n+ No mixed content\r\n+ 16 images on the page\r\n+ Efficient CSS setup\r\n+ Light script load (1 scripts)\r\n+ Good page size (42.1KB)\r\n+ Clean sans-serif body font\r\n+ Uses modern CSS layout (Flexbox/Grid)\r\n+ Viewport meta tag present (mobile-friendly setup)\r\n+ Uses modern rounded corners / cards\r\n+ Uses shadows for visual depth\r\n+ Contact form/page found on: /contact, /contact-us, /contactus\r\n+ SSL certificate valid ÔÇö 61 days remaining\r\n+ Content Security Policy (CSP) is configured\r\n+ X-Frame-Options prevents clickjacking\r\n+ X-Content-Type-Options: nosniff is set\r\n+ Built with WordPress\r\n+ Contact form found on: /contact, /contact-us, /contactus, /about-us\r\n+ Built with WordPress\r\n+ Built with WordPress\r\n+ Built with WordPress\r\n+ Built with WordPress\r\n\r\n========================================\r\n\r\nYour current website provider should be flagging things like this for you.\r\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\r\n\r\nBest,\r\nDavid\r\nDS Studios\r\nWebsites for small businesses in Ireland.",
+    "businessType":  "hotel",
+    "score":  91,
+    "location":  "Westport",
+    "platform":  "WordPress",
+    "issues":  [
+                   {
+                       "detail":  "Without analytics, you cannot see how visitors find you or what they do on your site.",
+                       "label":  "No analytics tracking",
+                       "check":  "Check the page source for references to gtag, analytics.js, or fbq.",
+                       "type":  "business",
+                       "siteHint":  "You are flying blind - no data on what pages work or where traffic comes from.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Some images appear to be placeholders (very small dimensions).",
+                       "label":  "Placeholder/low-quality images detected",
+                       "check":  "Do any images look like grey boxes or low-res blurs where real images should be?",
+                       "type":  "design",
+                       "siteHint":  "Replace placeholder images with actual photography or graphics.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "HTTP Strict Transport Security tells browsers to always use HTTPS. Without it, a downgrade attack is possible.",
+                       "label":  "Missing HSTS header",
+                       "check":  "Open DevTools ÔåÆ Network ÔåÆ click the first request ÔåÆ look for \"strict-transport-security\".",
+                       "type":  "preflight",
+                       "siteHint":  "HSTS is a simple config that hardens your site against protocol downgrade attacks.",
+                       "severity":  "low"
+                   }
+               ]
+}
