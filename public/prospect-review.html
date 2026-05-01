@@ -5,65 +5,89 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>Prospect Review — DS Studios</title>
 <meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+:root {
+  --primary: #a3d977;
+  --secondary: #7aa36f;
+  --dark: #1a202c;
+  --light: #fafafa;
+  --bg: #0f0f13;
+  --card-bg: #1a1c24;
+  --text: #e8e8f0;
+  --muted: #8a8a9a;
+  --border: rgba(255,255,255,.06);
+}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0f0f13;color:#fff;overflow:hidden;height:100dvh;display:flex;flex-direction:column;user-select:none;-webkit-user-select:none}
-#loader{position:fixed;top:0;left:0;right:0;bottom:0;background:#0f0f13;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:100;padding:20px}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:#fff;overflow:hidden;height:100dvh;display:flex;flex-direction:column;user-select:none;-webkit-user-select:none}
+#loader{position:fixed;top:0;left:0;right:0;bottom:0;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:100;padding:20px}
 #loader.hidden{display:none}
-#loader h2{font-size:18px;margin-bottom:6px}
-#loader p{font-size:11px;color:#6b7280;margin-bottom:20px;text-align:center}
-#loader .btn{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:#fff;padding:12px 24px;border-radius:10px;font-size:13px;font-weight:600;cursor:pointer}
-#loader .btn:hover{background:rgba(255,255,255,.1)}
+#loader .brand{font-size:28px;font-weight:800;margin-bottom:2px;letter-spacing:-.5px}
+#loader .brand span{color:var(--primary)}
+#loader .tagline{font-size:11px;color:var(--muted);margin-bottom:24px}
+#loader .btn{border:1px solid rgba(255,255,255,.12);background:rgba(163,217,119,.08);color:#fff;padding:14px 28px;border-radius:12px;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s}
+#loader .btn:hover{background:rgba(163,217,119,.15);border-color:var(--primary)}
 .loader-input{display:none}
-.preview-info{font-size:10px;color:#6b7280;margin-top:10px;text-align:center;max-width:300px}
+.preview-info{font-size:10px;color:var(--muted);margin-top:10px;text-align:center;max-width:300px;line-height:1.5}
 .hd{display:flex;align-items:center;gap:10px;padding:12px 16px 0;max-width:420px;margin:0 auto;width:100%}
-.hd .n{font-size:15px;font-weight:700}.hd .s{font-size:10px;color:#6b7280}
+.hd .n{font-size:15px;font-weight:700}.hd .s{font-size:10px;color:var(--muted)}
 .hd .sb{font-weight:800;padding:4px 10px;border-radius:20px;font-size:12px}
+.sb.good{background:rgba(163,217,119,.15);color:var(--primary);border:1px solid rgba(163,217,119,.2)}
+.sb.ok{background:rgba(250,204,21,.15);color:#facc15;border:1px solid rgba(250,204,21,.2)}
+.sb.bad{background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.2)}
 .cs{flex:1;position:relative;overflow:hidden;padding:16px 12px 8px}.cw{position:relative;width:100%;height:100%;max-width:420px;margin:0 auto}
-.card{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(160deg,#1a1a24,#12121a);border-radius:18px;padding:24px 20px 18px;box-shadow:0 8px 40px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.06);display:flex;flex-direction:column;will-change:transform}
-.scroll{flex:1;overflow-y:auto;padding-right:4px}.scroll::-webkit-scrollbar{width:3px}.scroll::-webkit-scrollbar-thumb{background:rgba(255,255,255,.1);border-radius:2px}
+.card{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(160deg,var(--card-bg),#12121a);border-radius:18px;padding:24px 20px 18px;box-shadow:0 8px 40px rgba(0,0,0,.5);border:1px solid var(--border);display:flex;flex-direction:column;will-change:transform}
+.scroll{flex:1;overflow-y:auto;padding-right:4px}.scroll::-webkit-scrollbar{width:3px}.scroll::-webkit-scrollbar-thumb{background:rgba(255,255,255,.08);border-radius:2px}
 .bdg{display:inline-block;font-size:9px;font-weight:700;padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:8px}
 .bdg.critical{background:rgba(239,68,68,.2);color:#ef4444;border:1px solid rgba(239,68,68,.3)}
 .bdg.high{background:rgba(245,158,11,.2);color:#f59e0b;border:1px solid rgba(245,158,11,.3)}
-.bdg.medium{background:rgba(59,130,246,.2);color:#60a5fa;border:1px solid rgba(59,130,246,.3)}
+.bdg.medium{background:rgba(163,217,119,.2);color:var(--primary);border:1px solid rgba(163,217,119,.3)}
 .bdg.low{background:rgba(156,163,175,.15);color:#9ca3af;border:1px solid rgba(156,163,175,.2)}
 .card h2{font-size:18px;font-weight:700;letter-spacing:-.3px;margin-bottom:4px;line-height:1.2}
-.card .dt{font-size:13px;color:#a0a0b0;line-height:1.55;margin-bottom:10px}
-.cl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;color:#6b7280;margin-bottom:4px}
+.card .dt{font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px}
+.cl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);margin-bottom:4px}
 .cb{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:8px 10px;font-size:11px;color:#9ca3af;line-height:1.4;margin-bottom:6px}
 .cr2{display:flex;gap:6px;margin-top:auto;padding-top:6px;flex-shrink:0}
-.cr2 a{flex:1;text-align:center;padding:8px;border-radius:8px;font-size:11px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.1);color:#a0a0b0;background:rgba(255,255,255,.04)}
+.cr2 a{flex:1;text-align:center;padding:8px;border-radius:8px;font-size:11px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.1);color:var(--muted);background:rgba(255,255,255,.04);transition:all .15s}
+.cr2 a:hover{background:rgba(163,217,119,.08);border-color:rgba(163,217,119,.2);color:var(--primary)}
 .ind{display:flex;justify-content:center;gap:5px;padding:6px 0 10px;flex-shrink:0}
-.dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.15);transition:all .2s}
-.dot.on{background:#6366f1;width:18px;border-radius:3px}
+.dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.12);transition:all .2s}
+.dot.on{background:var(--primary);width:18px;border-radius:3px}
 .fb{display:flex;gap:8px;padding:6px 12px 16px;max-width:420px;margin:0 auto;width:100%;flex-shrink:0}
 .fb button{flex:1;padding:12px 8px;border:0;border-radius:12px;font-size:12px;font-weight:600;cursor:pointer;transition:transform .05s}
 .fb button:active{transform:scale(.96)}
-.fb .bp{background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.2)}
-.fb .bc{background:rgba(99,102,241,.15);color:#818cf8;border:1px solid rgba(99,102,241,.2)}
-.fb .bs{background:rgba(34,197,94,.15);color:#22c55e;border:1px solid rgba(34,197,94,.2)}
+.fb .bp{background:rgba(239,68,68,.12);color:#ef4444;border:1px solid rgba(239,68,68,.18);transition:background .15s}
+.fb .bp:hover{background:rgba(239,68,68,.18)}
+.fb .bs{background:rgba(163,217,119,.12);color:var(--primary);border:1px solid rgba(163,217,119,.18);transition:background .15s}
+.fb .bs:hover{background:rgba(163,217,119,.18)}
+.fb .bc{background:rgba(255,255,255,.04);color:var(--muted);border:1px solid rgba(255,255,255,.1)}
 .ds{display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;height:100%;padding:20px}.ds.on{display:flex}
 .ds .e{font-size:48px;margin-bottom:10px}
 .ds h2{font-size:20px;margin-bottom:4px}
-.ds p{font-size:12px;color:#9ca3af;margin-bottom:16px;line-height:1.5;max-width:360px}
+.ds p{font-size:12px;color:var(--muted);margin-bottom:16px;line-height:1.5;max-width:360px}
 .oc{font-size:11px;padding:6px 14px;border-radius:6px;margin-bottom:12px}
-.oc.go{background:rgba(34,197,94,.12);color:#22c55e;border:1px solid rgba(34,197,94,.15)}
+.oc.go{background:rgba(163,217,119,.12);color:var(--primary);border:1px solid rgba(163,217,119,.15)}
 .oc.no{background:rgba(239,68,68,.12);color:#ef4444;border:1px solid rgba(239,68,68,.15)}
-.eb{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px;max-height:200px;overflow-y:auto;width:100%;text-align:left;font-size:10px;color:#9ca3af;line-height:1.5;white-space:pre-wrap;margin-bottom:10px}
+.eb{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px;max-height:200px;overflow-y:auto;width:100%;text-align:left;font-size:10px;color:var(--muted);line-height:1.5;white-space:pre-wrap;margin-bottom:10px}
 .ra{display:flex;flex-direction:column;gap:8px;width:100%;margin-top:4px;flex-shrink:0}
 .ra .rw{display:flex;gap:6px}
-.ra button{flex:1;padding:10px;border:0;border-radius:10px;font-size:11px;font-weight:600;cursor:pointer}
-.ra .go{background:#22c55e;color:#000}
-.ra .sp{background:rgba(255,255,255,.06);color:#9ca3af;border:1px solid rgba(255,255,255,.1)}
-.ra .cp{background:rgba(99,102,241,.15);color:#818cf8;border:1px solid rgba(99,102,241,.2)}
+.ra button{flex:1;padding:10px;border:0;border-radius:10px;font-size:11px;font-weight:600;cursor:pointer;transition:background .15s}
+.ra .go{background:var(--primary);color:#000}
+.ra .go:hover{background:var(--secondary);color:#fff}
+.ra .sp{background:rgba(255,255,255,.06);color:var(--muted);border:1px solid rgba(255,255,255,.1)}
+.ra .sp:hover{background:rgba(255,255,255,.1)}
+.ra .cp{background:rgba(163,217,119,.08);color:var(--primary);border:1px solid rgba(163,217,119,.15)}
+.ra .cp:hover{background:rgba(163,217,119,.15)}
 </style>
 </head>
 <body>
 
 <!-- Loader screen -->
 <div id="loader">
-  <h2>DS Studios</h2>
-  <p>Prospect Review Tool</p>
+  <div class="brand"><span>DS</span> Studios</div>
+  <div class="tagline">Prospect Review Tool</div>
   <button class="btn" onclick="document.getElementById('fileInput').click()">📂 Load Prospect File</button>
   <input type="file" id="fileInput" class="loader-input" accept=".json" onchange="loadFile(event)">
   <div class="preview-info">Load a <strong>{id}-prospect.json</strong> file generated by the analyze script</div>
@@ -72,7 +96,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 <!-- Main UI (hidden until data loaded) -->
 <div class="hd" id="hdr"></div>
 <div class="cs" id="sk"><div class="cw" id="cw"></div><div class="ind" id="dots"></div></div>
-<div class="fb" id="fb"><button class="bp" onclick="sl('l')">✕ Skip</button><button class="bc" onclick="os()">🔍 Check Site</button><button class="bs" onclick="sl('r')">✓ Looks Good</button></div>
+<div class="fb" id="fb"><button class="bp">✕ Skip</button><button class="bc">🔍 Check Site</button><button class="bs">✓ Looks Good</button></div>
 
 <!-- Done screen -->
 <div class="ds" id="dn">
@@ -82,13 +106,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
   <div class="oc" id="ob"></div>
   <div class="eb" id="ep"></div>
   <div class="ra">
-    <div class="rw"><button class="go" id="bcopy" onclick="copyE()">📋 Copy & Send</button><button class="sp" onclick="rs()">↺ Review Again</button></div>
+    <div class="rw"><button class="go" id="bcopy">📋 Copy & Send</button><button class="sp" onclick="rs()">↺ Review Again</button></div>
     <div class="rw"><button class="cp" onclick="copyE()">Copy Email Text</button><button class="sp" onclick="os()">Open Website</button></div>
   </div>
 </div>
 
 <script>
-var D = null; // data
+var D = null;
 var ci = 0, v = null, anim = false;
 
 function loadFile(ev) {
@@ -104,7 +128,7 @@ function loadFile(ev) {
 function start() {
   document.getElementById('loader').classList.add('hidden');
   var s = D.score;
-  var cls = s >= 70 ? 'g' : s >= 40 ? 'o' : 'b';
+  var cls = s >= 70 ? 'good' : s >= 40 ? 'ok' : 'bad';
   document.getElementById('hdr').innerHTML = '<div><div class="n">' + D.businessName + '</div><div class="s">' + D.url + ' · ' + D.issues.length + ' issues</div></div><div class="sb ' + cls + '">' + s + '/100</div>';
   rc();
   ud();
@@ -125,10 +149,10 @@ function rc() {
     var sevCls = iss.severity === 'high' ? 'high' : iss.severity === 'medium' ? 'medium' : iss.severity === 'critical' ? 'critical' : 'low';
     d.innerHTML = '<div class="scroll"><span class="bdg ' + sevCls + '">' + iss.severity + '</span><h2>' + iss.label + '</h2><div class="dt">' + iss.detail + '</div><div class="cl">What to check</div><div class="cb">' + iss.check + '</div><div class="cl">Why it matters</div><div class="cb">' + iss.siteHint + '</div><div class="cr2"><a href="' + D.url + '" target="_blank">🔍 Open site</a><a href="' + D.url + '" target="_blank">📋 DevTools</a></div></div>';
     if (i === 0) {
-      var sx = 0;
-      d.addEventListener('touchstart', function(e) { if (anim) return; sx = e.touches[0].clientX; d.style.transition = 'none'; }, { passive: true });
-      d.addEventListener('touchmove', function(e) { if (anim || !sx) return; var dx = e.touches[0].clientX - sx; if (Math.abs(dx) < 5) return; d.style.transform = 'translateX(' + dx + 'px) rotate(' + (dx * 0.08) + 'deg)'; d.style.opacity = 1 - Math.abs(dx) / 600; }, { passive: true });
-      d.addEventListener('touchend', function(e) { if (anim || !sx) return; var dx = e.changedTouches[0].clientX - sx; d.style.transition = 'transform .35s ease, opacity .35s ease'; if (Math.abs(dx) > 80) sl(dx > 0 ? 'r' : 'l'); else { d.style.transform = 'none'; d.style.opacity = 1; } sx = 0; }, { passive: true });
+      var sx = 0, sy = 0;
+      d.addEventListener('touchstart', function(e) { if (anim) return; var t = e.touches[0]; sx = t.clientX; sy = t.clientY; d.style.transition = 'none'; }, { passive: true });
+      d.addEventListener('touchmove', function(e) { if (anim || !sx) return; var t = e.touches[0]; var dx = t.clientX - sx; var dy = t.clientY - sy; if (Math.abs(dx) < 5 && Math.abs(dy) < 5) return; if (Math.abs(dx) < Math.abs(dy)) { d.style.transform = 'scale(.98)'; return; } d.style.transform = 'translateX(' + dx + 'px) rotate(' + (dx * 0.08) + 'deg)'; d.style.opacity = 1 - Math.abs(dx) / 600; }, { passive: true });
+      d.addEventListener('touchend', function(e) { if (anim || !sx) return; var t = e.changedTouches[0]; var dx = t.clientX - sx; d.style.transition = 'transform .35s ease, opacity .35s ease'; if (Math.abs(dx) > 80) sl(dx > 0 ? 'r' : 'l'); else { d.style.transform = 'none'; d.style.opacity = 1; } sx = 0; }, { passive: true });
     }
     c.appendChild(d);
   }
@@ -183,6 +207,11 @@ function rs() { ci = 0; v = null; anim = false;
   document.getElementById('fb').style.display = 'flex';
   rc(); ud();
 }
+
+// Wire up buttons
+document.querySelector('.fb .bp').onclick = function() { sl('l'); };
+document.querySelector('.fb .bs').onclick = function() { sl('r'); };
+document.querySelector('.fb .bc').onclick = os;
 
 document.addEventListener('keydown', function(e) {
   if (e.key === 'ArrowLeft') sl('l');

@@ -1,64 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>DS Studios — Websites for small businesses in Ireland</title>
-<meta name="robots" content="noindex,nofollow">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f6fa;color:#1a1c2e;line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
-.header{background:linear-gradient(135deg,#1a1c2e,#2d1b69);color:#fff;padding:60px 20px 40px;text-align:center;position:relative;overflow:hidden}
-.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 50%,rgba(255,255,255,.03) 0%,transparent 50%),radial-gradient(circle at 70% 50%,rgba(99,102,241,.05) 0%,transparent 50%);pointer-events:none}
-.header h1{font-size:32px;font-weight:800;letter-spacing:-.5px;position:relative}
-.header .tag{font-size:14px;opacity:.65;margin-top:4px;position:relative}
-.container{max-width:640px;margin:0 auto;padding:40px 20px;flex:1;width:100%}
-.section{margin-bottom:36px}
-.section h2{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#6b7280;margin-bottom:10px}
-.card{background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
-.card p{font-size:13px;color:#6b7280;line-height:1.7}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.service{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.04);text-align:center;transition:box-shadow .1s}
-.service:hover{box-shadow:0 2px 8px rgba(0,0,0,.06)}
-.service .ico{font-size:24px;margin-bottom:4px}
-.service h4{font-size:13px;font-weight:600;margin-bottom:2px}
-.service p{font-size:11px;color:#6b7280}
-.footer{text-align:center;padding:20px 20px 24px;font-size:10px;color:#9ca3af;border-top:1px solid #e5e7eb}
-.footer a{color:#4f46e5;text-decoration:none;font-weight:500}
-@media(max-width:500px){.grid{grid-template-columns:1fr}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS Studios — Website Audits for Irish Small Businesses</title>
+    <meta name="description" content="Free website health checks for hotels, B&Bs, restaurants, and small businesses in Ireland. Find out what your site is missing.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#x1F50D;</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#a3d977',
+                        secondary: '#7aa36f',
+                        dark: '#1a202c',
+                        light: '#fafafa'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .gradient-text { background: linear-gradient(135deg, #a3d977, #7aa36f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    </style>
 </head>
-<body>
-<div class="header">
-  <h1>DS Studios</h1>
-  <div class="tag">Websites for small businesses in Ireland</div>
-</div>
-<div class="container">
-  <div class="section">
-    <h2>What we do</h2>
-    <div class="grid">
-      <div class="service"><div class="ico">🖥️</div><h4>New Websites</h4><p>Modern, fast, mobile-friendly</p></div>
-      <div class="service"><div class="ico">🔧</div><h4>Fixes & Upgrades</h4><p>Speed, SEO, design improvements</p></div>
-      <div class="service"><div class="ico">🔍</div><h4>Audits</h4><p>Free scans, no strings attached</p></div>
-      <div class="service"><div class="ico">☕</div><h4>Just a Chat</h4><p>Not sure what you need?</p></div>
-    </div>
-  </div>
-  <div class="section">
-    <h2>Who it's for</h2>
-    <div class="card">
-      <p>Hotels, B&Bs, restaurants, cafes, trades, shops — any small business in Ireland with a website that could do more for you.</p>
-    </div>
-  </div>
-  <div class="section">
-    <h2>Get in touch</h2>
-    <div class="card">
-      <p>If you received an audit report and want to chat, reply to that email or reach out.</p>
-      <p style="margin-top:8px;color:#1a1c2e;font-weight:600">DS Studios, Ireland</p>
-    </div>
-  </div>
-</div>
-<div class="footer">
-  <a href="/ds-studios">DS Studios</a>
-</div>
+<body class="bg-light text-dark antialiased transition-colors duration-300 dark:bg-dark dark:text-light">
+    <!-- Navigation -->
+    <header class="fixed top-0 w-full z-50 backdrop-blur-md bg-white/80 dark:bg-dark/80 border-b border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/ds-studios/" class="text-2xl font-bold tracking-tight">
+                <span class="text-primary dark:text-secondary">DS</span> Studios
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#how-it-works" class="hover:text-primary dark:hover:text-secondary transition">How It Works</a>
+                <a href="#what-we-look-for" class="hover:text-primary dark:hover:text-secondary transition">What We Check</a>
+                <a href="#audit-tool" class="hover:text-primary dark:hover:text-secondary transition">Run Audit</a>
+                <a href="#contact" class="hover:text-primary dark:hover:text-secondary transition">Contact</a>
+            </nav>
+            <button id="themeToggle" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition" aria-label="Toggle theme">
+                <i class="fas fa-moon dark:fa-sun"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 py-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Free website health checks<br>
+                    <span class="gradient-text">for Irish small businesses</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">
+                    Hotels, B&Bs, restaurants, cafes, trades, shops — if you've got a website,<br>
+                    I'll tell you what's working and what's not. No strings attached.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="#audit-tool" class="px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary/90 transition shadow-lg hover:shadow-xl">
+                        Run a free audit <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#how-it-works" class="px-8 py-4 border-2 border-gray-300 dark:border-gray-700 font-semibold rounded-full hover:border-primary dark:hover:border-secondary transition">
+                        How it works
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center">
+                        <span class="text-3xl font-bold text-primary">1</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">I analyze your site</h3>
+                    <p class="text-gray-600 dark:text-gray-400">I run a technical scan of your website — checking titles, speed, mobile readiness, accessibility, and more.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-secondary/10 dark:bg-secondary/20 flex items-center justify-center">
+                        <span class="text-3xl font-bold text-secondary">2</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">You get a report</h3>
+                    <p class="text-gray-600 dark:text-gray-400">A clear, honest breakdown of issues found — ranked by severity, with plain-English explanations.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center">
+                        <span class="text-3xl font-bold text-primary">3</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">No pitch, just help</h3>
+                    <p class="text-gray-600 dark:text-gray-400">I'll send you the report. No sales call. If you want to chat after reading it, the door's open.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Check -->
+    <section id="what-we-look-for" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">What I Check</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="p-6 rounded-2xl border border-gray-200 dark:border-gray-800 hover:shadow-lg transition">
+                    <i class="fas fa-search text-2xl text-primary mb-3"></i>
+                    <h3 class="font-bold text-lg mb-1">SEO Basics</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Titles, meta descriptions, headings, schema markup</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-gray-200 dark:border-gray-800 hover:shadow-lg transition">
+                    <i class="fas fa-mobile-alt text-2xl text-secondary mb-3"></i>
+                    <h3 class="font-bold text-lg mb-1">Mobile Ready</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Viewport tag, responsive layout, touch-friendly</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-gray-200 dark:border-gray-800 hover:shadow-lg transition">
+                    <i class="fas fa-tachometer-alt text-2xl text-primary mb-3"></i>
+                    <h3 class="font-bold text-lg mb-1">Performance</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Page size, scripts, CSS bloat, load time red flags</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-gray-200 dark:border-gray-800 hover:shadow-lg transition">
+                    <i class="fas fa-universal-access text-2xl text-secondary mb-3"></i>
+                    <h3 class="font-bold text-lg mb-1">Accessibility</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Image alt text, semantic nav, screen reader basics</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-gray-200 dark:border-gray-800 hover:shadow-lg transition">
+                    <i class="fas fa-shield-alt text-2xl text-primary mb-3"></i>
+                    <h3 class="font-bold text-lg mb-1">Security</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Mixed content warnings, HTTPS hygiene</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-gray-200 dark:border-gray-800 hover:shadow-lg transition">
+                    <i class="fas fa-chart-line text-2xl text-secondary mb-3"></i>
+                    <h3 class="font-bold text-lg mb-1">Analytics</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Tracking setup, data visibility, conversion readiness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audit Tool Section -->
+    <section id="audit-tool" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready for a check?</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
+                    Drop your website URL below. I'll scan it and generate a full report.<br>
+                    <span class="text-sm text-gray-400">Fully automated — no data stored, no follow-up spam.</span>
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+                    <input type="url" id="auditUrl" placeholder="https://yourbusiness.ie" 
+                        class="flex-1 max-w-md px-6 py-4 rounded-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:border-primary dark:focus:border-secondary text-center text-lg">
+                </div>
+                <p class="text-sm text-gray-400">
+                    Prefer a personal audit? <a href="#contact" class="text-primary dark:text-secondary hover:underline">Get in touch</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Want a proper review?</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
+                    The automated scan catches technical issues. If you'd like me to look deeper — design, UX, competitor comparison — just ask.
+                </p>
+                <p class="text-gray-500 dark:text-gray-400">
+                    Email me at <a href="mailto:hello@ds-studios.com" class="text-primary dark:text-secondary hover:underline font-semibold">hello@ds-studios.com</a>
+                </p>
+                <p class="mt-4 text-sm text-gray-400">
+                    DS Studios — based in Ireland, working with Irish small businesses
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-600 dark:text-gray-400">
+                &copy; <span id="currentYear"></span> DS Studios. All rights reserved.
+            </p>
+            <div class="mt-6 space-x-6">
+                <a href="https://santaclawone.github.io/ds-studios-portfolio/" class="text-gray-500 hover:text-primary dark:hover:text-secondary transition">
+                    <i class="fas fa-briefcase text-xl" title="Portfolio"></i>
+                </a>
+                <a href="https://github.com/santaclawone/ds-studios" class="text-gray-500 hover:text-primary dark:hover:text-secondary transition">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle
+        const toggle = document.getElementById('themeToggle');
+        const icon = toggle.querySelector('i');
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark'); icon.className = 'fas fa-sun';
+        }
+        toggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            icon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+        // Current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
