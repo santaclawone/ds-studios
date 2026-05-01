@@ -1,0 +1,48 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the Clayton Hotel Sligo website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 67/100\n========================================\n\n5 issues identified:\n\nHIGH\n--------------------\n- No SSL redirect\n MEDIUM\n--------------------\n- 10 external scripts\n MEDIUM\n--------------------\n- No meta description\n MEDIUM\n--------------------\n- Missing alt text on 5 images\n HIGH\n--------------------\n- No contact form\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.claytonsligo.ie/",
+    "issues":  [
+                   {
+                       "detail":  "Visitors reaching HTTP are not redirected to HTTPS, risking security warnings.",
+                       "label":  "No SSL redirect",
+                       "check":  "Type http://[domain] - does it automatically go to https://?",
+                       "type":  "security",
+                       "siteHint":  "Google flags non-HTTPS sites as \u0027Not Secure\u0027 in Chrome.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "10 external scripts",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Search results show a generic snippet instead of a compelling description.",
+                       "label":  "No meta description",
+                       "check":  "Search \u0027site:[business URL]\u0027 on Google. Does the snippet look well-written?",
+                       "type":  "seo",
+                       "siteHint":  "Meta descriptions directly impact click-through rates from Google by 5-15%.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Missing alt text on 5 images",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Without a contact form, visitors must compose their own email - some won\u0027t bother.",
+                       "label":  "No contact form",
+                       "check":  "Scroll the page. Do you see a Name/Email/Message form? If only an email link, there\u0027s no form.",
+                       "type":  "ux",
+                       "siteHint":  "Contact forms typically boost inbound leads by 30-50%.",
+                       "severity":  "medium"
+                   }
+               ],
+    "businessName":  "Clayton Hotel Sligo",
+    "score":  67
+}

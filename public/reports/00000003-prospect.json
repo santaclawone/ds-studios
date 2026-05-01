@@ -1,0 +1,48 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the Hotel Westport website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 78/100\n========================================\n\n5 issues identified:\n\nHIGH\n--------------------\n- 2 HTTPS mixed content\n MEDIUM\n--------------------\n- 12 external scripts\n MEDIUM\n--------------------\n- No FAQ schema\n MEDIUM\n--------------------\n- Small font on mobile\n MEDIUM\n--------------------\n- Missing social meta tags\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.hotelwestport.ie/",
+    "issues":  [
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "2 HTTPS mixed content",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Each script tag adds a roundtrip. 12+ scripts mean 2-4 seconds extra load time.",
+                       "label":  "12 external scripts",
+                       "check":  "Open DevTools \u003e Network tab, filter by JS. Count how many files load.",
+                       "type":  "perf",
+                       "siteHint":  "40% of users abandon sites that take longer than 3 seconds to load.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "FAQ rich results in Google are a missed opportunity for visibility.",
+                       "label":  "No FAQ schema",
+                       "check":  "Search a common question about your business. Do you see expandable answers?",
+                       "type":  "seo",
+                       "siteHint":  "FAQ rich results take up 3x more space in search results.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Body text below 16px makes iOS zoom in, causing a poor mobile experience.",
+                       "label":  "Small font on mobile",
+                       "check":  "Open your site on a phone. Can you comfortably read the body text?",
+                       "type":  "mobile",
+                       "siteHint":  "70% of hotel bookings are researched on mobile devices.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Open Graph tags control how your site appears when shared on Facebook, LinkedIn, and WhatsApp.",
+                       "label":  "Missing social meta tags",
+                       "check":  "Share your URL on Facebook or LinkedIn. Does it show a proper preview image and description?",
+                       "type":  "seo",
+                       "siteHint":  "Posts with rich previews get 2x more clicks.",
+                       "severity":  "medium"
+                   }
+               ],
+    "businessName":  "Hotel Westport",
+    "score":  78
+}

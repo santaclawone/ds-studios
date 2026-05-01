@@ -1,0 +1,48 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the The Glasshouse Hotel website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 79/100\n========================================\n\n5 issues identified:\n\nHIGH\n--------------------\n- 1 HTTPS mixed content\n MEDIUM\n--------------------\n- Missing alt tags on 6 images\n MEDIUM\n--------------------\n- No FAQ schema\n MEDIUM\n--------------------\n- No blog section\n MEDIUM\n--------------------\n- Slow hero video\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.theglasshousehotel.ie/",
+    "issues":  [
+                   {
+                       "detail":  "A single HTTP element on an HTTPS page can trigger the mixed content warning.",
+                       "label":  "1 HTTPS mixed content",
+                       "check":  "Check DevTools \u003e Console for mixed content warnings.",
+                       "type":  "security",
+                       "siteHint":  "Even one warning undermines visitor trust.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Missing alt tags on 6 images",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "FAQ rich results in Google are a missed opportunity for visibility.",
+                       "label":  "No FAQ schema",
+                       "check":  "Search a common question about your business. Do you see expandable answers?",
+                       "type":  "seo",
+                       "siteHint":  "FAQ rich results take up 3x more space in search results.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "A blog provides fresh content for Google and showcases your venue to potential guests.",
+                       "label":  "No blog section",
+                       "check":  "Is there a News, Blog, or Stories section on the site?",
+                       "type":  "content",
+                       "siteHint":  "Hotel sites with blogs get 55% more organic traffic.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Slow hero video",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   }
+               ],
+    "businessName":  "The Glasshouse Hotel",
+    "score":  79
+}

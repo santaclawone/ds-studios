@@ -1,0 +1,56 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the Moran\u0027s Bar \u0026 Restaurant website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 64/100\n========================================\n\n6 issues identified:\n\nHIGH\n--------------------\n- No SSL\n HIGH\n--------------------\n- 5 HTTP images\n MEDIUM\n--------------------\n- No meta description\n MEDIUM\n--------------------\n- Missing contact page\n HIGH\n--------------------\n- 2 broken links\n MEDIUM\n--------------------\n- No social links\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.moranssligo.ie/",
+    "issues":  [
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No SSL",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "5 HTTP images",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Search results show a generic snippet instead of a compelling description.",
+                       "label":  "No meta description",
+                       "check":  "Search \u0027site:[business URL]\u0027 on Google. Does the snippet look well-written?",
+                       "type":  "seo",
+                       "siteHint":  "Meta descriptions directly impact click-through rates from Google by 5-15%.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Missing contact page",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "2 broken links",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No social links",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "low"
+                   }
+               ],
+    "businessName":  "Moran\u0027s Bar \u0026 Restaurant",
+    "score":  64
+}

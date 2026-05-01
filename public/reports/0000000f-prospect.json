@@ -1,0 +1,56 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the Oranmore Lodge Hotel website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 59/100\n========================================\n\n6 issues identified:\n\nHIGH\n--------------------\n- No SSL certificate\n MEDIUM\n--------------------\n- 20 inline styles\n MEDIUM\n--------------------\n- No meta description\n HIGH\n--------------------\n- Not responsive\n MEDIUM\n--------------------\n- No alt text on any image\n MEDIUM\n--------------------\n- Missing footer links\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.oranmorelodge.ie/",
+    "issues":  [
+                   {
+                       "detail":  "The site loads over HTTP only. No encryption means data is sent in plain text.",
+                       "label":  "No SSL certificate",
+                       "check":  "Does the URL start with http:// instead of https://?",
+                       "type":  "security",
+                       "siteHint":  "Google flags all non-HTTPS sites as \u0027Not Secure\u0027.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "20 inline styles",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Search results show a generic snippet instead of a compelling description.",
+                       "label":  "No meta description",
+                       "check":  "Search \u0027site:[business URL]\u0027 on Google. Does the snippet look well-written?",
+                       "type":  "seo",
+                       "siteHint":  "Meta descriptions directly impact click-through rates from Google by 5-15%.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "The website layout breaks on mobile and tablet screens.",
+                       "label":  "Not responsive",
+                       "check":  "Resize your browser to 375px width (iPhone SE). Does content overflow?",
+                       "type":  "mobile",
+                       "siteHint":  "Google penalizes non-responsive sites in mobile search rankings.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Every single image on the site lacks descriptive alt text.",
+                       "label":  "No alt text on any image",
+                       "check":  "Right-click any image \u003e Inspect. Check if alt attribute exists and has text.",
+                       "type":  "accessibility",
+                       "siteHint":  "Without alt text, image SEO is effectively zero.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "The footer lacks important navigation links like Privacy Policy, Terms, and Sitemap.",
+                       "label":  "Missing footer links",
+                       "check":  "Scroll to the bottom of the page. Are the expected links present?",
+                       "type":  "ux",
+                       "siteHint":  "Footer links support SEO and help visitors find key pages.",
+                       "severity":  "low"
+                   }
+               ],
+    "businessName":  "Oranmore Lodge Hotel",
+    "score":  59
+}

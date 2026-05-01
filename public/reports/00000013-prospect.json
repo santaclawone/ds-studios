@@ -1,0 +1,64 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the Flannery\u0027s Hotel Galway website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 54/100\n========================================\n\n7 issues identified:\n\nHIGH\n--------------------\n- No SSL\n MEDIUM\n--------------------\n- No viewport meta\n MEDIUM\n--------------------\n- 14 inline styles\n HIGH\n--------------------\n- Broken reservation system\n HIGH\n--------------------\n- Not responsive\n MEDIUM\n--------------------\n- No analytics\n MEDIUM\n--------------------\n- Images oversized\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.flanneryshotelgalway.ie/",
+    "issues":  [
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No SSL",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No viewport meta",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "14 inline styles",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Broken reservation system",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "The website layout breaks on mobile and tablet screens.",
+                       "label":  "Not responsive",
+                       "check":  "Resize your browser to 375px width (iPhone SE). Does content overflow?",
+                       "type":  "mobile",
+                       "siteHint":  "Google penalizes non-responsive sites in mobile search rankings.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Without analytics, you can\u0027t track traffic sources, popular pages, or conversion rates.",
+                       "label":  "No analytics",
+                       "check":  "Install the Tag Assistant extension and check if GA or similar is detected.",
+                       "type":  "content",
+                       "siteHint":  "You can\u0027t improve what you don\u0027t measure.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Images oversized",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   }
+               ],
+    "businessName":  "Flannery\u0027s Hotel Galway",
+    "score":  54
+}

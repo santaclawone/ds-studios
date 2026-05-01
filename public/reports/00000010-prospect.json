@@ -1,0 +1,40 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the The Twelve Hotel website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 80/100\n========================================\n\n4 issues identified:\n\nHIGH\n--------------------\n- 2 HTTPS issues\n MEDIUM\n--------------------\n- Thin content on some pages\n MEDIUM\n--------------------\n- No FAQ schema\n MEDIUM\n--------------------\n- Missing social preview images\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.thetwelvehotel.ie/",
+    "issues":  [
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "2 HTTPS issues",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Thin content on some pages",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "FAQ rich results in Google are a missed opportunity for visibility.",
+                       "label":  "No FAQ schema",
+                       "check":  "Search a common question about your business. Do you see expandable answers?",
+                       "type":  "seo",
+                       "siteHint":  "FAQ rich results take up 3x more space in search results.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Missing social preview images",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   }
+               ],
+    "businessName":  "The Twelve Hotel",
+    "score":  80
+}

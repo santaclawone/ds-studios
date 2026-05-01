@@ -1,0 +1,48 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the Salthill Hotel website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 73/100\n========================================\n\n5 issues identified:\n\nHIGH\n--------------------\n- 2 HTTP mixed content\n HIGH\n--------------------\n- No schema markup\n MEDIUM\n--------------------\n- 4 gallery images missing alt\n HIGH\n--------------------\n- No contact form\n MEDIUM\n--------------------\n- Header overflow on mobile\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.salthillhotel.com/",
+    "issues":  [
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "2 HTTP mixed content",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Missing structured data helps Google display rich snippets in search results.",
+                       "label":  "No schema markup",
+                       "check":  "Search for your business on Google - do you see star ratings, hours, or FAQ entries?",
+                       "type":  "seo",
+                       "siteHint":  "Competitors with rich snippets get 3x more clicks.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "4 gallery images missing alt",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Without a contact form, visitors must compose their own email - some won\u0027t bother.",
+                       "label":  "No contact form",
+                       "check":  "Scroll the page. Do you see a Name/Email/Message form? If only an email link, there\u0027s no form.",
+                       "type":  "ux",
+                       "siteHint":  "Contact forms typically boost inbound leads by 30-50%.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Header overflow on mobile",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   }
+               ],
+    "businessName":  "Salthill Hotel",
+    "score":  73
+}

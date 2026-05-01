@@ -1,0 +1,40 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the Westport Heights Hotel website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 81/100\n========================================\n\n4 issues identified:\n\nHIGH\n--------------------\n- 1 HTTPS mixed content\n MEDIUM\n--------------------\n- No blog section\n MEDIUM\n--------------------\n- Thin content on homepage\n MEDIUM\n--------------------\n- Missing alt text on gallery\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.westportheights.com/",
+    "issues":  [
+                   {
+                       "detail":  "A single HTTP element on an HTTPS page can trigger the mixed content warning.",
+                       "label":  "1 HTTPS mixed content",
+                       "check":  "Check DevTools \u003e Console for mixed content warnings.",
+                       "type":  "security",
+                       "siteHint":  "Even one warning undermines visitor trust.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "A blog provides fresh content for Google and showcases your venue to potential guests.",
+                       "label":  "No blog section",
+                       "check":  "Is there a News, Blog, or Stories section on the site?",
+                       "type":  "content",
+                       "siteHint":  "Hotel sites with blogs get 55% more organic traffic.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "The homepage has very little text content for search engines to index.",
+                       "label":  "Thin content on homepage",
+                       "check":  "Read the homepage. Is there less than 150 words of content?",
+                       "type":  "seo",
+                       "siteHint":  "Pages with thin content rarely rank in the top 20 of Google results.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Gallery images without alt text are invisible to screen readers and image search.",
+                       "label":  "Missing alt text on gallery",
+                       "check":  "Check if gallery \u003cimg\u003e tags have descriptive alt attributes.",
+                       "type":  "accessibility",
+                       "siteHint":  "Google Image Search drives 30% of venue discovery traffic.",
+                       "severity":  "medium"
+                   }
+               ],
+    "businessName":  "Westport Heights Hotel",
+    "score":  81
+}

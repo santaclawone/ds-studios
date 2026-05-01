@@ -1,0 +1,40 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the Sage Restaurant Westport website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 70/100\n========================================\n\n4 issues identified:\n\nHIGH\n--------------------\n- 4 HTTP resources (mixed content)\n MEDIUM\n--------------------\n- 33 external scripts\n MEDIUM\n--------------------\n- 15 inline style blocks\n HIGH\n--------------------\n- No contact form\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://sagewestport.ie/",
+    "issues":  [
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "4 HTTP resources (mixed content)",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "33 external scripts",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "15 inline style blocks",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Without a contact form, visitors must compose their own email - some won\u0027t bother.",
+                       "label":  "No contact form",
+                       "check":  "Scroll the page. Do you see a Name/Email/Message form? If only an email link, there\u0027s no form.",
+                       "type":  "ux",
+                       "siteHint":  "Contact forms typically boost inbound leads by 30-50%.",
+                       "severity":  "medium"
+                   }
+               ],
+    "businessName":  "Sage Restaurant Westport",
+    "score":  70
+}

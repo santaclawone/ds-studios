@@ -1,0 +1,48 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the The g Hotel website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 76/100\n========================================\n\n5 issues identified:\n\nHIGH\n--------------------\n- 4 HTTP resources\n MEDIUM\n--------------------\n- 18 external scripts\n MEDIUM\n--------------------\n- No local business schema\n MEDIUM\n--------------------\n- Missing contact form\n HIGH\n--------------------\n- 2 broken gallery links\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.theghotel.ie/",
+    "issues":  [
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "4 HTTP resources",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "18 external scripts",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No local business schema",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Visitors can\u0027t fill out an inquiry form directly on your site.",
+                       "label":  "Missing contact form",
+                       "check":  "Does the Contact page have form fields (Name, Email, Message)?",
+                       "type":  "ux",
+                       "siteHint":  "Inline contact forms convert 3x better than email-only links.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "2 broken gallery links",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   }
+               ],
+    "businessName":  "The g Hotel",
+    "score":  76
+}

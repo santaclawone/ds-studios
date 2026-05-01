@@ -1,0 +1,56 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the The Coach House Hotel website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 60/100\n========================================\n\n6 issues identified:\n\nHIGH\n--------------------\n- No SSL redirect\n HIGH\n--------------------\n- 2 broken links\n HIGH\n--------------------\n- No schema\n MEDIUM\n--------------------\n- Missing alt text\n HIGH\n--------------------\n- Not fully responsive\n MEDIUM\n--------------------\n- No analytics\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.thecoachhousehotelsligo.ie/",
+    "issues":  [
+                   {
+                       "detail":  "Visitors reaching HTTP are not redirected to HTTPS, risking security warnings.",
+                       "label":  "No SSL redirect",
+                       "check":  "Type http://[domain] - does it automatically go to https://?",
+                       "type":  "security",
+                       "siteHint":  "Google flags non-HTTPS sites as \u0027Not Secure\u0027 in Chrome.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "2 broken links",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No schema",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Missing alt text",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Not fully responsive",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Without analytics, you can\u0027t track traffic sources, popular pages, or conversion rates.",
+                       "label":  "No analytics",
+                       "check":  "Install the Tag Assistant extension and check if GA or similar is detected.",
+                       "type":  "content",
+                       "siteHint":  "You can\u0027t improve what you don\u0027t measure.",
+                       "severity":  "low"
+                   }
+               ],
+    "businessName":  "The Coach House Hotel",
+    "score":  60
+}

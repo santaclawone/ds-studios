@@ -1,0 +1,80 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the Belleek Castle \u0026 Thatch Bar website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 43/100\n========================================\n\n9 issues identified:\n\nHIGH\n--------------------\n- No SSL\n HIGH\n--------------------\n- No mobile support\n MEDIUM\n--------------------\n- 20+ inline styles\n HIGH\n--------------------\n- Broken menu page\n MEDIUM\n--------------------\n- No meta tags\n MEDIUM\n--------------------\n- No analytics\n MEDIUM\n--------------------\n- Images oversized\n HIGH\n--------------------\n- No contact form\n MEDIUM\n--------------------\n- No footer\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.belleekcastle.ie/",
+    "issues":  [
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No SSL",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No mobile support",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "20+ inline styles",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Broken menu page",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No meta tags",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Without analytics, you can\u0027t track traffic sources, popular pages, or conversion rates.",
+                       "label":  "No analytics",
+                       "check":  "Install the Tag Assistant extension and check if GA or similar is detected.",
+                       "type":  "content",
+                       "siteHint":  "You can\u0027t improve what you don\u0027t measure.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Images oversized",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Without a contact form, visitors must compose their own email - some won\u0027t bother.",
+                       "label":  "No contact form",
+                       "check":  "Scroll the page. Do you see a Name/Email/Message form? If only an email link, there\u0027s no form.",
+                       "type":  "ux",
+                       "siteHint":  "Contact forms typically boost inbound leads by 30-50%.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No footer",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "critical"
+                   }
+               ],
+    "businessName":  "Belleek Castle \u0026 Thatch Bar",
+    "score":  43
+}

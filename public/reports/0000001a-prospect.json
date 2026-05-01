@@ -1,0 +1,64 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the The Diamond Coast Hotel website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 56/100\n========================================\n\n7 issues identified:\n\nHIGH\n--------------------\n- No HTTPS\n MEDIUM\n--------------------\n- 1 H1 tag only\n MEDIUM\n--------------------\n- 12 inline styles\n MEDIUM\n--------------------\n- No viewport meta\n HIGH\n--------------------\n- Broken booking link\n HIGH\n--------------------\n- Not mobile responsive\n MEDIUM\n--------------------\n- No favicon\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.diamondcoast.ie/",
+    "issues":  [
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No HTTPS",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "1 H1 tag only",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "12 inline styles",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No viewport meta",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "The reservation or booking system link leads to a dead page.",
+                       "label":  "Broken booking link",
+                       "check":  "Click through the booking/reservation process end-to-end.",
+                       "type":  "ux",
+                       "siteHint":  "A broken booking link is a direct loss of revenue.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "The site doesn\u0027t adapt to different screen sizes. Buttons and text overlap on mobile.",
+                       "label":  "Not mobile responsive",
+                       "check":  "Resize your browser to mobile width. Does content break or overflow?",
+                       "type":  "mobile",
+                       "siteHint":  "93% of couples research venues on their phone before booking.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No favicon",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   }
+               ],
+    "businessName":  "The Diamond Coast Hotel",
+    "score":  56
+}

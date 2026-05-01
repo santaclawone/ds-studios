@@ -1,0 +1,56 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the Sheaffrey\u0027s Bar \u0026 Townhouse website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 55/100\n========================================\n\n6 issues identified:\n\nHIGH\n--------------------\n- No SSL\n MEDIUM\n--------------------\n- No meta description\n MEDIUM\n--------------------\n- 10+ inline styles\n HIGH\n--------------------\n- Broken contact page\n MEDIUM\n--------------------\n- No analytics\n HIGH\n--------------------\n- Not responsive on mobile\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.sheaffreys.com/",
+    "issues":  [
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No SSL",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Search results show a generic snippet instead of a compelling description.",
+                       "label":  "No meta description",
+                       "check":  "Search \u0027site:[business URL]\u0027 on Google. Does the snippet look well-written?",
+                       "type":  "seo",
+                       "siteHint":  "Meta descriptions directly impact click-through rates from Google by 5-15%.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Large amounts of inline CSS hurt maintainability and caching efficiency.",
+                       "label":  "10+ inline styles",
+                       "check":  "View page source and look for multiple \u003cstyle\u003e blocks with excessive rules.",
+                       "type":  "perf",
+                       "siteHint":  "External CSS files compress better and are cached by browsers.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "The contact page returns an error or doesn\u0027t load properly.",
+                       "label":  "Broken contact page",
+                       "check":  "Click on the Contact link. Does it load a working page?",
+                       "type":  "ux",
+                       "siteHint":  "No working contact page means lost booking inquiries.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Without analytics, you can\u0027t track traffic sources, popular pages, or conversion rates.",
+                       "label":  "No analytics",
+                       "check":  "Install the Tag Assistant extension and check if GA or similar is detected.",
+                       "type":  "content",
+                       "siteHint":  "You can\u0027t improve what you don\u0027t measure.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Not responsive on mobile",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "low"
+                   }
+               ],
+    "businessName":  "Sheaffrey\u0027s Bar \u0026 Townhouse",
+    "score":  55
+}

@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Website Audit - An Port MÃ³r Restaurant - Empire</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Open Sans',-apple-system,sans-serif;background:#F5F5F5;color:#2D3047;line-height:1.6}
+.header{background:linear-gradient(135deg,#93C572,#7db85a);color:#2D3047;padding:40px 20px 32px;text-align:center}
+.header h1{font-size:2em;font-weight:700;letter-spacing:-.5px;color:#2D3047}
+.header .sub{font-size:12px;opacity:.7;margin-top:4px;font-weight:400}
+.badge{display:inline-flex;align-items:center;gap:8px;margin:14px auto 0;background:rgba(255,255,255,.25);border:1px solid rgba(255,255,255,.3);padding:6px 20px 6px 18px;border-radius:20px;font-size:14px}
+.badge .num{font-weight:800;font-size:24px;color:#2D3047}
+.badge .den{opacity:.5;font-weight:400}
+.badge .grade{background:#2D3047;color:#fff;border-radius:4px;padding:2px 8px;font-size:11px;font-weight:700;margin-left:6px}
+.cap{font-size:10px;opacity:.5;margin-top:6px}
+.loc-tag{display:inline-block;background:rgba(45,48,71,.1);padding:2px 12px;border-radius:12px;font-size:11px;font-weight:600;color:#2D3047;margin-top:6px}
+.container{max-width:680px;margin:0 auto;padding:24px 16px}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;margin-bottom:24px}
+.stat{background:#fff;border-radius:8px;padding:14px 8px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.04);border:1px solid rgba(0,0,0,.04)}
+.stat .n{font-size:24px;font-weight:800}
+.stat .n.crit{color:#E74C3C}.stat .n.high{color:#F39C12}.stat .n.med{color:#4A8FE7}.stat .n.low{color:#9CA3AF}
+.stat .l{font-size:9px;color:#6b7280;text-transform:uppercase;letter-spacing:.4px;font-weight:600}
+h2{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#93C572;margin:0 0 8px}
+.issues{margin-bottom:20px}
+.issue{background:#fff;border-radius:8px;padding:12px 14px;margin-bottom:6px;border-left:4px solid #d1d5db;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+.issue.crit{border-left-color:#E74C3C}.issue.high{border-left-color:#F39C12}.issue.med{border-left-color:#4A8FE7}.issue.low{border-left-color:#9CA3AF}
+.issue .hdr{font-size:13px;font-weight:600}
+.issue .sev{display:inline-block;font-size:8px;padding:2px 6px;border-radius:3px;font-weight:700;text-transform:uppercase;margin-right:6px;letter-spacing:.3px}
+.issue.crit .sev{background:#fde8e8;color:#E74C3C}.issue.high .sev{background:#fef3c7;color:#F39C12}.issue.med .sev{background:#e0f2fe;color:#4A8FE7}.issue.low .sev{background:#f3f4f6;color:#9CA3AF}
+.issue .det{font-size:12px;color:#6b7280;margin-top:3px}
+.positives{margin-bottom:20px}
+.pos-item{background:rgba(147,197,114,.1);border:1px solid rgba(147,197,114,.25);border-radius:6px;padding:7px 10px;margin-bottom:3px;font-size:11px;color:#2D3047}
+.info{background:#fff;border-radius:8px;padding:16px;margin-top:20px;box-shadow:0 1px 3px rgba(0,0,0,.03);font-size:11px;color:#6b7280;line-height:1.6}
+.info strong{color:#2D3047}
+.info .empire-badge{display:inline-block;background:#93C572;color:#2D3047;padding:1px 6px;border-radius:3px;font-size:9px;font-weight:700;letter-spacing:.3px}
+.footer{text-align:center;padding:24px 20px;font-size:10px;color:#9CA3AF}
+.footer a{color:#4A8FE7;text-decoration:none}
+.footer .em{speak:none;color:#93C572;font-weight:700}
+</style></head>
+<body>
+<div class="header">
+  <h1>An Port MÃ³r Restaurant</h1>
+  <div class="sub">Website health audit</div>
+  <div class="loc-tag">Westport</div>
+  <div class="badge"><span class="num">62</span><span class="den">/100</span><span class="grade">C</span></div>
+  <div class="cap">2026-05-01 03:14</div>
+</div>
+<div class="container">
+  <div class="grid">
+    <div class="stat"><div class="n crit">1</div><div class="l">Critical</div></div>
+    <div class="stat"><div class="n high">1</div><div class="l">High</div></div>
+    <div class="stat"><div class="n med">4</div><div class="l">Medium</div></div>
+    <div class="stat"><div class="n low">0</div><div class="l">Low</div></div>
+  </div>
+  <div class="issues"><h2>Issues (6)</h2><div class="issue critical">
+  <div class="hdr"><span class="sev">critical</span>No SSL</div>
+  <div class="det"></div>
+</div>
+<div class="issue medium">
+  <div class="hdr"><span class="sev">medium</span>7 inline scripts</div>
+  <div class="det"></div>
+</div>
+<div class="issue medium">
+  <div class="hdr"><span class="sev">medium</span>No meta description</div>
+  <div class="det">Search results show a generic snippet instead of a compelling description.</div>
+</div>
+<div class="issue medium">
+  <div class="hdr"><span class="sev">medium</span>Missing favicon</div>
+  <div class="det"></div>
+</div>
+<div class="issue medium">
+  <div class="hdr"><span class="sev">medium</span>Thin homepage content</div>
+  <div class="det"></div>
+</div>
+<div class="issue medium">
+  <div class="hdr"><span class="sev">medium</span>No analytics</div>
+  <div class="det">Without analytics, you can't track traffic sources, popular pages, or conversion rates.</div>
+</div>
+</div>
+  <div class="positives"><h2>Working</h2><div class='pos-item'>+ Business has established online presence</div>
+ <div class='pos-item'>+ Independent website operational</div>
+ <div class='pos-item'>+ Active in Westport market</div>
+ <div class='pos-item'>+ Content visible to search engines</div>
+ <div class='pos-item'>+ Potential for significant improvement</div>
+</div>
+  <div class="info">
+    <strong><span class="empire-badge">EMPIRE</span> Website Health Audit</strong><br>
+    Generated by Empower Project. Covers SEO, mobile readiness, performance, security, and usability checks.<br><br>
+    <strong>URL:</strong> <a href="https://www.anportmor.ie/" style="color:#4A8FE7">anportmor.ie/</a><br>
+    <strong>Location:</strong> Westport
+  </div>
+</div>
+<div class="footer">
+  <span class="em">â—†</span> Empire Project â€” Websites for small businesses in Ireland <span class="em">â—†</span><br>
+  <a href="#">empire.ie</a>
+</div>
+</body>
+</html>

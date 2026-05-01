@@ -1,0 +1,56 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the Yeats Country Hotel, Spa \u0026 Leisure Club website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 61/100\n========================================\n\n6 issues identified:\n\nHIGH\n--------------------\n- No SSL\n HIGH\n--------------------\n- 7 HTTP assets\n HIGH\n--------------------\n- 3 broken gallery images\n HIGH\n--------------------\n- No schema markup\n MEDIUM\n--------------------\n- Small text on mobile\n MEDIUM\n--------------------\n- No analytics\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.yeatscountryhotel.com/",
+    "issues":  [
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No SSL",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "7 HTTP assets",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Gallery images are returning 404 errors and won\u0027t display.",
+                       "label":  "3 broken gallery images",
+                       "check":  "Go through the gallery section and check for broken image icons.",
+                       "type":  "ux",
+                       "siteHint":  "Visual galleries are the #1 feature couples look for on venue sites.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Missing structured data helps Google display rich snippets in search results.",
+                       "label":  "No schema markup",
+                       "check":  "Search for your business on Google - do you see star ratings, hours, or FAQ entries?",
+                       "type":  "seo",
+                       "siteHint":  "Competitors with rich snippets get 3x more clicks.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Small text on mobile",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Without analytics, you can\u0027t track traffic sources, popular pages, or conversion rates.",
+                       "label":  "No analytics",
+                       "check":  "Install the Tag Assistant extension and check if GA or similar is detected.",
+                       "type":  "content",
+                       "siteHint":  "You can\u0027t improve what you don\u0027t measure.",
+                       "severity":  "low"
+                   }
+               ],
+    "businessName":  "Yeats Country Hotel, Spa \u0026 Leisure Club",
+    "score":  61
+}

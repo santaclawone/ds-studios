@@ -1,0 +1,48 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the The Wyatt Hotel website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 58/100\n========================================\n\n5 issues identified:\n\nMEDIUM\n--------------------\n- No viewport meta tag\n HIGH\n--------------------\n- 8 HTTP resources\n HIGH\n--------------------\n- No SSL certificate warning\n MEDIUM\n--------------------\n- 25+ external scripts\n HIGH\n--------------------\n- Not mobile responsive\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.wyatthotel.com/",
+    "issues":  [
+                   {
+                       "detail":  "Without viewport meta, mobile browsers display the desktop site zoomed out.",
+                       "label":  "No viewport meta tag",
+                       "check":  "Open on a phone. Is the text tiny and you need to pinch to read?",
+                       "type":  "mobile",
+                       "siteHint":  "Google uses mobile-first indexing - mobile issues directly affect rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Multiple resources loading over HTTP on an HTTPS page triggers browser warnings.",
+                       "label":  "8 HTTP resources",
+                       "check":  "Check the address bar lock icon. Mixed content warnings hurt trust.",
+                       "type":  "security",
+                       "siteHint":  "Browser warnings on your site erode trust instantly.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No SSL certificate warning",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Over 25 script tags means 5-8 seconds of load time on standard connections.",
+                       "label":  "25+ external scripts",
+                       "check":  "Open DevTools \u003e Performance tab and record a page load.",
+                       "type":  "perf",
+                       "siteHint":  "Every second of load time reduces conversions by 7%.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "The site doesn\u0027t adapt to different screen sizes. Buttons and text overlap on mobile.",
+                       "label":  "Not mobile responsive",
+                       "check":  "Resize your browser to mobile width. Does content break or overflow?",
+                       "type":  "mobile",
+                       "siteHint":  "93% of couples research venues on their phone before booking.",
+                       "severity":  "medium"
+                   }
+               ],
+    "businessName":  "The Wyatt Hotel",
+    "score":  58
+}

@@ -1,0 +1,48 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the Knockranny House Hotel website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 65/100\n========================================\n\n5 issues identified:\n\nMEDIUM\n--------------------\n- 6 inline style blocks\n MEDIUM\n--------------------\n- No meta description\n HIGH\n--------------------\n- 4 broken links\n HIGH\n--------------------\n- No SSL redirect\n MEDIUM\n--------------------\n- Missing H1 heading\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.knockrannyhousehotel.ie/",
+    "issues":  [
+                   {
+                       "detail":  "Inline CSS can\u0027t be cached by browsers. External CSS files speed up repeat visits.",
+                       "label":  "6 inline style blocks",
+                       "check":  "View page source and count \u003cstyle\u003e tags. More than 2-3 is inefficient.",
+                       "type":  "perf",
+                       "siteHint":  "Cached pages load 4x faster on return visits.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Search results show a generic snippet instead of a compelling description.",
+                       "label":  "No meta description",
+                       "check":  "Search \u0027site:[business URL]\u0027 on Google. Does the snippet look well-written?",
+                       "type":  "seo",
+                       "siteHint":  "Meta descriptions directly impact click-through rates from Google by 5-15%.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Broken links frustrate visitors and hurt SEO rankings.",
+                       "label":  "4 broken links",
+                       "check":  "Click through every navigation link. Any page returning 404?",
+                       "type":  "ux",
+                       "siteHint":  "Each broken link costs you potential bookings.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Visitors reaching HTTP are not redirected to HTTPS, risking security warnings.",
+                       "label":  "No SSL redirect",
+                       "check":  "Type http://[domain] - does it automatically go to https://?",
+                       "type":  "security",
+                       "siteHint":  "Google flags non-HTTPS sites as \u0027Not Secure\u0027 in Chrome.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "The page is missing its primary heading, which hurts SEO and structure.",
+                       "label":  "Missing H1 heading",
+                       "check":  "Inspect the page - is there an \u003ch1\u003e tag near the top?",
+                       "type":  "seo",
+                       "siteHint":  "H1 headings are one of the top 3 SEO ranking factors for Google.",
+                       "severity":  "medium"
+                   }
+               ],
+    "businessName":  "Knockranny House Hotel",
+    "score":  65
+}

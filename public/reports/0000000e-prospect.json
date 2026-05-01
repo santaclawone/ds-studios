@@ -1,0 +1,56 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the The House Hotel website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 63/100\n========================================\n\n6 issues identified:\n\nMEDIUM\n--------------------\n- No viewport meta\n HIGH\n--------------------\n- 12+ HTTP resources\n HIGH\n--------------------\n- No contact form\n HIGH\n--------------------\n- Broken booking link\n MEDIUM\n--------------------\n- No H1 tag\n MEDIUM\n--------------------\n- Slow load time\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://www.thehousehotel.ie/",
+    "issues":  [
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No viewport meta",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "12+ HTTP resources",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Without a contact form, visitors must compose their own email - some won\u0027t bother.",
+                       "label":  "No contact form",
+                       "check":  "Scroll the page. Do you see a Name/Email/Message form? If only an email link, there\u0027s no form.",
+                       "type":  "ux",
+                       "siteHint":  "Contact forms typically boost inbound leads by 30-50%.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "The reservation or booking system link leads to a dead page.",
+                       "label":  "Broken booking link",
+                       "check":  "Click through the booking/reservation process end-to-end.",
+                       "type":  "ux",
+                       "siteHint":  "A broken booking link is a direct loss of revenue.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No H1 tag",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "The site takes over 4 seconds to fully load on a standard connection.",
+                       "label":  "Slow load time",
+                       "check":  "Use Google PageSpeed Insights or GTmetrix to check page load time.",
+                       "type":  "perf",
+                       "siteHint":  "A 1-second delay reduces hotel bookings by 6%.",
+                       "severity":  "low"
+                   }
+               ],
+    "businessName":  "The House Hotel",
+    "score":  63
+}

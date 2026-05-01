@@ -1,0 +1,48 @@
+﻿{
+    "emailText":  "Hi there,\n\nI came across the Plougastel-Daoulas Restaurant website and wanted to share some honest observations based on a quick audit. No pitch - just a fresh pair of eyes.\n\n========================================\nWebsite Health Check - Score: 68/100\n========================================\n\n5 issues identified:\n\nHIGH\n--------------------\n- 5 HTTP images\n MEDIUM\n--------------------\n- No H1 tag\n HIGH\n--------------------\n- No schema markup\n HIGH\n--------------------\n- 2 broken navigation links\n MEDIUM\n--------------------\n- Missing social media links\n\n\nWHAT\u0027S WORKING WELL\n--------------------\n+ Business is established and operational\n+ Has independent web presence\n+ Active in local market\n\n========================================\n\nYour current website provider should be flagging things like this for you.\n\nIf you ever need a fresh pair of eyes or a new provider, just reach out.\n\nBest,\nDavid\nDS Studios",
+    "url":  "https://plougastel-daoulas.ie/",
+    "issues":  [
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "5 HTTP images",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "No H1 tag",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Missing structured data helps Google display rich snippets in search results.",
+                       "label":  "No schema markup",
+                       "check":  "Search for your business on Google - do you see star ratings, hours, or FAQ entries?",
+                       "type":  "seo",
+                       "siteHint":  "Competitors with rich snippets get 3x more clicks.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Some main navigation links point to non-existent pages.",
+                       "label":  "2 broken navigation links",
+                       "check":  "Hover over each navigation link and check the URL path. Click the ones that seem broken.",
+                       "type":  "ux",
+                       "siteHint":  "Broken navigation frustrates users and signals poor maintenance.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Issue not detailed yet.",
+                       "label":  "Missing social media links",
+                       "check":  "Investigate to understand the issue.",
+                       "type":  "general",
+                       "siteHint":  "This issue may affect user experience or rankings.",
+                       "severity":  "medium"
+                   }
+               ],
+    "businessName":  "Plougastel-Daoulas Restaurant",
+    "score":  68
+}
