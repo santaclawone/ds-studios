@@ -1,0 +1,57 @@
+﻿BATCH AUDIT v2 - 2026-05-01 05:47
+Total: 30 prospects
+
+[13/30] DONE: The Hardiman Hotel in 41s
+DONE: The Castlecourt Hotel in 27s
+[14/30] DONE: The House Hotel in 35s
+DONE: Hotel Westport in 23s
+DONE: Knockranny House Hotel in 1s
+[15/30] DONE: Oranmore Lodge Hotel in 33s
+[16/30] DONE: The Twelve Hotel in 2s
+DONE: The Wyatt Hotel in 31s
+[17/30] DONE: Glenlo Abbey Hotel & Estate in 1s
+[18/30] DONE: Jurys Inn Galway in 1s
+[19/30] DONE: Flannery's Hotel Galway in 1s
+DONE: Westport Heights Hotel in 38s
+[20/30] DONE: Salthill Hotel in 34s
+DONE: Sheaffrey's Bar & Townhouse in 1s
+[21/30] DONE: Sligo Park Hotel in 1s
+DONE: Plougastel-Daoulas Restaurant in 1s
+[22/30] DONE: The Glasshouse Hotel in 1s
+[23/30] DONE: Radisson Blu Hotel & Spa Sligo in 1s
+[24/30] DONE: Clayton Hotel Sligo in 1s
+[25/30] DONE: Yeats Country Hotel, Spa & Leisure Club in 22s
+[26/30] DONE: The Diamond Coast Hotel in 29s
+[27/30] DONE: Belleek Castle & Thatch Bar in 1s
+[28/30] DONE: Riverside Hotel Sligo in 1s
+[29/30] DONE: Moran's Bar & Restaurant in 1s
+[30/30] DONE: The Coach House Hotel in 1s
+========================================
+BATCH COMPLETE at 2026-05-01 05:50
+Total: 30/30 - Failed: 0
+DONE: Sage Restaurant Westport in 76s
+DONE: An Port Mor Restaurant in 1s
+DONE: The West Coast Hotel in 1s
+DONE: The g Hotel in 32s
+DONE: Galmont Hotel & Spa in 33s
+DONE: The Hardiman Hotel in 40s
+DONE: The House Hotel in 35s
+DONE: Oranmore Lodge Hotel in 35s
+DONE: The Twelve Hotel in 39s
+DONE: Glenlo Abbey Hotel & Estate in 1s
+DONE: Jurys Inn Galway in 1s
+DONE: Flannery's Hotel Galway in 1s
+DONE: Salthill Hotel in 28s
+DONE: Sligo Park Hotel in 1s
+DONE: The Glasshouse Hotel in 1s
+DONE: Radisson Blu Hotel & Spa Sligo in 37s
+DONE: Clayton Hotel Sligo in 1s
+DONE: Yeats Country Hotel, Spa & Leisure Club in 24s
+DONE: The Diamond Coast Hotel in 28s
+DONE: Belleek Castle & Thatch Bar in 1s
+DONE: Riverside Hotel Sligo in 1s
+DONE: Moran's Bar & Restaurant in 1s
+DONE: The Coach House Hotel in 1s
+========================================
+BATCH COMPLETE at 2026-05-01 05:56
+Audited: 30 | Skipped (down): 0 | Failed: 0

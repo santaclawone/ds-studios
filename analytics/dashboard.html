@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>DS Studios — Audit Analytics Dashboard</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f0f13;color:#e2e8f0;min-height:100vh}
+.header{background:linear-gradient(135deg,#1a202c,#2a3a2c);padding:24px 20px;text-align:center;border-bottom:1px solid #2d3748}
+.header h1{font-size:20px;font-weight:700;letter-spacing:-.3px;color:#fff}
+.header .sub{font-size:11px;color:#a0aec0;margin-top:3px}
+.header .sub span{color:#a3d977}
+.container{max-width:900px;margin:0 auto;padding:16px}
+.section{margin-bottom:20px}
+h2{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#a0aec0;margin-bottom:10px}
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:8px;margin-bottom:16px}
+.stat-card{background:#1a202c;border:1px solid #2d3748;border-radius:12px;padding:14px;text-align:center}
+.stat-card .num{font-size:26px;font-weight:800;color:#a3d977}
+.stat-card .num.warn{color:#f59e0b}
+.stat-card .num.danger{color:#ef4444}
+.stat-card .lbl{font-size:9px;text-transform:uppercase;letter-spacing:.3px;color:#718096;margin-top:3px}
+.chart-bar{display:flex;align-items:center;gap:8px;margin-bottom:5px;font-size:11px}
+.chart-bar .lbl{width:140px;text-align:right;color:#a0aec0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chart-bar .bar-wrap{flex:1;background:#1a202c;border-radius:6px;height:18px;overflow:hidden}
+.chart-bar .bar{height:100%;border-radius:6px;transition:width .5s ease;min-width:4px}
+.chart-bar .bar.g{background:#a3d977}
+.chart-bar .bar.o{background:#f59e0b}
+.chart-bar .bar.b{background:#ef4444}
+.chart-bar .cnt{width:35px;text-align:left;color:#718096;font-size:10px}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{padding:6px 8px;text-align:left;color:#a0aec0;font-weight:600;text-transform:uppercase;letter-spacing:.3px;font-size:9px;border-bottom:1px solid #2d3748}
+td{padding:5px 8px;border-bottom:1px solid #1a202c;color:#cbd5e0}
+tr:hover td{background:rgba(163,217,119,.04)}
+.score-b{color:#ef4444;font-weight:700}.score-o{color:#f59e0b;font-weight:700}.score-g{color:#a3d977;font-weight:700}
+.platform-tag{display:inline-block;background:#1a202c;padding:1px 6px;border-radius:4px;font-size:9px;color:#a0aec0;border:1px solid #2d3748}
+.loc-tag{display:inline-block;background:rgba(163,217,119,.1);color:#a3d977;padding:1px 6px;border-radius:4px;font-size:9px}
+.last-updated{text-align:center;font-size:10px;color:#4a5568;margin-top:20px;padding:8px}
+.last-updated button{background:#2d3748;color:#a0aec0;border:none;padding:4px 12px;border-radius:6px;cursor:pointer;font-size:10px;font-family:inherit;margin-left:6px}
+.last-updated button:hover{background:#4a5568}
+.no-data{text-align:center;padding:40px;color:#4a5568;font-size:13px}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>📊 Audit Analytics</h1>
+  <div class="sub">DS Studios — <span id="totalCount">0</span> total audits</div>
+</div>
+<div class="container">
+  <div id="statsSection" class="section" style="display:none">
+    <div class="stat-row">
+      <div class="stat-card"><div class="num" id="avgScore">-</div><div class="lbl">Avg Score</div></div>
+      <div class="stat-card"><div class="num" id="totalIssues">-</div><div class="lbl">Total Issues</div></div>
+      <div class="stat-card"><div class="num" id="totalPositives">-</div><div class="lbl">Positives</div></div>
+      <div class="stat-card"><div class="num" id="locationCount">-</div><div class="lbl">Locations</div></div>
+      <div class="stat-card"><div class="num" id="platformCount">-</div><div class="lbl">Platforms Detected</div></div>
+    </div>
+
+    <div class="section">
+      <h2>Score Distribution</h2>
+      <div id="distChart"></div>
+    </div>
+
+    <div class="section">
+      <h2>By Location</h2>
+      <div id="locChart"></div>
+    </div>
+
+    <div class="section">
+      <h2>Platform Detection</h2>
+      <div id="platformChart"></div>
+    </div>
+
+    <div class="section">
+      <h2>Recent Audits</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Business</th>
+            <th>Score</th>
+            <th>Location</th>
+            <th>Issues</th>
+            <th>Platform</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="auditTable"></tbody>
+      </table>
+    </div>
+  </div>
+  <div id="loading" class="no-data">
+    <div style="font-size:24px;margin-bottom:8px">⏳</div>
+    Loading audit data...
+  </div>
+</div>
+<div class="last-updated">
+  Last updated: <span id="lastUpdated">-</span>
+  <button onclick="loadData()">↻ Refresh</button>
+</div>
+
+<script>
+async function loadData() {
+  const loading = document.getElementById('loading');
+  const section = document.getElementById('statsSection');
+  loading.style.display = 'block';
+  section.style.display = 'none';
+
+  try {
+    // Try loading from analytics dashboard.json (aggregate) and audit-log.jsonl (details)
+    let entries = [];
+    
+    // Load from JSONL
+    const resp = await fetch('../analytics/audit-log.jsonl');
+    if (resp.ok) {
+      const text = await resp.text();
+      entries = text.split('\n').filter(l => l.trim()).map(l => {
+        try { return JSON.parse(l); } catch(e) { return null; }
+      }).filter(e => e !== null);
+    }
+
+    if (entries.length === 0) {
+      loading.innerHTML = '<div style="font-size:24px;margin-bottom:8px">📭</div>No audit data found yet.<br>Run some audits first!';
+      return;
+    }
+
+    // Deduplicate: keep only the latest entry per URL (normalize trailing slash)
+    var unique = {};
+    entries.forEach(function(e) {
+      var key = (e.url || e.id).replace(/\/$/, '');
+      if (!unique[key] || new Date(e.analyzedAt) > new Date(unique[key].analyzedAt)) {
+        unique[key] = e;
+      }
+    });
+    var entries = Object.values(unique);
+
+    // Global stats
+    document.getElementById('totalCount').textContent = entries.length;
+    
+    const scores = entries.map(e => e.score).filter(s => s !== undefined && s !== null);
+    const avg = scores.length > 0 ? (scores.reduce((a,b) => a+b, 0) / scores.length) : 0;
+    document.getElementById('avgScore').textContent = avg > 0 ? avg.toFixed(1) : '-';
+    document.getElementById('totalIssues').textContent = entries.reduce((sum, e) => sum + (e.totalIssues || 0), 0);
+    document.getElementById('totalPositives').textContent = entries.reduce((sum, e) => sum + (e.totalPositives || 0), 0);
+
+    const locations = new Set(entries.map(e => e.location).filter(Boolean));
+    document.getElementById('locationCount').textContent = locations.size;
+    
+    const platforms = entries.filter(e => e.platform && e.platform !== '');
+    document.getElementById('platformCount').textContent = platforms.length;
+    
+    // Score distribution
+    const ranges = [
+      { label: '90-100', min: 90, max: 100, color: '#a3d977', count: 0 },
+      { label: '70-89',  min: 70, max: 89,  color: '#84cc5a', count: 0 },
+      { label: '50-69',  min: 50, max: 69,  color: '#f59e0b', count: 0 },
+      { label: '30-49',  min: 30, max: 49,  color: '#ef4444', count: 0 },
+      { label: '0-29',   min: 0,  max: 29,  color: '#dc2626', count: 0 }
+    ];
+    entries.forEach(e => {
+      const r = ranges.find(r => e.score >= r.min && e.score <= r.max);
+      if (r) r.count++;
+    });
+    const maxDist = Math.max(...ranges.map(r => r.count), 1);
+    document.getElementById('distChart').innerHTML = ranges.map(r => 
+      `<div class="chart-bar">
+        <div class="lbl">${r.label}</div>
+        <div class="bar-wrap"><div class="bar" style="width:${(r.count/maxDist*100).toFixed(0)}%;background:${r.color}"></div></div>
+        <div class="cnt">${r.count}</div>
+      </div>`
+    ).join('');
+
+    // By location
+    const locMap = {};
+    entries.forEach(e => {
+      const loc = e.location || 'Unknown';
+      if (!locMap[loc]) locMap[loc] = { count: 0, scores: [] };
+      locMap[loc].count++;
+      if (e.score !== undefined) locMap[loc].scores.push(e.score);
+    });
+    const locArr = Object.entries(locMap).sort((a,b) => b[1].count - a[1].count);
+    const maxLoc = Math.max(...locArr.map(([_,v]) => v.count), 1);
+    document.getElementById('locChart').innerHTML = locArr.map(([loc, data]) => {
+      const avgLoc = data.scores.length > 0 ? (data.scores.reduce((a,b) => a+b, 0) / data.scores.length).toFixed(1) : '-';
+      return `<div class="chart-bar">
+        <div class="lbl">${loc}</div>
+        <div class="bar-wrap"><div class="bar" style="width:${(data.count/maxLoc*100).toFixed(0)}%"> </div></div>
+        <div class="cnt">${data.count} (avg ${avgLoc})</div>
+      </div>`;
+    }).join('');
+
+    // Platform detection
+    const platMap = {};
+    entries.forEach(e => {
+      const p = e.platform || 'Unknown';
+      if (!platMap[p]) platMap[p] = 0;
+      platMap[p]++;
+    });
+    const platArr = Object.entries(platMap).sort((a,b) => b[1] - a[1]);
+    const maxPlat = Math.max(...platArr.map(([_,c]) => c), 1);
+    document.getElementById('platformChart').innerHTML = platArr.map(([plat, count]) => {
+      const pct = (count / entries.length * 100).toFixed(0);
+      return `<div class="chart-bar">
+        <div class="lbl">${plat === '' ? 'Not detected' : plat}</div>
+        <div class="bar-wrap"><div class="bar" style="width:${(count/maxPlat*100).toFixed(0)}%"></div></div>
+        <div class="cnt">${count} (${pct}%)</div>
+      </div>`;
+    }).join('');
+
+    // Audit table
+    const sorted = [...entries].sort((a,b) => new Date(b.analyzedAt) - new Date(a.analyzedAt)).slice(0, 50);
+    document.getElementById('auditTable').innerHTML = sorted.map(e => {
+      const sc = e.score >= 70 ? 'score-g' : e.score >= 40 ? 'score-o' : 'score-b';
+      const date = e.analyzedAt ? e.analyzedAt.replace(' ', '<br>') : '-';
+      const plat = e.platform ? `<span class="platform-tag">${e.platform}</span>` : '-';
+      const loc = e.location ? `<span class="loc-tag">${e.location}</span>` : '-';
+      return `<tr>
+        <td style="font-weight:500">${e.businessName || '-'}</td>
+        <td><span class="${sc}">${e.score}</span></td>
+        <td>${loc}</td>
+        <td>${e.totalIssues}c / ${e.high || 0}h / ${e.medium || 0}m / ${e.low || 0}l</td>
+        <td>${plat}</td>
+        <td style="font-size:9px;color:#718096">${date}</td>
+      </tr>`;
+    }).join('');
+
+    document.getElementById('lastUpdated').textContent = new Date().toLocaleString();
+    loading.style.display = 'none';
+    section.style.display = 'block';
+  } catch(err) {
+    loading.innerHTML = '<div style="font-size:24px;margin-bottom:8px">⚠️</div>Error loading data:<br>' + err.message;
+  }
+}
+
+loadData();
+</script>
+</body>
+</html>

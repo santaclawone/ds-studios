@@ -3,6 +3,9 @@ const puppeteer = require('puppeteer');
 const url = process.argv[2];
 if (!url) { console.error('Usage: node visual-audit.js <url>'); process.exit(1); }
 
+// Normalize URL
+const baseUrl = url.replace(/\/+$/, '');
+
 (async () => {
   const browser = await puppeteer.launch({
     headless: true,
@@ -15,6 +18,7 @@ if (!url) { console.error('Usage: node visual-audit.js <url>'); process.exit(1);
   await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36');
 
   try {
+    // ---- MAIN PAGE VISUAL ANALYSIS ----
     await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
     await new Promise(r => setTimeout(r, 2000));
 
@@ -127,8 +131,93 @@ if (!url) { console.error('Usage: node visual-audit.js <url>'); process.exit(1);
         }
       }
 
-      return { issues, positives: pos, colors, imgCount };
+      // 11. Check for nav links to contact/about pages (signal of subpage structure)
+      const navLinks = [...document.querySelectorAll('nav a, header a')].map(a => a.getAttribute('href') || '');
+      const hasContactLink = navLinks.some(h => /contact|enquire|book|get.in.touch/i.test(h));
+      const hasAboutLink = navLinks.some(h => /about/i.test(h));
+
+      return { issues, positives: pos, colors, imgCount, hasContactLink };
     });
+
+    // ---- SUBPAGE CRAWLING for contact forms ----
+    const subpagesToCheck = ['/contact', '/contact-us', '/get-in-touch', '/contactus', '/enquire', '/book', '/book-now', '/reservations', '/booking'];
+    const foundSubpages = [];
+
+    for (const sp of subpagesToCheck) {
+      try {
+        const spUrl = baseUrl + sp;
+        const resp = await page.goto(spUrl, { waitUntil: 'domcontentloaded', timeout: 8000 });
+        if (resp && resp.status() === 200) {
+          const spInfo = await page.evaluate(() => {
+            const bodyText = document.body.innerText || '';
+            const html = document.body.innerHTML || '';
+            const hasFormElement = !!document.querySelector('form');
+            const hasInputs = !!document.querySelector('input[type="text"], input[type="email"], input[type="tel"], textarea');
+            const hasSubmitButton = !!document.querySelector('button[type="submit"], input[type="submit"]');
+            // Check if page is actually a contact page vs 404-style message
+            const seemsContact = /contact|enquire|get in touch|drop us a|send us|message/i.test(bodyText);
+            return { hasForm: hasFormElement && hasInputs, seemsContact, bodyText: bodyText.substring(0, 200) };
+          });
+          if (spInfo.seemsContact || spInfo.hasForm) {
+            foundSubpages.push({ path: sp, hasForm: spInfo.hasForm, isContact: spInfo.seemsContact });
+          }
+        }
+      } catch (e) {
+        // 404 or timeout — skip silently
+      }
+    }
+
+    // Check main page for actual contact form / methods
+    const mainHasFormOnPage = results.issues.some(i => i.type === 'ux');
+    const mainHasContactNav = results.hasContactLink || false;
+    const mainHasContactMethod = mainHasFormOnPage || mainHasContactNav || (await page.evaluate(() => {
+      const bodyText = document.body.innerText || '';
+      return /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/.test(bodyText) ||
+             !!document.querySelector('a[href^="mailto:"]') ||
+             !!document.querySelector('form');
+    }));
+
+    // If no contact method at all on homepage and no subpages found = big issue
+    if (!mainHasContactMethod && foundSubpages.length === 0) {
+      // Check one more time on the main page for ANY mention of contact info
+      const mainPageInfo = await page.evaluate(() => {
+        const bodyText = document.body.innerText || '';
+        return {
+          hasEmail: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/.test(bodyText),
+          hasPhone: /(\+?\d[\d\s-]{7,})/.test(bodyText),
+          hasMailto: !!document.querySelector('a[href^="mailto:"]')
+        };
+      });
+
+      if (!mainPageInfo.hasEmail && !mainPageInfo.hasPhone && !mainPageInfo.hasMailto) {
+        results.issues.push({
+          type: 'ux',
+          label: 'No contact method found (homepage or subpages)',
+          severity: 'high',
+          detail: 'No contact form, email address, or phone number found. We checked the homepage and common subpages.',
+          check: 'Can you find any way to contact this business from their website?',
+          siteHint: 'If visitors cannot contact you, they will go to a competitor.'
+        });
+      } else {
+        results.positives.push('Contact info found (email/phone on page)');
+      }
+    } else if (mainHasContactNav && foundSubpages.length === 0) {
+      // Has nav link to contact but we didn't find the subpage — try /contact directly
+      // Already checked /contact, so it's likely a custom path
+      results.issues.push({
+        type: 'ux',
+        label: 'Contact info may be behind a custom URL',
+        severity: 'low',
+        detail: 'The navbar links to a contact page, but none of the common paths (/contact, /contact-us) resolved.',
+        check: 'Click the Contact link in the navigation to verify it works.',
+        siteHint: 'Unusual contact page URLs can confuse visitors and search engines.'
+      });
+    } else if (foundSubpages.length > 0) {
+      results.positives.push(`Contact form/page found on: ${foundSubpages.map(s => s.path).join(', ')}`);
+    }
+
+    // Go back to main page for screenshot consistency
+    await page.goto(url, { waitUntil: 'networkidle2', timeout: 15000 });
 
     // Output as JSON for the PowerShell script to consume
     console.log(JSON.stringify(results));
