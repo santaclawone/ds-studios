@@ -16,7 +16,8 @@ $issueHtml = ""
 foreach($iss in $issues){
   $cls = switch($iss.severity){"critical"{"crit"}"high"{"high"}"medium"{"med"}default{"low"}}
   $s = $iss.severity
-  $issueHtml += "<div class=""issue $cls""><div class=""hdr""><span class=""sev $cls"">$s</span>$($iss.label)</div><div class=""det"">$($iss.detail)</div></div>`n"
+  $hint = if ($iss.siteHint) { "<div class=""hint"">$($iss.siteHint)</div>" } else { "" }
+  $issueHtml += "<div class=""issue $cls""><div class=""hdr""><span class=""sev $cls"">$s</span>$($iss.label)</div><div class=""det"">$($iss.detail)</div>$hint</div>`n"
 }
 
 $posHtml = ""
@@ -63,7 +64,7 @@ h2{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;c
 .issue{background:#fff;border-radius:10px;padding:10px 12px;margin-bottom:5px;border-left:3px solid #d1d5db;box-shadow:0 1px 3px rgba(0,0,0,.03)}
 .issue.crit{border-left-color:#ef4444}.issue.high{border-left-color:#f59e0b}.issue.med{border-left-color:#a3d977}.issue.low{border-left-color:#9ca3af}
 .issue .hdr{font-size:12px;font-weight:600}
-.issue .sev{display:inline-block;font-size:8px;padding:1px 5px;border-radius:3px;font-weight:700;text-transform:uppercase;margin-right:5px}
+.issue .sev{display:inline-block;font-size:8px;padding:1px 5px;border-radius:3px;font-weight:700;text-transform:uppercase;margin-right:5px}.issue .hint{background:#fefcbf;color:#92400e;font-size:10px;padding:4px 6px;border-radius:4px;margin-top:6px;font-style:italic}
 .issue.crit .sev{background:#fde8e8;color:#dc2626}.issue.high .sev{background:#fef3c7;color:#d97706}.issue.med .sev{background:#edfad6;color:#5a9e3a}.issue.low .sev{background:#f3f4f6;color:#6b7280}
 .issue .det{font-size:11px;color:#6b7280;margin-top:2px}
 .positives{margin-bottom:16px}
