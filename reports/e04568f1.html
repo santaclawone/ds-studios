@@ -24,7 +24,20 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 .stat .n{font-size:22px;font-weight:800}
 .stat .n.crit{color:#ef4444}.stat .n.high{color:#f59e0b}.stat .n.med{color:#a3d977}.stat .n.low{color:#9ca3af}
 .stat .l{font-size:9px;color:#6b7280;text-transform:uppercase;letter-spacing:.3px}
+.human-badge{display:inline-flex;align-items:center;gap:4px;margin:8px auto 0;background:rgba(26,32,44,.08);border:1px solid rgba(26,32,44,.1);padding:3px 12px;border-radius:20px;font-size:10px;font-weight:700}.human-badge .emoji{font-size:13px}
 h2{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#6b7280;margin:0 0 6px}
+.human-review{background:#eef2ff;border:2px solid #a5b4fc;border-radius:12px;padding:14px;margin-bottom:16px;box-shadow:0 1px 4px rgba(99,102,241,.08)}
+.human-review .hr-hdr{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.human-review .hr-hdr .emoji{font-size:18px}
+.human-review .hr-hdr .title{font-size:13px;font-weight:800;color:#3730a3}
+.human-review .hr-hdr .sub{font-size:9px;color:#6366f1;font-weight:600}
+.hr-obs{border-left:3px solid #a5b4fc;padding:8px 0 8px 12px;margin-bottom:8px}
+.hr-obs:last-child{margin-bottom:0}
+.hr-obs .obs-label{font-size:12px;font-weight:700;color:#1a202c;margin-bottom:2px;display:flex;align-items:center;gap:6px}
+.hr-obs .obs-label .verify{font-size:8px;padding:2px 6px;border-radius:4px;background:#c7d2fe;color:#3730a3;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.hr-obs .obs-detail{font-size:11px;color:#4b5563;margin-bottom:3px}
+.hr-obs .obs-suggestion{font-size:10px;color:#6366f1;font-style:italic}
+.issues{margin-bottom:16px};font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#6b7280;margin:0 0 6px}
 .issues{margin-bottom:16px}
 .issue{background:#fff;border-radius:10px;padding:10px 12px;margin-bottom:5px;border-left:3px solid #d1d5db;box-shadow:0 1px 3px rgba(0,0,0,.03)}
 .issue.crit{border-left-color:#ef4444}.issue.high{border-left-color:#f59e0b}.issue.med{border-left-color:#a3d977}.issue.low{border-left-color:#9ca3af}
@@ -46,11 +59,28 @@ h2{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;c
   <h1>JJ O'Malley's Westport</h1>
   <div class="sub">Free website health audit</div>
   <div class="badge"><span class="num">52</span><span class="den">/100</span></div>
+  <div class="human-badge"><span class="emoji">👀</span> Human Reviewed</div>
   <div class="cap">2026-05-02 04:32</div>
 </div>
 <div class="container">
   <div class="grid">
-    <div class="stat"><div class="n crit">0</div><div class="l">Critical</div></div>
+    <div class="stat"><div class="n crit">0</div>
+  <!-- 👀 Human Review Section -->
+  <div class="human-review">
+    <div class="hr-hdr">
+      <span class="emoji">👀</span>
+      <div>
+        <div class="title">Human Review Observations</div>
+        <div class="sub">Verified by D S · 1 observations</div>
+      </div>
+    </div>    <div class="hr-obs">
+      <div class="obs-label">
+        Gift cards buried below reservations — zero visibility
+        <span class="verify">👤 Verified</span>
+      </div>
+      <div class="obs-detail">There is a gift card/voucher page (/gift-cards) and a Toast eGift iframe on the reservations page, but neither is linked from the navigation (HOME, FOOD & DRINK, LIVE MUSIC, GALLERY, RESERVATIONS — no GIFT CARDS). The word 'gift' appears nowhere on the homepage or the menu page. A customer browsing the site has no way to know gift cards exist unless they dig into the bottom of the reservations page.</div>
+      <div class="obs-suggestion">→ Add 'Gift Cards' or 'Vouchers' as a top-level nav item. Put a Gift Cards link in the footer on every page. Better yet, add a short 'Give the gift of JJ O'Malley's' section on the homepage above the fold with a direct call-to-action.</div>
+    </div>  </div><div class="l">Critical</div></div>
     <div class="stat"><div class="n high">0</div><div class="l">High</div></div>
     <div class="stat"><div class="n med">2</div><div class="l">Medium</div></div>
     <div class="stat"><div class="n low">19</div><div class="l">Low</div></div>
@@ -96,3 +126,4 @@ h2{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;c
 </div>
 <div class="footer"><span class="ds">â—†</span> <a href="https://santaclawone.github.io/ds-studios/">DS Studios</a> â€” Websites for small businesses in Ireland <span class="ds">â—†</span></div>
 </body></html>
+

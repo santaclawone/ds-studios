@@ -225,5 +225,19 @@
                       {
                           "detail":  "Built with WordPress"
                       }
-                  ]
+                  ],
+    "humanReview":  {
+                        "date":  "2026-05-02",
+                        "reviewer":  "D S",
+                        "observations":  [
+                                             {
+                                                 "label":  "Gift cards buried below reservations — zero visibility",
+                                                 "detail":  "There is a gift card/voucher page (/gift-cards) and a Toast eGift iframe on the reservations page, but neither is linked from the navigation (HOME, FOOD \u0026 DRINK, LIVE MUSIC, GALLERY, RESERVATIONS — no GIFT CARDS). The word \u0027gift\u0027 appears nowhere on the homepage or the menu page. A customer browsing the site has no way to know gift cards exist unless they dig into the bottom of the reservations page.",
+                                                 "suggestion":  "Add \u0027Gift Cards\u0027 or \u0027Vouchers\u0027 as a top-level nav item. Put a Gift Cards link in the footer on every page. Better yet, add a short \u0027Give the gift of JJ O\u0027Malley\u0027s\u0027 section on the homepage above the fold with a direct call-to-action.",
+                                                 "type":  "ux",
+                                                 "severity":  "high"
+                                             }
+                                         ],
+                        "reviewed":  true
+                    }
 }
