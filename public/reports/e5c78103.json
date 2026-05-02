@@ -1,0 +1,126 @@
+﻿{
+    "issues":  [
+                   {
+                       "detail":  "Schema helps Google show your hours, reviews, and events in search results.",
+                       "label":  "No schema markup",
+                       "check":  "Search for your business on Google. Does it show a Knowledge Panel with hours and reviews?",
+                       "type":  "seo",
+                       "siteHint":  "Detailed search results get higher click-through rates.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Images that fail to load show blank boxes or broken icons.",
+                       "label":  "38 broken image(s)",
+                       "check":  "Scroll through the page. Do you see any broken image icons?",
+                       "type":  "design",
+                       "siteHint":  "Broken images look unprofessional. Each one should load properly.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Some images appear to be placeholders (very small dimensions).",
+                       "label":  "Placeholder/low-quality images detected",
+                       "check":  "Do any images look like grey boxes or low-res blurs where real images should be?",
+                       "type":  "design",
+                       "siteHint":  "Replace placeholder images with actual photography or graphics.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The navbar links to a contact page, but none of the common paths (/contact, /contact-us) resolved.",
+                       "label":  "Contact info may be behind a custom URL",
+                       "check":  "Click the Contact link in the navigation to verify it works.",
+                       "type":  "ux",
+                       "siteHint":  "Unusual contact page URLs can confuse visitors and search engines.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "SSL cert renews on Jun  4 03:02:06 2026 GMT. Mark your calendar.",
+                       "label":  "SSL certificate expires in 32 days",
+                       "check":  "Check the lock icon in the address bar.",
+                       "type":  "preflight",
+                       "siteHint":  "Just a reminder ÔÇö easy to forget until it is too late.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "CSP helps prevent XSS attacks by controlling which resources can load.",
+                       "label":  "Missing Content Security Policy",
+                       "check":  "Check DevTools Console for CSP-related warnings.",
+                       "type":  "preflight",
+                       "siteHint":  "A basic CSP blocks most common script injection attacks.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Without this, your site could be embedded in an iframe on another site (clickjacking risk).",
+                       "label":  "Missing X-Frame-Options header",
+                       "check":  "Check if the site has X-Frame-Options: DENY or SAMEORIGIN in response headers.",
+                       "type":  "preflight",
+                       "siteHint":  "Without this, others could embed your site on malicious pages.",
+                       "severity":  "low"
+                   }
+               ],
+    "id":  "e5c78103",
+    "low":  6,
+    "high":  0,
+    "medium":  1,
+    "location":  "Castlebar",
+    "critical":  0,
+    "url":  "https://www.breaffyhouseresort.com/",
+    "benchmark":  "",
+    "businessName":  "Breaffy House Resort Castlebar",
+    "businessType":  "hotel",
+    "platform":  "WordPress",
+    "score":  84,
+    "analyzedAt":  "2026-05-02 04:35",
+    "positives":  [
+                      {
+                          "detail":  "Page title is set"
+                      },
+                      {
+                          "detail":  "Meta description present"
+                      },
+                      {
+                          "detail":  "Uses H1 heading"
+                      },
+                      {
+                          "detail":  "No mixed content"
+                      },
+                      {
+                          "detail":  "50 images on the page"
+                      },
+                      {
+                          "detail":  "Efficient CSS setup"
+                      },
+                      {
+                          "detail":  "Light script load (5 scripts)"
+                      },
+                      {
+                          "detail":  "Analytics active"
+                      },
+                      {
+                          "detail":  "Good page size (106.3KB)"
+                      },
+                      {
+                          "detail":  "Clean sans-serif body font"
+                      },
+                      {
+                          "detail":  "Uses modern CSS layout (Flexbox/Grid)"
+                      },
+                      {
+                          "detail":  "Viewport meta tag present (mobile-friendly setup)"
+                      },
+                      {
+                          "detail":  "Uses modern rounded corners / cards"
+                      },
+                      {
+                          "detail":  "Uses shadows for visual depth"
+                      },
+                      {
+                          "detail":  "HSTS (HTTP Strict Transport Security) is set"
+                      },
+                      {
+                          "detail":  "X-Content-Type-Options: nosniff is set"
+                      },
+                      {
+                          "detail":  "Built with WordPress"
+                      }
+                  ]
+}

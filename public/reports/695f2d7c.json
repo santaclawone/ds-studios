@@ -1,0 +1,28 @@
+﻿{
+    "issues":  [
+                   {
+                       "detail":  "The website at https://plougastel-daoulas.ie/ could not be reached. DNS resolution failed.",
+                       "label":  "Website is offline or unreachable",
+                       "check":  "Try visiting https://plougastel-daoulas.ie/ in a browser.",
+                       "type":  "business",
+                       "siteHint":  "Your website is down, costing you customers. Contact your hosting provider immediately.",
+                       "severity":  "critical"
+                   }
+               ],
+    "id":  "695f2d7c",
+    "low":  0,
+    "high":  0,
+    "medium":  0,
+    "location":  "Westport",
+    "critical":  1,
+    "url":  "https://plougastel-daoulas.ie/",
+    "benchmark":  "",
+    "businessName":  "Plougastel-Daoulas Restaurant",
+    "businessType":  "restaurant",
+    "platform":  "",
+    "score":  0,
+    "analyzedAt":  "2026-05-01 06:01",
+    "positives":  [
+
+                  ]
+}

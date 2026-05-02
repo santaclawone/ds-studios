@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Website Audit â€” Castlecourt Hotel â€” DS Studios</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f5f9;color:#1a202c;line-height:1.6}
+.header{background:linear-gradient(135deg,#1a202c,#2a3a2c);color:#fff;padding:36px 20px 28px;text-align:center}
+.header h1{font-size:24px;font-weight:700;letter-spacing:-.3px}
+.header .sub{font-size:12px;opacity:.6;margin-top:3px}
+.badge{display:inline-flex;align-items:center;gap:6px;margin:10px auto 0;background:rgba(163,217,119,.12);border:1px solid rgba(163,217,119,.2);padding:5px 16px 5px 14px;border-radius:20px;font-size:13px}
+.badge .num{font-weight:800;font-size:20px;color:#a3d977}
+.badge .den{opacity:.4;font-weight:400}
+.cap{font-size:10px;opacity:.5;margin-top:6px}
+.container{max-width:640px;margin:0 auto;padding:20px 16px}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px;margin-bottom:20px}
+.stat{background:#fff;border-radius:10px;padding:10px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.stat .n{font-size:22px;font-weight:800}
+.stat .n.crit{color:#ef4444}.stat .n.high{color:#f59e0b}.stat .n.med{color:#a3d977}.stat .n.low{color:#9ca3af}
+.stat .l{font-size:9px;color:#6b7280;text-transform:uppercase;letter-spacing:.3px}
+h2{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#6b7280;margin:0 0 6px}
+.issues{margin-bottom:16px}
+.issue{background:#fff;border-radius:10px;padding:10px 12px;margin-bottom:5px;border-left:3px solid #d1d5db;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+.issue.crit{border-left-color:#ef4444}.issue.high{border-left-color:#f59e0b}.issue.med{border-left-color:#a3d977}.issue.low{border-left-color:#9ca3af}
+.issue .hdr{font-size:12px;font-weight:600}
+.issue .sev{display:inline-block;font-size:8px;padding:1px 5px;border-radius:3px;font-weight:700;text-transform:uppercase;margin-right:5px}
+.issue.crit .sev{background:#fde8e8;color:#dc2626}.issue.high .sev{background:#fef3c7;color:#d97706}.issue.med .sev{background:#edfad6;color:#5a9e3a}.issue.low .sev{background:#f3f4f6;color:#6b7280}
+.issue .det{font-size:11px;color:#6b7280;margin-top:2px}
+.positives{margin-bottom:16px}
+.pos-item{background:#edfad6;border:1px solid #b8e08a;border-radius:6px;padding:6px 10px;margin-bottom:3px;font-size:11px;color:#2d5a1a}
+.info{background:#fff;border-radius:10px;padding:14px;margin-top:16px;box-shadow:0 1px 3px rgba(0,0,0,.03);font-size:11px;color:#6b7280;line-height:1.6}
+.info strong{color:#1a202c}
+.footer{text-align:center;padding:20px;font-size:10px;color:#9ca3af}
+.footer a{color:#a3d977;text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+</style></head><body>
+<div class="header">
+  <h1>Castlecourt Hotel</h1>
+  <div class="sub">Website audit by DS Studios</div>
+  <div class="badge"><span class="num">79</span><span class="den">/100</span></div>
+  <div class="cap">2026-05-01 05:40</div>
+</div>
+<div class="container">
+  <div class="grid">
+    <div class="stat"><div class="n crit">0</div><div class="l">Critical</div></div>
+    <div class="stat"><div class="n high">1</div><div class="l">High</div></div>
+    <div class="stat"><div class="n med">1</div><div class="l">Medium</div></div>
+    <div class="stat"><div class="n low">3</div><div class="l">Low</div></div>
+  </div>
+  <div class="issues"><h2>Issues (5)</h2><div class="issue high"><div class="hdr"><span class="sev high">high</span>5 HTTP resources (mixed content)</div><div class="det">Assets loading over HTTP on an HTTPS page trigger browser security warnings.</div></div>
+<div class="issue med"><div class="hdr"><span class="sev med">medium</span>13 images missing alt text</div><div class="det">Alt text helps screen readers and helps Google understand your images.</div></div>
+<div class="issue low"><div class="hdr"><span class="sev low">low</span>No schema markup</div><div class="det">Schema helps Google show your hours, reviews, and events in search results.</div></div>
+<div class="issue low"><div class="hdr"><span class="sev low">low</span>Placeholder/low-quality images detected</div><div class="det">Some images appear to be placeholders (very small dimensions).</div></div>
+<div class="issue low"><div class="hdr"><span class="sev low">low</span>No favicon</div><div class="det">Browser tabs show a blank icon instead of your brand.</div></div>
+</div>
+  <div class="positives"><h2>Working (20)</h2><div class="pos-item">+ Page title is set</div>
+<div class="pos-item">+ Meta description present</div>
+<div class="pos-item">+ Uses H1 heading</div>
+<div class="pos-item">+ 38 images on the page</div>
+<div class="pos-item">+ Efficient CSS setup</div>
+<div class="pos-item">+ Light script load (4 scripts)</div>
+<div class="pos-item">+ Analytics active</div>
+<div class="pos-item">+ Good page size (81.5KB)</div>
+<div class="pos-item">+ Clean sans-serif body font</div>
+<div class="pos-item">+ Uses modern CSS layout (Flexbox/Grid)</div>
+<div class="pos-item">+ Viewport meta tag present (mobile-friendly setup)</div>
+<div class="pos-item">+ Uses modern rounded corners / cards</div>
+<div class="pos-item">+ Uses shadows for visual depth</div>
+<div class="pos-item">+ Contact form/page found on: /contact-us</div>
+<div class="pos-item">+ SSL certificate valid ÔÇö 82 days remaining</div>
+<div class="pos-item">+ HSTS (HTTP Strict Transport Security) is set</div>
+<div class="pos-item">+ Content Security Policy (CSP) is configured</div>
+<div class="pos-item">+ X-Frame-Options prevents clickjacking</div>
+<div class="pos-item">+ X-Content-Type-Options: nosniff is set</div>
+<div class="pos-item">+ Contact form found on: /contact-us, /about-us</div>
+</div>
+  <div class="info"><strong>About this audit</strong><br>Generated by DS Studios. Covers SEO, mobile readiness, performance, security, and usability checks.<br><br><strong>Location:</strong> Westport<br><br><strong>URL:</strong> <a href="https://www.castlecourthotel.ie" style="color:#a3d977">https://www.castlecourthotel.ie</a></div>
+</div>
+<div class="footer"><a href="https://dsstudios.ie">DS Studios</a> â€” Websites for small businesses in Ireland</div>
+</body></html>

@@ -1,0 +1,114 @@
+﻿{
+    "issues":  [
+                   {
+                       "detail":  "Assets loading over HTTP on an HTTPS page trigger browser security warnings.",
+                       "label":  "2 HTTP resources (mixed content)",
+                       "check":  "Click the lock icon in the address bar. If it says \u0027Not Secure\u0027 or shows a warning, mixed content is present.",
+                       "type":  "security",
+                       "siteHint":  "Visitors may get browser warnings and leave your site.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Images that fail to load show blank boxes or broken icons.",
+                       "label":  "20 broken image(s)",
+                       "check":  "Scroll through the page. Do you see any broken image icons?",
+                       "type":  "design",
+                       "siteHint":  "Broken images look unprofessional. Each one should load properly.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Some images appear to be placeholders (very small dimensions).",
+                       "label":  "Placeholder/low-quality images detected",
+                       "check":  "Do any images look like grey boxes or low-res blurs where real images should be?",
+                       "type":  "design",
+                       "siteHint":  "Replace placeholder images with actual photography or graphics.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "HTTP Strict Transport Security tells browsers to always use HTTPS. Without it, a downgrade attack is possible.",
+                       "label":  "Missing HSTS header",
+                       "check":  "Open DevTools ÔåÆ Network ÔåÆ click the first request ÔåÆ look for \"strict-transport-security\".",
+                       "type":  "preflight",
+                       "siteHint":  "HSTS is a simple config that hardens your site against protocol downgrade attacks.",
+                       "severity":  "low"
+                   }
+               ],
+    "id":  "1ed50b92",
+    "low":  2,
+    "high":  1,
+    "medium":  1,
+    "location":  "Galway",
+    "critical":  0,
+    "url":  "https://www.thetwelvehotel.ie/",
+    "benchmark":  "",
+    "businessName":  "The Twelve Hotel",
+    "businessType":  "hotel",
+    "platform":  "WordPress",
+    "score":  82,
+    "analyzedAt":  "2026-05-01 05:54",
+    "positives":  [
+                      {
+                          "detail":  "Page title is set"
+                      },
+                      {
+                          "detail":  "Meta description present"
+                      },
+                      {
+                          "detail":  "Uses H1 heading"
+                      },
+                      {
+                          "detail":  "22 images on the page"
+                      },
+                      {
+                          "detail":  "Efficient CSS setup"
+                      },
+                      {
+                          "detail":  "Light script load (3 scripts)"
+                      },
+                      {
+                          "detail":  "Analytics active"
+                      },
+                      {
+                          "detail":  "Good page size (57.9KB)"
+                      },
+                      {
+                          "detail":  "Clean sans-serif body font"
+                      },
+                      {
+                          "detail":  "Uses modern CSS layout (Flexbox/Grid)"
+                      },
+                      {
+                          "detail":  "Viewport meta tag present (mobile-friendly setup)"
+                      },
+                      {
+                          "detail":  "Uses modern rounded corners / cards"
+                      },
+                      {
+                          "detail":  "Uses shadows for visual depth"
+                      },
+                      {
+                          "detail":  "Contact form/page found on: /contact-us, /reservations"
+                      },
+                      {
+                          "detail":  "SSL certificate valid ÔÇö 63 days remaining"
+                      },
+                      {
+                          "detail":  "Content Security Policy (CSP) is configured"
+                      },
+                      {
+                          "detail":  "X-Frame-Options prevents clickjacking"
+                      },
+                      {
+                          "detail":  "X-Content-Type-Options: nosniff is set"
+                      },
+                      {
+                          "detail":  "Built with WordPress"
+                      },
+                      {
+                          "detail":  "Contact form found on: /contact-us"
+                      },
+                      {
+                          "detail":  "Built with WordPress"
+                      }
+                  ]
+}

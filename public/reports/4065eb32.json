@@ -1,0 +1,124 @@
+﻿{
+    "issues":  [
+                   {
+                       "detail":  "H1 headings tell Google the main topic of your page.",
+                       "label":  "No H1 heading",
+                       "check":  "View page source (Ctrl+U). Search for an H1 tag. If there is none, the page structure is weak.",
+                       "type":  "seo",
+                       "siteHint":  "Missing H1 weakens your search ranking signals.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Assets loading over HTTP on an HTTPS page trigger browser security warnings.",
+                       "label":  "1 HTTP resources (mixed content)",
+                       "check":  "Click the lock icon in the address bar. If it says \u0027Not Secure\u0027 or shows a warning, mixed content is present.",
+                       "type":  "security",
+                       "siteHint":  "Visitors may get browser warnings and leave your site.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Each CSS file is a separate HTTP request.",
+                       "label":  "9 external CSS files",
+                       "check":  "Open DevTools Network tab, reload. Count CSS files.",
+                       "type":  "perf",
+                       "siteHint":  "Extra HTTP requests slow down page load.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Consider consolidating or deferring non-critical scripts.",
+                       "label":  "25 external scripts",
+                       "check":  "Same check - DevTools Network tab, filter by JS.",
+                       "type":  "perf",
+                       "siteHint":  "Marginal speed improvement possible.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Without analytics, you cannot see how visitors find you or what they do on your site.",
+                       "label":  "No analytics tracking",
+                       "check":  "Check the page source for references to gtag, analytics.js, or fbq.",
+                       "type":  "business",
+                       "siteHint":  "You are flying blind - no data on what pages work or where traffic comes from.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Some images appear to be placeholders (very small dimensions).",
+                       "label":  "Placeholder/low-quality images detected",
+                       "check":  "Do any images look like grey boxes or low-res blurs where real images should be?",
+                       "type":  "design",
+                       "siteHint":  "Replace placeholder images with actual photography or graphics.",
+                       "severity":  "low"
+                   }
+               ],
+    "id":  "4065eb32",
+    "low":  3,
+    "high":  1,
+    "medium":  2,
+    "location":  "Galway",
+    "critical":  0,
+    "url":  "https://www.theghotel.ie/",
+    "benchmark":  "",
+    "businessName":  "The g Hotel",
+    "businessType":  "hotel",
+    "platform":  "WordPress",
+    "score":  74,
+    "analyzedAt":  "2026-05-01 05:46",
+    "positives":  [
+                      {
+                          "detail":  "Page title is set"
+                      },
+                      {
+                          "detail":  "Meta description present"
+                      },
+                      {
+                          "detail":  "36 images on the page"
+                      },
+                      {
+                          "detail":  "Good page size (71.8KB)"
+                      },
+                      {
+                          "detail":  "Clean sans-serif body font"
+                      },
+                      {
+                          "detail":  "Uses modern CSS layout (Flexbox/Grid)"
+                      },
+                      {
+                          "detail":  "Viewport meta tag present (mobile-friendly setup)"
+                      },
+                      {
+                          "detail":  "Uses modern rounded corners / cards"
+                      },
+                      {
+                          "detail":  "Uses shadows for visual depth"
+                      },
+                      {
+                          "detail":  "Contact form/page found on: /contact-us"
+                      },
+                      {
+                          "detail":  "SSL certificate valid ÔÇö 76 days remaining"
+                      },
+                      {
+                          "detail":  "HSTS (HTTP Strict Transport Security) is set"
+                      },
+                      {
+                          "detail":  "Content Security Policy (CSP) is configured"
+                      },
+                      {
+                          "detail":  "X-Frame-Options prevents clickjacking"
+                      },
+                      {
+                          "detail":  "X-Content-Type-Options: nosniff is set"
+                      },
+                      {
+                          "detail":  "Built with WordPress"
+                      },
+                      {
+                          "detail":  "Contact form found on: /contact-us, /about-us"
+                      },
+                      {
+                          "detail":  "Built with WordPress"
+                      },
+                      {
+                          "detail":  "Built with WordPress"
+                      }
+                  ]
+}

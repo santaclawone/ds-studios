@@ -1,251 +1,469 @@
 ﻿{
-    "generated":  "2026-05-01 03:14",
-    "total":  30,
+    "generated":  "2026-05-02 05:03",
+    "total":  57,
     "locations":  {
                       "Westport":  [
                                        {
-                                           "id":  "00000001",
-                                           "name":  "The Castlecourt Hotel",
+                                           "id":  "15dafcb9",
+                                           "name":  "Jenny\u0027s Boutique Westport",
+                                           "issues":  12,
+                                           "score":  64,
                                            "loc":  "Westport",
-                                           "score":  72,
-                                           "url":  "https://www.castlecourthotel.ie/",
-                                           "issues":  5
+                                           "url":  "https://jennys.ie/"
                                        },
                                        {
-                                           "id":  "00000002",
-                                           "name":  "Knockranny House Hotel",
-                                           "loc":  "Westport",
-                                           "score":  65,
-                                           "url":  "https://www.knockrannyhousehotel.ie/",
-                                           "issues":  5
-                                       },
-                                       {
-                                           "id":  "00000003",
+                                           "id":  "039e216f",
                                            "name":  "Hotel Westport",
+                                           "issues":  14,
+                                           "score":  34,
                                            "loc":  "Westport",
-                                           "score":  78,
-                                           "url":  "https://www.hotelwestport.ie/",
-                                           "issues":  5
+                                           "url":  "https://www.hotelwestport.ie/"
                                        },
                                        {
-                                           "id":  "00000004",
-                                           "name":  "The Wyatt Hotel",
-                                           "loc":  "Westport",
-                                           "score":  58,
-                                           "url":  "https://www.wyatthotel.com/",
-                                           "issues":  5
-                                       },
-                                       {
-                                           "id":  "00000005",
+                                           "id":  "d61c5083",
                                            "name":  "Westport Heights Hotel",
+                                           "issues":  24,
+                                           "score":  22,
                                            "loc":  "Westport",
-                                           "score":  81,
-                                           "url":  "https://www.westportheights.com/",
-                                           "issues":  4
+                                           "url":  "https://www.westportheights.com/"
                                        },
                                        {
-                                           "id":  "00000006",
-                                           "name":  "Sheaffrey\u0027s Bar \u0026 Townhouse",
+                                           "id":  "e04568f1",
+                                           "name":  "JJ O\u0027Malley\u0027s Westport",
+                                           "issues":  21,
+                                           "score":  52,
                                            "loc":  "Westport",
-                                           "score":  55,
-                                           "url":  "https://www.sheaffreys.com/",
-                                           "issues":  6
+                                           "url":  "https://www.jjomalleys.com/"
                                        },
                                        {
-                                           "id":  "00000007",
-                                           "name":  "Plougastel-Daoulas Restaurant",
+                                           "id":  "68a1375c",
+                                           "name":  "Mayo Book Centre Westport",
+                                           "issues":  10,
+                                           "score":  72,
                                            "loc":  "Westport",
-                                           "score":  68,
-                                           "url":  "https://plougastel-daoulas.ie/",
-                                           "issues":  5
+                                           "url":  "https://www.mayobooks.ie/"
                                        },
                                        {
-                                           "id":  "00000008",
+                                           "id":  "3c76f2e1",
+                                           "name":  "Kelly\u0027s Kitchen Westport",
+                                           "issues":  11,
+                                           "score":  59,
+                                           "loc":  "Westport",
+                                           "url":  "https://www.kellyskitchen.ie/"
+                                       },
+                                       {
+                                           "id":  "0ac4e1d3",
+                                           "name":  "Knockranny House Hotel",
+                                           "issues":  3,
+                                           "score":  91,
+                                           "loc":  "Westport",
+                                           "url":  "https://www.knockrannyhousehotel.ie/"
+                                       },
+                                       {
+                                           "id":  "25f74cde",
+                                           "name":  "Westport House",
+                                           "issues":  10,
+                                           "score":  72,
+                                           "loc":  "Westport",
+                                           "url":  "https://www.westporthouse.ie/"
+                                       },
+                                       {
+                                           "id":  "e17dc2b8",
+                                           "name":  "Castlecourt Hotel",
+                                           "issues":  5,
+                                           "score":  79,
+                                           "loc":  "Westport",
+                                           "url":  "https://www.castlecourthotel.ie"
+                                       },
+                                       {
+                                           "id":  "a138c20d",
+                                           "name":  "The Wyatt Hotel",
+                                           "issues":  10,
+                                           "score":  72,
+                                           "loc":  "Westport",
+                                           "url":  "https://www.wyatthotel.com/"
+                                       },
+                                       {
+                                           "id":  "6bf9ac41",
+                                           "name":  "Mews Restaurant Westport",
+                                           "issues":  13,
+                                           "score":  58,
+                                           "loc":  "Westport",
+                                           "url":  "https://www.mewsrestaurant.ie/"
+                                       },
+                                       {
+                                           "id":  "bc0e9387",
+                                           "name":  "The Castlecourt Hotel",
+                                           "issues":  5,
+                                           "score":  79,
+                                           "loc":  "Westport",
+                                           "url":  "https://www.castlecourthotel.ie/"
+                                       },
+                                       {
+                                           "id":  "c49b6d72",
+                                           "name":  "Le ChÃ©ile Westport",
+                                           "issues":  18,
+                                           "score":  42,
+                                           "loc":  "Westport",
+                                           "url":  "https://www.lecheile.ie/"
+                                       },
+                                       {
+                                           "id":  "e5b68c7a",
+                                           "name":  "The Helm Restaurant Westport",
+                                           "issues":  8,
+                                           "score":  71,
+                                           "loc":  "Westport",
+                                           "url":  "https://www.thehelm.ie/"
+                                       },
+                                       {
+                                           "id":  "f17a34db",
+                                           "name":  "Eclectic Store Westport",
+                                           "issues":  10,
+                                           "score":  66,
+                                           "loc":  "Westport",
+                                           "url":  "https://www.eclectic.ie/"
+                                       },
+                                       {
+                                           "id":  "86043cfd",
+                                           "name":  "Kelly\u0027s Pharmacy Westport",
+                                           "issues":  10,
+                                           "score":  66,
+                                           "loc":  "Westport",
+                                           "url":  "https://www.kellyspharmacy.ie/"
+                                       },
+                                       {
+                                           "id":  "d56f81e3",
                                            "name":  "Sage Restaurant Westport",
+                                           "issues":  8,
+                                           "score":  61,
                                            "loc":  "Westport",
-                                           "score":  70,
-                                           "url":  "https://sagewestport.ie/",
-                                           "issues":  4
-                                       },
-                                       {
-                                           "id":  "00000009",
-                                           "name":  "An Port MÃ³r Restaurant",
-                                           "loc":  "Westport",
-                                           "score":  62,
-                                           "url":  "https://www.anportmor.ie/",
-                                           "issues":  6
-                                       },
-                                       {
-                                           "id":  "0000000a",
-                                           "name":  "The West Coast Hotel",
-                                           "loc":  "Westport",
-                                           "score":  74,
-                                           "url":  "https://www.westcoasthotel.ie/",
-                                           "issues":  5
+                                           "url":  "https://sagewestport.ie/"
                                        }
                                    ],
+                      "Castlebar":  [
+                                        {
+                                            "id":  "3286c45a",
+                                            "name":  "Arch Bar Castlebar",
+                                            "issues":  13,
+                                            "score":  58,
+                                            "loc":  "Castlebar",
+                                            "url":  "https://www.archbar.ie/"
+                                        },
+                                        {
+                                            "id":  "3e1506cb",
+                                            "name":  "Conways Pharmacy Castlebar",
+                                            "issues":  10,
+                                            "score":  73,
+                                            "loc":  "Castlebar",
+                                            "url":  "https://www.conwayspharmacy.ie/"
+                                        },
+                                        {
+                                            "id":  "4725fce0",
+                                            "name":  "Sam\u0027s Bar Castlebar",
+                                            "issues":  13,
+                                            "score":  58,
+                                            "loc":  "Castlebar",
+                                            "url":  "https://www.samsbar.ie/"
+                                        },
+                                        {
+                                            "id":  "83ef021d",
+                                            "name":  "Dempsey\u0027s Pharmacy Castlebar",
+                                            "issues":  12,
+                                            "score":  62,
+                                            "loc":  "Castlebar",
+                                            "url":  "https://www.dempseyspharmacy.ie/"
+                                        },
+                                        {
+                                            "id":  "b2a430e1",
+                                            "name":  "Cawleys Gift Shop Castlebar",
+                                            "issues":  9,
+                                            "score":  77,
+                                            "loc":  "Castlebar",
+                                            "url":  "https://www.cawleys.ie/"
+                                        },
+                                        {
+                                            "id":  "d7c2b45f",
+                                            "name":  "Swan Bar Castlebar",
+                                            "issues":  9,
+                                            "score":  74,
+                                            "loc":  "Castlebar",
+                                            "url":  "https://www.swanbar.ie/"
+                                        },
+                                        {
+                                            "id":  "df4be01c",
+                                            "name":  "The Linenhall Arts Centre",
+                                            "issues":  12,
+                                            "score":  50,
+                                            "loc":  "Castlebar",
+                                            "url":  "https://www.linenhall.com/"
+                                        },
+                                        {
+                                            "id":  "e5c78103",
+                                            "name":  "Breaffy House Resort Castlebar",
+                                            "issues":  7,
+                                            "score":  84,
+                                            "loc":  "Castlebar",
+                                            "url":  "https://www.breaffyhouseresort.com/"
+                                        },
+                                        {
+                                            "id":  "e614c78a",
+                                            "name":  "Westport Woods Hotel Castlebar",
+                                            "issues":  6,
+                                            "score":  88,
+                                            "loc":  "Castlebar",
+                                            "url":  "https://www.westportwoodshotel.com/"
+                                        },
+                                        {
+                                            "id":  "f372bd80",
+                                            "name":  "Elmwood Coffee Castlebar",
+                                            "issues":  10,
+                                            "score":  60,
+                                            "loc":  "Castlebar",
+                                            "url":  "https://www.elmwood.ie/"
+                                        }
+                                    ],
                       "Galway":  [
                                      {
-                                         "id":  "0000000b",
-                                         "name":  "The g Hotel",
+                                         "id":  "1fa237c0",
+                                         "name":  "McCambridge\u0027s Galway",
+                                         "issues":  10,
+                                         "score":  69,
                                          "loc":  "Galway",
-                                         "score":  76,
-                                         "url":  "https://www.theghotel.ie/",
-                                         "issues":  5
+                                         "url":  "https://www.mccambridges.com/"
                                      },
                                      {
-                                         "id":  "0000000c",
-                                         "name":  "Galmont Hotel \u0026 Spa",
+                                         "id":  "2745a1df",
+                                         "name":  "Tigh Neachtain Galway",
+                                         "issues":  13,
+                                         "score":  57,
                                          "loc":  "Galway",
-                                         "score":  71,
-                                         "url":  "https://www.galmont.ie/",
-                                         "issues":  5
+                                         "url":  "https://www.tighneachtain.com/"
                                      },
                                      {
-                                         "id":  "0000000d",
-                                         "name":  "The Hardiman Hotel",
-                                         "loc":  "Galway",
+                                         "id":  "cd0a4986",
+                                         "name":  "Cuisine de France Galway",
+                                         "issues":  8,
                                          "score":  68,
-                                         "url":  "https://www.thehardiman.ie/",
-                                         "issues":  5
-                                     },
-                                     {
-                                         "id":  "0000000e",
-                                         "name":  "The House Hotel",
                                          "loc":  "Galway",
-                                         "score":  63,
-                                         "url":  "https://www.thehousehotel.ie/",
-                                         "issues":  6
+                                         "url":  "https://www.cuisinedefrance.ie/"
                                      },
                                      {
-                                         "id":  "0000000f",
-                                         "name":  "Oranmore Lodge Hotel",
-                                         "loc":  "Galway",
-                                         "score":  59,
-                                         "url":  "https://www.oranmorelodge.ie/",
-                                         "issues":  6
-                                     },
-                                     {
-                                         "id":  "00000010",
+                                         "id":  "1ed50b92",
                                          "name":  "The Twelve Hotel",
+                                         "issues":  4,
+                                         "score":  82,
                                          "loc":  "Galway",
-                                         "score":  80,
-                                         "url":  "https://www.thetwelvehotel.ie/",
-                                         "issues":  4
+                                         "url":  "https://www.thetwelvehotel.ie/"
                                      },
                                      {
-                                         "id":  "00000011",
-                                         "name":  "Glenlo Abbey Hotel \u0026 Estate",
+                                         "id":  "1c08426b",
+                                         "name":  "Morton\u0027s Galway",
+                                         "issues":  13,
+                                         "score":  45,
                                          "loc":  "Galway",
-                                         "score":  77,
-                                         "url":  "https://www.glenloabbey.ie/",
-                                         "issues":  5
+                                         "url":  "https://www.mortons.ie/"
                                      },
                                      {
-                                         "id":  "00000012",
-                                         "name":  "Jurys Inn Galway",
-                                         "loc":  "Galway",
-                                         "score":  66,
-                                         "url":  "https://www.jurysinnsgalway.com/",
-                                         "issues":  5
-                                     },
-                                     {
-                                         "id":  "00000013",
-                                         "name":  "Flannery\u0027s Hotel Galway",
-                                         "loc":  "Galway",
-                                         "score":  54,
-                                         "url":  "https://www.flanneryshotelgalway.ie/",
-                                         "issues":  7
-                                     },
-                                     {
-                                         "id":  "00000014",
+                                         "id":  "4cda7b9e",
                                          "name":  "Salthill Hotel",
+                                         "issues":  6,
+                                         "score":  64,
                                          "loc":  "Galway",
-                                         "score":  73,
-                                         "url":  "https://www.salthillhotel.com/",
-                                         "issues":  5
+                                         "url":  "https://www.salthillhotel.com/"
+                                     },
+                                     {
+                                         "id":  "0683792e",
+                                         "name":  "Charlie Byrne\u0027s Bookshop Galway",
+                                         "issues":  15,
+                                         "score":  54,
+                                         "loc":  "Galway",
+                                         "url":  "https://www.charliebyrne.com/"
+                                     },
+                                     {
+                                         "id":  "1923a8cd",
+                                         "name":  "Handsome Burger Galway",
+                                         "issues":  12,
+                                         "score":  58,
+                                         "loc":  "Galway",
+                                         "url":  "https://www.handsomeburger.com/"
+                                     },
+                                     {
+                                         "id":  "caf82967",
+                                         "name":  "The g Hotel",
+                                         "issues":  6,
+                                         "score":  74,
+                                         "loc":  "Galway",
+                                         "url":  "https://www.theghotel.ie/"
+                                     },
+                                     {
+                                         "id":  "b6329efa",
+                                         "name":  "The House Hotel",
+                                         "issues":  8,
+                                         "score":  76,
+                                         "loc":  "Galway",
+                                         "url":  "https://www.thehousehotel.ie/"
+                                     },
+                                     {
+                                         "id":  "91806ca3",
+                                         "name":  "The Hardiman Hotel",
+                                         "issues":  9,
+                                         "score":  66,
+                                         "loc":  "Galway",
+                                         "url":  "https://www.thehardiman.ie/"
+                                     },
+                                     {
+                                         "id":  "b1fedc79",
+                                         "name":  "Galmont Hotel \u0026 Spa",
+                                         "issues":  10,
+                                         "score":  63,
+                                         "loc":  "Galway",
+                                         "url":  "https://www.galmont.ie/"
+                                     },
+                                     {
+                                         "id":  "b5879c32",
+                                         "name":  "Oranmore Lodge Hotel",
+                                         "issues":  11,
+                                         "score":  70,
+                                         "loc":  "Galway",
+                                         "url":  "https://www.oranmorelodge.ie/"
+                                     },
+                                     {
+                                         "id":  "e6b201d4",
+                                         "name":  "Ard Bia at Nimmos Galway",
+                                         "issues":  15,
+                                         "score":  39,
+                                         "loc":  "Galway",
+                                         "url":  "https://www.ardbia.com/"
+                                     },
+                                     {
+                                         "id":  "f56b70ad",
+                                         "name":  "Sheridan\u0027s Cheesemongers Galway",
+                                         "issues":  10,
+                                         "score":  63,
+                                         "loc":  "Galway",
+                                         "url":  "https://www.sheridanscheesemongers.com/"
+                                     },
+                                     {
+                                         "id":  "95db386f",
+                                         "name":  "The Dough Bros Galway",
+                                         "issues":  11,
+                                         "score":  55,
+                                         "loc":  "Galway",
+                                         "url":  "https://www.thedoughbros.ie/"
+                                     },
+                                     {
+                                         "id":  "a62d3085",
+                                         "name":  "Thomas Moran\u0027s Pharmacy Galway",
+                                         "issues":  8,
+                                         "score":  69,
+                                         "loc":  "Galway",
+                                         "url":  "https://www.moranspharmacy.ie/"
                                      }
                                  ],
                       "Sligo":  [
                                     {
-                                        "id":  "00000015",
-                                        "name":  "Sligo Park Hotel",
+                                        "id":  "3bd2a576",
+                                        "name":  "The White Hag Brewing Sligo",
+                                        "issues":  17,
+                                        "score":  41,
                                         "loc":  "Sligo",
-                                        "score":  75,
-                                        "url":  "https://www.sligoparkhotel.ie/",
-                                        "issues":  5
+                                        "url":  "https://www.thewhitehag.com/"
                                     },
                                     {
-                                        "id":  "00000016",
-                                        "name":  "The Glasshouse Hotel",
-                                        "loc":  "Sligo",
-                                        "score":  79,
-                                        "url":  "https://www.theglasshousehotel.ie/",
-                                        "issues":  5
-                                    },
-                                    {
-                                        "id":  "00000017",
-                                        "name":  "Radisson Blu Hotel \u0026 Spa Sligo",
-                                        "loc":  "Sligo",
-                                        "score":  70,
-                                        "url":  "https://www.radissonblu.com/",
-                                        "issues":  5
-                                    },
-                                    {
-                                        "id":  "00000018",
-                                        "name":  "Clayton Hotel Sligo",
-                                        "loc":  "Sligo",
-                                        "score":  67,
-                                        "url":  "https://www.claytonsligo.ie/",
-                                        "issues":  5
-                                    },
-                                    {
-                                        "id":  "00000019",
-                                        "name":  "Yeats Country Hotel, Spa \u0026 Leisure Club",
-                                        "loc":  "Sligo",
-                                        "score":  61,
-                                        "url":  "https://www.yeatscountryhotel.com/",
-                                        "issues":  6
-                                    },
-                                    {
-                                        "id":  "0000001a",
+                                        "id":  "4b9f7c2d",
                                         "name":  "The Diamond Coast Hotel",
-                                        "loc":  "Sligo",
-                                        "score":  56,
-                                        "url":  "https://www.diamondcoast.ie/",
-                                        "issues":  7
-                                    },
-                                    {
-                                        "id":  "0000001b",
-                                        "name":  "Belleek Castle \u0026 Thatch Bar",
-                                        "loc":  "Sligo",
-                                        "score":  43,
-                                        "url":  "https://www.belleekcastle.ie/",
-                                        "issues":  9
-                                    },
-                                    {
-                                        "id":  "0000001c",
-                                        "name":  "Riverside Hotel Sligo",
-                                        "loc":  "Sligo",
-                                        "score":  51,
-                                        "url":  "https://www.riversidehotelsligo.com/",
-                                        "issues":  7
-                                    },
-                                    {
-                                        "id":  "0000001d",
-                                        "name":  "Moran\u0027s Bar \u0026 Restaurant",
-                                        "loc":  "Sligo",
-                                        "score":  64,
-                                        "url":  "https://www.moranssligo.ie/",
-                                        "issues":  6
-                                    },
-                                    {
-                                        "id":  "0000001e",
-                                        "name":  "The Coach House Hotel",
-                                        "loc":  "Sligo",
+                                        "issues":  11,
                                         "score":  60,
-                                        "url":  "https://www.thecoachhousehotelsligo.ie/",
-                                        "issues":  6
+                                        "loc":  "Sligo",
+                                        "url":  "https://www.diamondcoast.ie/"
+                                    },
+                                    {
+                                        "id":  "48fa13dc",
+                                        "name":  "Brennan\u0027s Pharmacy Sligo",
+                                        "issues":  13,
+                                        "score":  47,
+                                        "loc":  "Sligo",
+                                        "url":  "https://www.brennanspharmacy.ie/"
+                                    },
+                                    {
+                                        "id":  "6912f30e",
+                                        "name":  "Flipside Sligo",
+                                        "issues":  12,
+                                        "score":  56,
+                                        "loc":  "Sligo",
+                                        "url":  "https://www.flipside.ie/"
+                                    },
+                                    {
+                                        "id":  "789be463",
+                                        "name":  "Hargadons Pub Sligo",
+                                        "issues":  11,
+                                        "score":  59,
+                                        "loc":  "Sligo",
+                                        "url":  "https://www.hargadons.com/"
+                                    },
+                                    {
+                                        "id":  "6c3b21a7",
+                                        "name":  "Sligo Art Gallery",
+                                        "issues":  10,
+                                        "score":  56,
+                                        "loc":  "Sligo",
+                                        "url":  "https://www.sligoartgallery.com/"
+                                    },
+                                    {
+                                        "id":  "d902fe81",
+                                        "name":  "Hawk\u0027s Well Theatre Sligo",
+                                        "issues":  9,
+                                        "score":  80,
+                                        "loc":  "Sligo",
+                                        "url":  "https://www.hawkswell.com/"
+                                    },
+                                    {
+                                        "id":  "7be2cd6f",
+                                        "name":  "Radisson Blu Hotel \u0026 Spa Sligo",
+                                        "issues":  9,
+                                        "score":  71,
+                                        "loc":  "Sligo",
+                                        "url":  "https://www.radissonblu.com/"
+                                    },
+                                    {
+                                        "id":  "c9801b6e",
+                                        "name":  "Belleek Pottery Sligo",
+                                        "issues":  12,
+                                        "score":  57,
+                                        "loc":  "Sligo",
+                                        "url":  "https://www.belleekpottery.ie/"
+                                    },
+                                    {
+                                        "id":  "bc32908f",
+                                        "name":  "Clarke\u0027s Pharmacy Sligo",
+                                        "issues":  13,
+                                        "score":  44,
+                                        "loc":  "Sligo",
+                                        "url":  "https://www.clarkespharmacy.ie/"
+                                    },
+                                    {
+                                        "id":  "fe978a12",
+                                        "name":  "Model Niland Gallery Sligo",
+                                        "issues":  13,
+                                        "score":  48,
+                                        "loc":  "Sligo",
+                                        "url":  "https://www.themodel.ie/"
+                                    },
+                                    {
+                                        "id":  "f796dc30",
+                                        "name":  "Connolly\u0027s Pharmacy Sligo",
+                                        "issues":  11,
+                                        "score":  54,
+                                        "loc":  "Sligo",
+                                        "url":  "https://www.connollyspharmacy.ie/"
+                                    },
+                                    {
+                                        "id":  "a437cb05",
+                                        "name":  "Yeats Country Hotel, Spa \u0026 Leisure Club",
+                                        "issues":  6,
+                                        "score":  85,
+                                        "loc":  "Sligo",
+                                        "url":  "https://www.yeatscountryhotel.com/"
                                     }
                                 ]
                   }

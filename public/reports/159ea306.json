@@ -1,0 +1,144 @@
+﻿{
+    "issues":  [
+                   {
+                       "detail":  "Each CSS file is a separate HTTP request.",
+                       "label":  "8 external CSS files",
+                       "check":  "Open DevTools Network tab, reload. Count CSS files.",
+                       "type":  "perf",
+                       "siteHint":  "Extra HTTP requests slow down page load.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Consider consolidating or deferring non-critical scripts.",
+                       "label":  "17 external scripts",
+                       "check":  "Same check - DevTools Network tab, filter by JS.",
+                       "type":  "perf",
+                       "siteHint":  "Marginal speed improvement possible.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Schema helps Google show your hours, reviews, and events in search results.",
+                       "label":  "No schema markup",
+                       "check":  "Search for your business on Google. Does it show a Knowledge Panel with hours and reviews?",
+                       "type":  "seo",
+                       "siteHint":  "Detailed search results get higher click-through rates.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "A nav tag helps screen readers and search engines find your menu.",
+                       "label":  "No semantic navbar",
+                       "check":  "Open a screen reader or check page structure with DevTools.",
+                       "type":  "a11y",
+                       "siteHint":  "Minor accessibility issue.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Images that fail to load show blank boxes or broken icons.",
+                       "label":  "14 broken image(s)",
+                       "check":  "Scroll through the page. Do you see any broken image icons?",
+                       "type":  "design",
+                       "siteHint":  "Broken images look unprofessional. Each one should load properly.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Some images appear to be placeholders (very small dimensions).",
+                       "label":  "Placeholder/low-quality images detected",
+                       "check":  "Do any images look like grey boxes or low-res blurs where real images should be?",
+                       "type":  "design",
+                       "siteHint":  "Replace placeholder images with actual photography or graphics.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "No contact form, email address, or phone number found. We checked the homepage and common subpages.",
+                       "label":  "No contact method found (homepage or subpages)",
+                       "check":  "Can you find any way to contact this business from their website?",
+                       "type":  "ux",
+                       "siteHint":  "If visitors cannot contact you, they will go to a competitor.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "SSL cert renews on Jun 12 02:39:29 2026 GMT. Mark your calendar.",
+                       "label":  "SSL certificate expires in 41 days",
+                       "check":  "Check the lock icon in the address bar.",
+                       "type":  "preflight",
+                       "siteHint":  "Just a reminder ÔÇö easy to forget until it is too late.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "CSP helps prevent XSS attacks by controlling which resources can load.",
+                       "label":  "Missing Content Security Policy",
+                       "check":  "Check DevTools Console for CSP-related warnings.",
+                       "type":  "preflight",
+                       "siteHint":  "A basic CSP blocks most common script injection attacks.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Without this, your site could be embedded in an iframe on another site (clickjacking risk).",
+                       "label":  "Missing X-Frame-Options header",
+                       "check":  "Check if the site has X-Frame-Options: DENY or SAMEORIGIN in response headers.",
+                       "type":  "preflight",
+                       "siteHint":  "Without this, others could embed your site on malicious pages.",
+                       "severity":  "low"
+                   }
+               ],
+    "id":  "159ea306",
+    "low":  8,
+    "high":  1,
+    "medium":  1,
+    "location":  "Westport",
+    "critical":  0,
+    "url":  "https://www.wyatthotel.com/",
+    "benchmark":  "",
+    "businessName":  "The Wyatt Hotel",
+    "businessType":  "hotel",
+    "platform":  "WordPress",
+    "score":  72,
+    "analyzedAt":  "2026-05-01 05:43",
+    "positives":  [
+                      {
+                          "detail":  "Page title is set"
+                      },
+                      {
+                          "detail":  "Meta description present"
+                      },
+                      {
+                          "detail":  "Uses H1 heading"
+                      },
+                      {
+                          "detail":  "No mixed content"
+                      },
+                      {
+                          "detail":  "35 images on the page"
+                      },
+                      {
+                          "detail":  "Analytics active"
+                      },
+                      {
+                          "detail":  "Good page size (86.6KB)"
+                      },
+                      {
+                          "detail":  "Clean sans-serif body font"
+                      },
+                      {
+                          "detail":  "Uses modern CSS layout (Flexbox/Grid)"
+                      },
+                      {
+                          "detail":  "Viewport meta tag present (mobile-friendly setup)"
+                      },
+                      {
+                          "detail":  "Uses modern rounded corners / cards"
+                      },
+                      {
+                          "detail":  "Uses shadows for visual depth"
+                      },
+                      {
+                          "detail":  "HSTS (HTTP Strict Transport Security) is set"
+                      },
+                      {
+                          "detail":  "X-Content-Type-Options: nosniff is set"
+                      },
+                      {
+                          "detail":  "Built with WordPress"
+                      }
+                  ]
+}

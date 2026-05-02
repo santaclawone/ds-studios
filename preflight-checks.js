@@ -32,7 +32,10 @@ function addIssue(label, severity, detail, check, siteHint) {
   results.issues.push({ type: 'preflight', label, severity, detail, check, siteHint });
 }
 function addPos(detail) {
-  results.positives.push({ detail });
+  // Deduplicate by detail text
+  if (!results.positives.some(p => p.detail === detail)) {
+    results.positives.push({ detail });
+  }
 }
 
 // 1. SSL Certificate check (via HTTPS GET — no external API, just reads the TLS handshake)
@@ -204,29 +207,57 @@ function detectPlatform(html) {
     platforms.push({ name: 'PrestaShop', severity: 'info', isDIY: false });
   }
 
+  // Detect agency/developer credits in the footer
+  const agencyPatterns = [
+    /designed\s+by\s+([^<.]{2,50})(?:\||\s*[-,]|\s*<|\s*\.)/i,
+    /developed\s+by\s+([^<.]{2,50})(?:\||\s*[-,]|\s*<|\s*\.)/i,
+    /built\s+by\s+([^<.]{2,50})(?:\||\s*[-,]|\s*<|\s*\.)/i,
+    /website\s+by\s+([^<.]{2,50})(?:\||\s*[-,]|\s*<|\s*\.)/i,
+    /powered\s+by\s+([^<.]{2,50})(?:\||\s*[-,]|\s*<|\s*\.)/i,
+    /created\s+by\s+([^<.]{2,50})(?:\||\s*[-,]|\s*<|\s*\.)/i,
+    /site\s+by\s+([^<.]{2,50})(?:\||\s*[-,]|\s*<|\s*\.)/i
+  ];
+  let agencyName = null;
+  for (const pattern of agencyPatterns) {
+    const match = html.match(pattern);
+    if (match && match[1]) {
+      agencyName = match[1].trim();
+      break;
+    }
+  }
   if (platforms.length > 0) {
     // De-duplicate
     const unique = platforms.filter((p, i, arr) => arr.findIndex(x => x.name === p.name) === i);
-    if (unique.length === 1 && unique[0].isDIY) {
-      addIssue(`Using ${unique[0].name} (DIY builder)`, 'medium',
-        `The site runs on ${unique[0].name}, a DIY website builder. DIY platforms limit design freedom, performance tuning, and SEO control.`,
-        'View page source and search for the platform name.',
-        `DIY builders like ${unique[0].name} are great for getting started, but as your business grows, the limitations become costly — custom features, page speed, and SEO are all capped by the platform.`
+    const isWordPress = unique.some(p => p.name === 'WordPress');
+
+    // Flag agencies that delivered a WordPress site
+    if (agencyName && isWordPress) {
+      addIssue('Website credited to "' + agencyName + '" but runs on WordPress', 'low',
+        'The footer credits "' + agencyName + '" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The "developer" is essentially reselling a stock template.',
+        'Scroll to the bottom of each page. Do you see "Designed by ' + agencyName + '"? They likely installed a WordPress theme.',
+        'Your current "web developer" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.'
       );
-    } else if (unique.length > 0) {
-      // WordPress or other professional CMS — not a DIY issue but worth noting
+    }
+
+    if (unique.length === 1 && unique[0].isDIY) {
+      addIssue('Using ' + unique[0].name + ' (DIY builder)', 'medium',
+        'The site runs on ' + unique[0].name + ', a DIY website builder. DIY platforms limit design freedom, performance tuning, and SEO control.',
+        'View page source and search for the platform name.',
+        'DIY builders like ' + unique[0].name + ' are great for getting started, but as your business grows, the limitations become costly - custom features, page speed, and SEO are all capped by the platform.'
+      );
+    } else {
+      // Multiple platforms or professional CMS
       const diyOnes = unique.filter(p => p.isDIY);
-      const proOnes = unique.filter(p => !p.isDIY);
       if (diyOnes.length > 0) {
-        addIssue(`Using ${diyOnes[0].name} (DIY builder)`, 'medium',
-          `The site runs on ${diyOnes[0].name}. This limits SEO flexibility, page speed control, and custom features.`,
+        addIssue('Using ' + diyOnes[0].name + ' (DIY builder)', 'medium',
+          'The site runs on ' + diyOnes[0].name + '. This limits SEO flexibility, page speed control, and custom features.',
           'View page source and search for the platform.',
-          `Businesses often outgrow ${diyOnes[0].name} and need a custom site to stand out.`
+          'Businesses often outgrow ' + diyOnes[0].name + ' and need a custom site to stand out.'
         );
       }
-      // For professional CMS (WordPress, etc.), just note it
+      // Note the platform
       results.platform = unique.map(p => p.name).join(', ');
-      addPos(`Built with ${unique.map(p => p.name).join(', ')}`);
+      addPos('Built with ' + unique.map(p => p.name).join(', '));
     }
   }
 }

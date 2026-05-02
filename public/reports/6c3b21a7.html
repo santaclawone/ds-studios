@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Website Audit â€” Sligo Art Gallery â€” DS Studios</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f5f9;color:#1a202c;line-height:1.6}
+.header{background:linear-gradient(135deg,#a3d977,#7aa36f);color:#1a202c;padding:36px 20px 28px;text-align:center}
+.header .ds-logo{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;background:rgba(26,32,44,.08);display:inline-block;padding:3px 12px;border-radius:12px;margin-bottom:8px}
+.header h1{font-size:24px;font-weight:700;letter-spacing:-.3px}
+.header .sub{font-size:12px;opacity:.6;margin-top:3px}
+.badge{display:inline-flex;align-items:center;gap:6px;margin:10px auto 0;background:rgba(26,32,44,.08);border:1px solid rgba(26,32,44,.1);padding:5px 16px 5px 14px;border-radius:20px;font-size:13px}
+.badge .num{font-weight:800;font-size:20px;color:#f59e0b}
+.badge .den{opacity:.4;font-weight:400}
+.cap{font-size:10px;opacity:.5;margin-top:6px}
+.container{max-width:640px;margin:0 auto;padding:20px 16px}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px;margin-bottom:20px}
+.stat{background:#fff;border-radius:10px;padding:10px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.stat .n{font-size:22px;font-weight:800}
+.stat .n.crit{color:#ef4444}.stat .n.high{color:#f59e0b}.stat .n.med{color:#a3d977}.stat .n.low{color:#9ca3af}
+.stat .l{font-size:9px;color:#6b7280;text-transform:uppercase;letter-spacing:.3px}
+h2{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#6b7280;margin:0 0 6px}
+.issues{margin-bottom:16px}
+.issue{background:#fff;border-radius:10px;padding:10px 12px;margin-bottom:5px;border-left:3px solid #d1d5db;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+.issue.crit{border-left-color:#ef4444}.issue.high{border-left-color:#f59e0b}.issue.med{border-left-color:#a3d977}.issue.low{border-left-color:#9ca3af}
+.issue .hdr{font-size:12px;font-weight:600}
+.issue .sev{display:inline-block;font-size:8px;padding:1px 5px;border-radius:3px;font-weight:700;text-transform:uppercase;margin-right:5px}.issue .hint{background:#fefcbf;color:#92400e;font-size:10px;padding:4px 6px;border-radius:4px;margin-top:6px;font-style:italic}
+.issue.crit .sev{background:#fde8e8;color:#dc2626}.issue.high .sev{background:#fef3c7;color:#d97706}.issue.med .sev{background:#edfad6;color:#5a9e3a}.issue.low .sev{background:#f3f4f6;color:#6b7280}
+.issue .det{font-size:11px;color:#6b7280;margin-top:2px}
+.positives{margin-bottom:16px}
+.pos-item{background:#edfad6;border:1px solid #b8e08a;border-radius:6px;padding:6px 10px;margin-bottom:3px;font-size:11px;color:#2d5a1a}
+.info{background:#fff;border-radius:10px;padding:14px;margin-top:16px;box-shadow:0 1px 3px rgba(0,0,0,.03);font-size:11px;color:#6b7280;line-height:1.6}
+.info strong{color:#1a202c}
+.footer{text-align:center;padding:20px;font-size:10px;color:#9ca3af}
+.footer .ds{color:#a3d977;font-weight:700}
+.footer a{color:#a3d977;text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+</style></head><body>
+<div class="header">
+  <div class="ds-logo">â—† DS Studios</div>
+  <h1>Sligo Art Gallery</h1>
+  <div class="sub">Free website health audit</div>
+  <div class="badge"><span class="num">56</span><span class="den">/100</span></div>
+  <div class="cap">2026-05-02 04:48</div>
+</div>
+<div class="container">
+  <div class="grid">
+    <div class="stat"><div class="n crit">1</div><div class="l">Critical</div></div>
+    <div class="stat"><div class="n high">1</div><div class="l">High</div></div>
+    <div class="stat"><div class="n med">2</div><div class="l">Medium</div></div>
+    <div class="stat"><div class="n low">6</div><div class="l">Low</div></div>
+  </div>
+  <div class="issues"><h2>Issues (10)</h2><div class="issue low"><div class="hdr"><span class="sev low">low</span>No schema markup</div><div class="det">Schema helps Google show your hours, reviews, and events in search results.</div><div class="hint">Detailed search results get higher click-through rates.</div></div>
+<div class="issue low"><div class="hdr"><span class="sev low">low</span>No semantic navbar</div><div class="det">A nav tag helps screen readers and search engines find your menu.</div><div class="hint">Minor accessibility issue.</div></div>
+<div class="issue med"><div class="hdr"><span class="sev med">medium</span>No analytics tracking</div><div class="det">Without analytics, you cannot see how visitors find you or what they do on your site.</div><div class="hint">You are flying blind - no data on what pages work or where traffic comes from.</div></div>
+<div class="issue med"><div class="hdr"><span class="sev med">medium</span>Outdated layout method (no Flexbox/Grid)</div><div class="det">The page uses float/tables for layout instead of modern CSS Flexbox or Grid.</div><div class="hint">Flexbox and CSS Grid are standard. Their absence suggests the site hasn't been updated in 5+ years.</div></div>
+<div class="issue crit"><div class="hdr"><span class="sev crit">critical</span>No viewport meta tag (not mobile responsive)</div><div class="det">The page lacks a viewport meta tag and will not scale properly on mobile devices.</div><div class="hint">Over 60% of traffic is mobile. Without responsive design, you lose visitors.</div></div>
+<div class="issue low"><div class="hdr"><span class="sev low">low</span>No favicon</div><div class="det">Browser tabs show a blank icon instead of your brand.</div><div class="hint">A favicon reinforces brand identity and makes tabs recognizable.</div></div>
+<div class="issue high"><div class="hdr"><span class="sev high">high</span>No contact method found (homepage or subpages)</div><div class="det">No contact form, email address, or phone number found. We checked the homepage and common subpages.</div><div class="hint">If visitors cannot contact you, they will go to a competitor.</div></div>
+<div class="issue low"><div class="hdr"><span class="sev low">low</span>Missing Content Security Policy</div><div class="det">CSP helps prevent XSS attacks by controlling which resources can load.</div><div class="hint">A basic CSP blocks most common script injection attacks.</div></div>
+<div class="issue low"><div class="hdr"><span class="sev low">low</span>Missing X-Frame-Options header</div><div class="det">Without this, your site could be embedded in an iframe on another site (clickjacking risk).</div><div class="hint">Without this, others could embed your site on malicious pages.</div></div>
+<div class="issue low"><div class="hdr"><span class="sev low">low</span>Missing X-Content-Type-Options header</div><div class="det">This prevents MIME-type sniffing attacks.</div><div class="hint">Minor security hardening.</div></div>
+</div>
+  <div class="positives"><h2>Working (12)</h2><div class="pos-item">+ Page title is set</div>
+<div class="pos-item">+ Meta description present</div>
+<div class="pos-item">+ Uses H1 heading</div>
+<div class="pos-item">+ No mixed content</div>
+<div class="pos-item">+ 7 images on the page</div>
+<div class="pos-item">+ Efficient CSS setup</div>
+<div class="pos-item">+ Light script load (2 scripts)</div>
+<div class="pos-item">+ Good page size (22.2KB)</div>
+<div class="pos-item">+ Clean sans-serif body font</div>
+<div class="pos-item">+ SSL certificate valid ÔÇö 70 days remaining</div>
+<div class="pos-item">+ HSTS (HTTP Strict Transport Security) is set</div>
+<div class="pos-item">+ Built with WordPress</div>
+</div>
+  <div class="info"><strong>About this audit</strong><br>Generated by DS Studios. Covers SEO, mobile readiness, performance, security, and usability checks.<br><br><strong>Platform:</strong> WordPress<br><br><strong>Location:</strong> Sligo<br><br><strong>URL:</strong> <a href="https://www.sligoartgallery.com/" style="color:#a3d977">https://www.sligoartgallery.com/</a></div>
+</div>
+<div class="footer"><span class="ds">â—†</span> <a href="https://santaclawone.github.io/ds-studios/">DS Studios</a> â€” Websites for small businesses in Ireland <span class="ds">â—†</span></div>
+</body></html>

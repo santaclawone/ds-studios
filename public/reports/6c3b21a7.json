@@ -1,0 +1,135 @@
+﻿{
+    "issues":  [
+                   {
+                       "detail":  "Schema helps Google show your hours, reviews, and events in search results.",
+                       "label":  "No schema markup",
+                       "check":  "Search for your business on Google. Does it show a Knowledge Panel with hours and reviews?",
+                       "type":  "seo",
+                       "siteHint":  "Detailed search results get higher click-through rates.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "A nav tag helps screen readers and search engines find your menu.",
+                       "label":  "No semantic navbar",
+                       "check":  "Open a screen reader or check page structure with DevTools.",
+                       "type":  "a11y",
+                       "siteHint":  "Minor accessibility issue.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Without analytics, you cannot see how visitors find you or what they do on your site.",
+                       "label":  "No analytics tracking",
+                       "check":  "Check the page source for references to gtag, analytics.js, or fbq.",
+                       "type":  "business",
+                       "siteHint":  "You are flying blind - no data on what pages work or where traffic comes from.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "The page uses float/tables for layout instead of modern CSS Flexbox or Grid.",
+                       "label":  "Outdated layout method (no Flexbox/Grid)",
+                       "check":  "Resize the browser window. Does content stack or overlap? If it doesn\u0027t adapt well, layout is outdated.",
+                       "type":  "design",
+                       "siteHint":  "Flexbox and CSS Grid are standard. Their absence suggests the site hasn\u0027t been updated in 5+ years.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "The page lacks a viewport meta tag and will not scale properly on mobile devices.",
+                       "label":  "No viewport meta tag (not mobile responsive)",
+                       "check":  "Open the site on a phone. Does text overflow? Do you need to zoom?",
+                       "type":  "design",
+                       "siteHint":  "Over 60% of traffic is mobile. Without responsive design, you lose visitors.",
+                       "severity":  "critical"
+                   },
+                   {
+                       "detail":  "Browser tabs show a blank icon instead of your brand.",
+                       "label":  "No favicon",
+                       "check":  "Look at the browser tab. Is there a small icon next to the page title?",
+                       "type":  "design",
+                       "siteHint":  "A favicon reinforces brand identity and makes tabs recognizable.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "No contact form, email address, or phone number found. We checked the homepage and common subpages.",
+                       "label":  "No contact method found (homepage or subpages)",
+                       "check":  "Can you find any way to contact this business from their website?",
+                       "type":  "ux",
+                       "siteHint":  "If visitors cannot contact you, they will go to a competitor.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "CSP helps prevent XSS attacks by controlling which resources can load.",
+                       "label":  "Missing Content Security Policy",
+                       "check":  "Check DevTools Console for CSP-related warnings.",
+                       "type":  "preflight",
+                       "siteHint":  "A basic CSP blocks most common script injection attacks.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Without this, your site could be embedded in an iframe on another site (clickjacking risk).",
+                       "label":  "Missing X-Frame-Options header",
+                       "check":  "Check if the site has X-Frame-Options: DENY or SAMEORIGIN in response headers.",
+                       "type":  "preflight",
+                       "siteHint":  "Without this, others could embed your site on malicious pages.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "This prevents MIME-type sniffing attacks.",
+                       "label":  "Missing X-Content-Type-Options header",
+                       "check":  "Check DevTools Network tab for the header.",
+                       "type":  "preflight",
+                       "siteHint":  "Minor security hardening.",
+                       "severity":  "low"
+                   }
+               ],
+    "id":  "6c3b21a7",
+    "low":  6,
+    "high":  1,
+    "medium":  2,
+    "location":  "Sligo",
+    "critical":  1,
+    "url":  "https://www.sligoartgallery.com/",
+    "benchmark":  "",
+    "businessName":  "Sligo Art Gallery",
+    "businessType":  "gallery",
+    "platform":  "WordPress",
+    "score":  56,
+    "analyzedAt":  "2026-05-02 04:48",
+    "positives":  [
+                      {
+                          "detail":  "Page title is set"
+                      },
+                      {
+                          "detail":  "Meta description present"
+                      },
+                      {
+                          "detail":  "Uses H1 heading"
+                      },
+                      {
+                          "detail":  "No mixed content"
+                      },
+                      {
+                          "detail":  "7 images on the page"
+                      },
+                      {
+                          "detail":  "Efficient CSS setup"
+                      },
+                      {
+                          "detail":  "Light script load (2 scripts)"
+                      },
+                      {
+                          "detail":  "Good page size (22.2KB)"
+                      },
+                      {
+                          "detail":  "Clean sans-serif body font"
+                      },
+                      {
+                          "detail":  "SSL certificate valid ÔÇö 70 days remaining"
+                      },
+                      {
+                          "detail":  "HSTS (HTTP Strict Transport Security) is set"
+                      },
+                      {
+                          "detail":  "Built with WordPress"
+                      }
+                  ]
+}

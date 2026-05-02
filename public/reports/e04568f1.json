@@ -1,0 +1,229 @@
+﻿{
+    "issues":  [
+                   {
+                       "detail":  "Inline style tags cannot be cached. Moving to external CSS speeds up repeat visits.",
+                       "label":  "9 inline style blocks",
+                       "check":  "View page source. Count the style tags. More than 3-4 is unwieldy.",
+                       "type":  "perf",
+                       "siteHint":  "Slower repeat visits, harder code maintenance.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Consider consolidating or deferring non-critical scripts.",
+                       "label":  "25 external scripts",
+                       "check":  "Same check - DevTools Network tab, filter by JS.",
+                       "type":  "perf",
+                       "siteHint":  "Marginal speed improvement possible.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Without analytics, you cannot see how visitors find you or what they do on your site.",
+                       "label":  "No analytics tracking",
+                       "check":  "Check the page source for references to gtag, analytics.js, or fbq.",
+                       "type":  "business",
+                       "siteHint":  "You are flying blind - no data on what pages work or where traffic comes from.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "SSL cert renews on Jun 10 15:20:22 2026 GMT. Mark your calendar.",
+                       "label":  "SSL certificate expires in 39 days",
+                       "check":  "Check the lock icon in the address bar.",
+                       "type":  "preflight",
+                       "siteHint":  "Just a reminder ÔÇö easy to forget until it is too late.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "CSP helps prevent XSS attacks by controlling which resources can load.",
+                       "label":  "Missing Content Security Policy",
+                       "check":  "Check DevTools Console for CSP-related warnings.",
+                       "type":  "preflight",
+                       "siteHint":  "A basic CSP blocks most common script injection attacks.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Without this, your site could be embedded in an iframe on another site (clickjacking risk).",
+                       "label":  "Missing X-Frame-Options header",
+                       "check":  "Check if the site has X-Frame-Options: DENY or SAMEORIGIN in response headers.",
+                       "type":  "preflight",
+                       "siteHint":  "Without this, others could embed your site on malicious pages.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The footer credits \"Slider Revolution 6\" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The \"developer\" is essentially reselling a stock template.",
+                       "label":  "Website credited to \"Slider Revolution 6\" but runs on WordPress",
+                       "check":  "Scroll to the bottom of each page. Do you see \"Designed by Slider Revolution 6\"? They likely installed a WordPress theme.",
+                       "type":  "preflight",
+                       "siteHint":  "Your current \"web developer\" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The footer credits \"Slider Revolution 6\" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The \"developer\" is essentially reselling a stock template.",
+                       "label":  "Website credited to \"Slider Revolution 6\" but runs on WordPress",
+                       "check":  "Scroll to the bottom of each page. Do you see \"Designed by Slider Revolution 6\"? They likely installed a WordPress theme.",
+                       "type":  "preflight",
+                       "siteHint":  "Your current \"web developer\" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The footer credits \"Slider Revolution 6\" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The \"developer\" is essentially reselling a stock template.",
+                       "label":  "Website credited to \"Slider Revolution 6\" but runs on WordPress",
+                       "check":  "Scroll to the bottom of each page. Do you see \"Designed by Slider Revolution 6\"? They likely installed a WordPress theme.",
+                       "type":  "preflight",
+                       "siteHint":  "Your current \"web developer\" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The footer credits \"Slider Revolution 6\" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The \"developer\" is essentially reselling a stock template.",
+                       "label":  "Website credited to \"Slider Revolution 6\" but runs on WordPress",
+                       "check":  "Scroll to the bottom of each page. Do you see \"Designed by Slider Revolution 6\"? They likely installed a WordPress theme.",
+                       "type":  "preflight",
+                       "siteHint":  "Your current \"web developer\" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The footer credits \"Slider Revolution 6\" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The \"developer\" is essentially reselling a stock template.",
+                       "label":  "Website credited to \"Slider Revolution 6\" but runs on WordPress",
+                       "check":  "Scroll to the bottom of each page. Do you see \"Designed by Slider Revolution 6\"? They likely installed a WordPress theme.",
+                       "type":  "preflight",
+                       "siteHint":  "Your current \"web developer\" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The footer credits \"Slider Revolution 6\" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The \"developer\" is essentially reselling a stock template.",
+                       "label":  "Website credited to \"Slider Revolution 6\" but runs on WordPress",
+                       "check":  "Scroll to the bottom of each page. Do you see \"Designed by Slider Revolution 6\"? They likely installed a WordPress theme.",
+                       "type":  "preflight",
+                       "siteHint":  "Your current \"web developer\" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The footer credits \"Slider Revolution 6\" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The \"developer\" is essentially reselling a stock template.",
+                       "label":  "Website credited to \"Slider Revolution 6\" but runs on WordPress",
+                       "check":  "Scroll to the bottom of each page. Do you see \"Designed by Slider Revolution 6\"? They likely installed a WordPress theme.",
+                       "type":  "preflight",
+                       "siteHint":  "Your current \"web developer\" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The footer credits \"Slider Revolution 6\" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The \"developer\" is essentially reselling a stock template.",
+                       "label":  "Website credited to \"Slider Revolution 6\" but runs on WordPress",
+                       "check":  "Scroll to the bottom of each page. Do you see \"Designed by Slider Revolution 6\"? They likely installed a WordPress theme.",
+                       "type":  "preflight",
+                       "siteHint":  "Your current \"web developer\" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The footer credits \"Slider Revolution 6\" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The \"developer\" is essentially reselling a stock template.",
+                       "label":  "Website credited to \"Slider Revolution 6\" but runs on WordPress",
+                       "check":  "Scroll to the bottom of each page. Do you see \"Designed by Slider Revolution 6\"? They likely installed a WordPress theme.",
+                       "type":  "preflight",
+                       "siteHint":  "Your current \"web developer\" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The footer credits \"Slider Revolution 6\" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The \"developer\" is essentially reselling a stock template.",
+                       "label":  "Website credited to \"Slider Revolution 6\" but runs on WordPress",
+                       "check":  "Scroll to the bottom of each page. Do you see \"Designed by Slider Revolution 6\"? They likely installed a WordPress theme.",
+                       "type":  "preflight",
+                       "siteHint":  "Your current \"web developer\" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The footer credits \"Slider Revolution 6\" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The \"developer\" is essentially reselling a stock template.",
+                       "label":  "Website credited to \"Slider Revolution 6\" but runs on WordPress",
+                       "check":  "Scroll to the bottom of each page. Do you see \"Designed by Slider Revolution 6\"? They likely installed a WordPress theme.",
+                       "type":  "preflight",
+                       "siteHint":  "Your current \"web developer\" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The footer credits \"Slider Revolution 6\" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The \"developer\" is essentially reselling a stock template.",
+                       "label":  "Website credited to \"Slider Revolution 6\" but runs on WordPress",
+                       "check":  "Scroll to the bottom of each page. Do you see \"Designed by Slider Revolution 6\"? They likely installed a WordPress theme.",
+                       "type":  "preflight",
+                       "siteHint":  "Your current \"web developer\" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The footer credits \"Slider Revolution 6\" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The \"developer\" is essentially reselling a stock template.",
+                       "label":  "Website credited to \"Slider Revolution 6\" but runs on WordPress",
+                       "check":  "Scroll to the bottom of each page. Do you see \"Designed by Slider Revolution 6\"? They likely installed a WordPress theme.",
+                       "type":  "preflight",
+                       "siteHint":  "Your current \"web developer\" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The footer credits \"Slider Revolution 6\" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The \"developer\" is essentially reselling a stock template.",
+                       "label":  "Website credited to \"Slider Revolution 6\" but runs on WordPress",
+                       "check":  "Scroll to the bottom of each page. Do you see \"Designed by Slider Revolution 6\"? They likely installed a WordPress theme.",
+                       "type":  "preflight",
+                       "siteHint":  "Your current \"web developer\" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The footer credits \"Slider Revolution 6\" as the developer, yet the underlying platform is WordPress. This suggests a pre-built theme rather than a custom build. The \"developer\" is essentially reselling a stock template.",
+                       "label":  "Website credited to \"Slider Revolution 6\" but runs on WordPress",
+                       "check":  "Scroll to the bottom of each page. Do you see \"Designed by Slider Revolution 6\"? They likely installed a WordPress theme.",
+                       "type":  "preflight",
+                       "siteHint":  "Your current \"web developer\" delivered a WordPress theme, not a custom site. DS Studios can build something genuinely custom.",
+                       "severity":  "low"
+                   }
+               ],
+    "id":  "e04568f1",
+    "low":  19,
+    "high":  0,
+    "medium":  2,
+    "location":  "Westport",
+    "critical":  0,
+    "url":  "https://www.jjomalleys.com/",
+    "benchmark":  "",
+    "businessName":  "JJ O\u0027Malley\u0027s Westport",
+    "businessType":  "pub",
+    "platform":  "WordPress",
+    "score":  52,
+    "analyzedAt":  "2026-05-02 04:32",
+    "positives":  [
+                      {
+                          "detail":  "Page title is set"
+                      },
+                      {
+                          "detail":  "Meta description present"
+                      },
+                      {
+                          "detail":  "Uses H1 heading"
+                      },
+                      {
+                          "detail":  "No mixed content"
+                      },
+                      {
+                          "detail":  "6 images on the page"
+                      },
+                      {
+                          "detail":  "Good page size (106.1KB)"
+                      },
+                      {
+                          "detail":  "Clean sans-serif body font"
+                      },
+                      {
+                          "detail":  "Uses modern CSS layout (Flexbox/Grid)"
+                      },
+                      {
+                          "detail":  "Viewport meta tag present (mobile-friendly setup)"
+                      },
+                      {
+                          "detail":  "Uses modern rounded corners / cards"
+                      },
+                      {
+                          "detail":  "Contact form/page found on: /contact, /contact-us, /get-in-touch, /contactus, /enquire, /book, /book-now, /reservations, /booking"
+                      },
+                      {
+                          "detail":  "HSTS (HTTP Strict Transport Security) is set"
+                      },
+                      {
+                          "detail":  "X-Content-Type-Options: nosniff is set"
+                      },
+                      {
+                          "detail":  "Built with WordPress"
+                      }
+                  ]
+}
