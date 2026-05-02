@@ -124,5 +124,26 @@
                       {
                           "detail":  "Contact form found on: /contact"
                       }
-                  ]
+                  ],
+    "humanReview":  {
+                        "date":  "2026-05-02",
+                        "reviewer":  "D S",
+                        "observations":  [
+                                             {
+                                                 "label":  "Menu text contrast issue",
+                                                 "detail":  "The menu body text color is too close to the background shade, making it difficult to read - especially on mobile screens in sunlight. The text visually blends into the background.",
+                                                 "suggestion":  "Use a darker text color (#1a202c or near-black) against the light/white background to meet WCAG AA contrast standards. Avoid grey-on-grey combos for body text.",
+                                                 "type":  "design",
+                                                 "severity":  "medium"
+                                             },
+                                             {
+                                                 "label":  "Homepage blurb wastes prime real estate",
+                                                 "detail":  "The homepage opens with a dense marketing paragraph about hospitality and culinary delights before any practical information. Visitors coming to the site need hours, booking options, and today\u0027s specials at a glance - not a wall of prose.",
+                                                 "suggestion":  "Lead with operating hours and a booking CTA at the top. Move the descriptive blurb below the key info. Add a warning/notice section for closures or special events.",
+                                                 "type":  "ux",
+                                                 "severity":  "high"
+                                             }
+                                         ],
+                        "reviewed":  true
+                    }
 }

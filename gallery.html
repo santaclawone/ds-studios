@@ -23,6 +23,7 @@ body{font-family:'Inter',-apple-system,sans-serif;background:#f4f5f9;color:#1a20
 .biz-url a{color:#6b7280;text-decoration:underline;text-decoration-color:#d1d5db;text-underline-offset:3px}
 .biz-url a:hover{color:#a3d977;text-decoration-color:#a3d977}
 .biz-type{font-size:10px;color:#9CA3AF;text-transform:capitalize}
+.hr-badge{display:inline-block;font-size:14px;margin-left:4px;vertical-align:middle}
 .score-row{display:flex;align-items:center;gap:16px;margin:10px 0 8px;padding:10px 14px;background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
 .score-ring{position:relative;width:60px;height:60px;flex-shrink:0}
 .score-ring svg{transform:rotate(-90deg)}
@@ -59,6 +60,15 @@ body{font-family:'Inter',-apple-system,sans-serif;background:#f4f5f9;color:#1a20
 .issue-summary .type-badge{flex-shrink:0}
 .pos-row{display:flex;align-items:center;gap:6px;padding:6px 10px;background:#f0fdf4;border-radius:8px;margin-bottom:3px;font-size:11px;color:#166534}
 .pos-row::before{content:'✓';font-weight:800;color:#16a34a;font-size:13px}
+.hr-section{background:#eef2ff;border:2px solid #a5b4fc;border-radius:12px;padding:12px;margin:10px 0;box-shadow:0 1px 4px rgba(99,102,241,.08)}
+.hr-header{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:#3730a3;margin-bottom:8px}
+.hr-count{background:#c7d2fe;color:#3730a3;padding:1px 7px;border-radius:8px;font-size:9px}
+.hr-obs-card{border-left:3px solid #a5b4fc;padding:6px 0 6px 10px;margin-bottom:6px}
+.hr-obs-card:last-child{margin-bottom:0}
+.hr-obs-label{font-size:11px;font-weight:700;color:#1a202c;display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.hr-verify{font-size:8px;padding:1px 5px;border-radius:4px;background:#c7d2fe;color:#3730a3;font-weight:700;text-transform:uppercase;letter-spacing:.4px}
+.hr-obs-detail{font-size:10px;color:#4b5563;margin-top:2px}
+.hr-obs-suggestion{font-size:10px;color:#6366f1;font-style:italic;margin-top:2px}
 .acc{background:#fff;border-radius:10px;margin:8px 0;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.03)}
 .acc-summary{list-style:none;padding:10px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#6b7280;cursor:pointer;display:flex;align-items:center;justify-content:space-between;-webkit-user-select:none;user-select:none}
 .acc-summary::-webkit-details-marker{display:none}
@@ -120,7 +130,7 @@ function buildReportHTML(rpt,biz){
 
   let h=`<div class="card-scroll">
     <div class="loc-badge">${(rpt.location||biz.loc||'').toUpperCase()}</div>
-    <div class="biz-name">${rpt.businessName||biz.name}</div>
+    <div class="biz-name">${rpt.businessName||biz.name}${rpt.humanReview&&rpt.humanReview.reviewed?' <span class="hr-badge">👀</span>':''}</div>
     <div class="biz-url">${fullUrl?`<a href="${fullUrl}" target="_blank" rel="noopener">${displayUrl}</a>`:displayUrl}</div>
     <div class="biz-type">${rpt.businessType||''}</div>
     <div class="score-row">
@@ -138,6 +148,21 @@ function buildReportHTML(rpt,biz){
         ${sev.map(x=>`<div class="sev-item ${x.cls}"><span class="n">${x.n}</span><span class="l">${x.label}</span></div>`).join('')}
       </div>
     </div>`;
+
+  // Human review
+  const hr=rpt.humanReview;
+  if(hr&&hr.reviewed&&hr.observations&&hr.observations.length){
+    h+=`<div class="hr-section">
+      <div class="hr-header">👀 <span>Human Review</span><span class="hr-count">${hr.observations.length}</span></div>`;
+    hr.observations.forEach(obs=>{
+      h+=`<div class="hr-obs-card">
+        <div class="hr-obs-label">${obs.label} <span class="hr-verify">👤 Verified</span></div>
+        <div class="hr-obs-detail">${obs.detail||''}</div>
+        <div class="hr-obs-suggestion">${obs.suggestion?'→ '+obs.suggestion:''}</div>
+      </div>`;
+    });
+    h+=`</div>`;
+  }
 
   if(positives.length){
     h+=`<details class="acc">
