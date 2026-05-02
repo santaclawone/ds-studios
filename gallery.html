@@ -51,6 +51,12 @@ body{font-family:'Inter',-apple-system,sans-serif;background:#f4f5f9;color:#1a20
 .pos-section{margin:8px 0 4px}
 .pos-row{display:flex;align-items:center;gap:6px;padding:6px 10px;background:#f0fdf4;border-radius:8px;margin-bottom:3px;font-size:11px;color:#166534}
 .pos-row::before{content:'✓';font-weight:800;color:#16a34a;font-size:13px}
+.acc{background:#fff;border-radius:10px;margin:8px 0;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+.acc-summary{list-style:none;padding:10px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#6b7280;cursor:pointer;display:flex;align-items:center;justify-content:space-between;-webkit-user-select:none;user-select:none}
+.acc-summary::-webkit-details-marker{display:none}
+.acc-summary::after{content:'+';font-size:16px;font-weight:600;color:#9CA3AF;transition:transform .2s}
+.acc[open] .acc-summary::after{content:'−'}
+.acc-body{padding:0 14px 10px}
 .nav-bar{display:flex;align-items:center;justify-content:center;gap:12px;padding:6px 16px 8px;background:#f4f5f9;flex-shrink:0}
 .nav-btn{background:#fff;border:1px solid rgba(0,0,0,.06);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;transition:all .15s;box-shadow:0 1px 4px rgba(0,0,0,.04);color:#1a202c}
 .nav-btn:active{transform:scale(.92)}
@@ -124,10 +130,12 @@ function buildReportHTML(rpt,biz){
     </div>`;
 
   if(positives.length){
-    h+=`<div class="pos-section">
-      <div class="section-title">✓ What's Working (${positives.length})</div>
-      ${positives.map(p=>`<div class="pos-row">${p.detail||p}</div>`).join('')}
-    </div>`;
+    h+=`<details class="acc">
+      <summary class="acc-summary">✓ What's Working (${positives.length})</summary>
+      <div class="acc-body">
+        ${positives.map(p=>`<div class="pos-row">${p.detail||p}</div>`).join('')}
+      </div>
+    </details>`;
   }
 
   h+=`<div class="issues-section">
