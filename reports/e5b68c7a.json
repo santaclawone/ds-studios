@@ -130,18 +130,25 @@
                         "reviewer":  "D S",
                         "observations":  [
                                              {
-                                                 "label":  "Menu text contrast issue",
-                                                 "detail":  "The menu body text color is too close to the background shade, making it difficult to read - especially on mobile screens in sunlight. The text visually blends into the background.",
-                                                 "suggestion":  "Use a darker text color (#1a202c or near-black) against the light/white background to meet WCAG AA contrast standards. Avoid grey-on-grey combos for body text.",
+                                                 "label":  "Menu text blends into background",
+                                                 "detail":  "The body text on the menu page uses a colour too close to the background shade. You literally have to squint to read it. On mobile in sunlight it\u0027s borderline unusable.",
+                                                 "suggestion":  "Darken the body text to near-black (#1a202c or #333) against the light background. Avoid grey-on-grey combos for anything that carries information.",
                                                  "type":  "design",
                                                  "severity":  "medium"
                                              },
                                              {
-                                                 "label":  "Homepage blurb wastes prime real estate",
-                                                 "detail":  "The homepage opens with a dense marketing paragraph about hospitality and culinary delights before any practical information. Visitors coming to the site need hours, booking options, and today\u0027s specials at a glance - not a wall of prose.",
-                                                 "suggestion":  "Lead with operating hours and a booking CTA at the top. Move the descriptive blurb below the key info. Add a warning/notice section for closures or special events.",
+                                                 "label":  "Welcome blurb is a wall of fluff — no practical info",
+                                                 "detail":  "The homepage opens with three dense paragraphs about \u0027warm hospitality and culinary delights\u0027 before telling customers anything useful. Visitors scanning the page need to find opening hours, booking info, and any closure warnings immediately — not after scrolling past marketing copy.",
+                                                 "suggestion":  "Put opening hours and a booking CTA at the very top of the page. Move the descriptive blurb below the practical info. Add a visible notice banner for closures or special hours.",
                                                  "type":  "ux",
                                                  "severity":  "high"
+                                             },
+                                             {
+                                                 "label":  "Menu categories blend together on the page",
+                                                 "detail":  "The sections (Starters, Main Courses) don\u0027t visually separate from the items below them — it\u0027s just one long scroll of text. Hard to tell where one category ends and the next begins. A border or different background on each section would help diners navigate.",
+                                                 "suggestion":  "Wrap each menu category (Starters, Mains, Desserts, etc) in a card with a light background and subtle border. Make the category headings bold and visually distinct with a background colour.",
+                                                 "type":  "design",
+                                                 "severity":  "medium"
                                              }
                                          ],
                         "reviewed":  true
