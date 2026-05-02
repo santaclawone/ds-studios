@@ -1,0 +1,137 @@
+﻿{
+    "issues":  [
+                   {
+                       "detail":  "Assets loading over HTTP on an HTTPS page trigger browser security warnings.",
+                       "label":  "3 HTTP resources (mixed content)",
+                       "check":  "Click the lock icon in the address bar. If it says \u0027Not Secure\u0027 or shows a warning, mixed content is present.",
+                       "type":  "security",
+                       "siteHint":  "Visitors may get browser warnings and leave your site.",
+                       "severity":  "high"
+                   },
+                   {
+                       "detail":  "Inline style tags cannot be cached. Moving to external CSS speeds up repeat visits.",
+                       "label":  "9 inline style blocks",
+                       "check":  "View page source. Count the style tags. More than 3-4 is unwieldy.",
+                       "type":  "perf",
+                       "siteHint":  "Slower repeat visits, harder code maintenance.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Consider consolidating or deferring non-critical scripts.",
+                       "label":  "12 external scripts",
+                       "check":  "Same check - DevTools Network tab, filter by JS.",
+                       "type":  "perf",
+                       "siteHint":  "Marginal speed improvement possible.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "A nav tag helps screen readers and search engines find your menu.",
+                       "label":  "No semantic navbar",
+                       "check":  "Open a screen reader or check page structure with DevTools.",
+                       "type":  "a11y",
+                       "siteHint":  "Minor accessibility issue.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Without analytics, you cannot see how visitors find you or what they do on your site.",
+                       "label":  "No analytics tracking",
+                       "check":  "Check the page source for references to gtag, analytics.js, or fbq.",
+                       "type":  "business",
+                       "siteHint":  "You are flying blind - no data on what pages work or where traffic comes from.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "Pages over 250KB load slowly on mobile.",
+                       "label":  "Page is 627KB",
+                       "check":  "Open DevTools Network tab. Check the Size column for large images or files.",
+                       "type":  "perf",
+                       "siteHint":  "Slow loading increases bounce rate.",
+                       "severity":  "medium"
+                   },
+                   {
+                       "detail":  "HTTP Strict Transport Security tells browsers to always use HTTPS. Without it, a downgrade attack is possible.",
+                       "label":  "Missing HSTS header",
+                       "check":  "Open DevTools ÔåÆ Network ÔåÆ click the first request ÔåÆ look for \"strict-transport-security\".",
+                       "type":  "preflight",
+                       "siteHint":  "HSTS is a simple config that hardens your site against protocol downgrade attacks.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "CSP helps prevent XSS attacks by controlling which resources can load.",
+                       "label":  "Missing Content Security Policy",
+                       "check":  "Check DevTools Console for CSP-related warnings.",
+                       "type":  "preflight",
+                       "siteHint":  "A basic CSP blocks most common script injection attacks.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "Without this, your site could be embedded in an iframe on another site (clickjacking risk).",
+                       "label":  "Missing X-Frame-Options header",
+                       "check":  "Check if the site has X-Frame-Options: DENY or SAMEORIGIN in response headers.",
+                       "type":  "preflight",
+                       "siteHint":  "Without this, others could embed your site on malicious pages.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "This prevents MIME-type sniffing attacks.",
+                       "label":  "Missing X-Content-Type-Options header",
+                       "check":  "Check DevTools Network tab for the header.",
+                       "type":  "preflight",
+                       "siteHint":  "Minor security hardening.",
+                       "severity":  "low"
+                   },
+                   {
+                       "detail":  "The site runs on Squarespace. This limits SEO flexibility, page speed control, and custom features.",
+                       "label":  "Using Squarespace (DIY builder)",
+                       "check":  "View page source and search for the platform.",
+                       "type":  "preflight",
+                       "siteHint":  "Businesses often outgrow Squarespace and need a custom site to stand out.",
+                       "severity":  "medium"
+                   }
+               ],
+    "id":  "789be463",
+    "low":  6,
+    "high":  1,
+    "medium":  4,
+    "location":  "Sligo",
+    "critical":  0,
+    "url":  "https://www.hargadons.com/",
+    "benchmark":  "",
+    "businessName":  "Hargadons Pub Sligo",
+    "businessType":  "pub",
+    "platform":  "WordPress, Squarespace",
+    "score":  59,
+    "analyzedAt":  "2026-05-02 04:48",
+    "positives":  [
+                      {
+                          "detail":  "Page title is set"
+                      },
+                      {
+                          "detail":  "Meta description present"
+                      },
+                      {
+                          "detail":  "Uses H1 heading"
+                      },
+                      {
+                          "detail":  "6 images on the page"
+                      },
+                      {
+                          "detail":  "Clean sans-serif body font"
+                      },
+                      {
+                          "detail":  "Uses modern CSS layout (Flexbox/Grid)"
+                      },
+                      {
+                          "detail":  "Viewport meta tag present (mobile-friendly setup)"
+                      },
+                      {
+                          "detail":  "Uses shadows for visual depth"
+                      },
+                      {
+                          "detail":  "SSL certificate valid ÔÇö 78 days remaining"
+                      },
+                      {
+                          "detail":  "Built with WordPress, Squarespace"
+                      }
+                  ]
+}
