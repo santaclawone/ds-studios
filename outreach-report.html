@@ -122,11 +122,12 @@
 <div class="container">
 
 <h1>DS Studios — Site Report Outreach</h1>
-<p class="subtitle">West of Ireland batch • Generated 18 May 2026</p>
+<p class="subtitle">Batch 1 (West of Ireland) + Batch 2 (Douglas, Midleton, Bray, Cavan) • Generated 18 May 2026</p>
 
 <div class="note">
   <strong>⚠️ Private monitoring page.</strong>
-  50 lowest-scoring businesses targeted from Westport, Castlebar, Galway &amp; Sligo (scores 22–100).
+  <strong>Batch 1:</strong> 50 lowest-scoring businesses from Westport, Castlebar, Galway &amp; Sligo (scores 22–100).<br>
+  <strong>Batch 2:</strong> 17 businesses from Douglas (7), Midleton (4), Bray (3), Cavan (3).<br>
   Emails sent <strong>from</strong> <code>audit@sitescorereports.info</code> via Resend.
   From name: <em>Site Reports by DS Studios</em>.
   Reply-To: <code>dscullywebdesign@gmail.com</code>.
@@ -134,19 +135,19 @@
 
 <div class="stats">
   <div class="stat-card green">
-    <span class="num">44</span>
+    <span class="num">60</span>
     <span class="label">Sent</span>
   </div>
   <div class="stat-card orange">
-    <span class="num">4</span>
-    <span class="label">Skipped (dead)</span>
+    <span class="num">5</span>
+    <span class="label">Skipped</span>
   </div>
   <div class="stat-card red">
-    <span class="num">2</span>
+    <span class="num">3</span>
     <span class="label">No Email Found</span>
   </div>
   <div class="stat-card">
-    <span class="num">50</span>
+    <span class="num">68</span>
     <span class="label">Targeted</span>
   </div>
 </div>
@@ -221,7 +222,26 @@ const data = [
   {score:63,name:"Galmont Hotel & Spa",loc:"Galway",email:"reservations@thegalmont.com",status:"Skipped (HTTP 410)",resend:""},
   {score:71,name:"Radisson Blu Hotel & Spa Sligo",loc:"Sligo",email:"info.sligo@radissonblu.com",status:"Skipped (HTTP 403)",resend:""},
   {score:55,name:"The Dough Bros Galway",loc:"Galway",email:"—",status:"No email",resend:""},
-  {score:56,name:"Sligo Art Gallery",loc:"Sligo",email:"—",status:"No email",resend:""}
+  {score:56,name:"Sligo Art Gallery",loc:"Sligo",email:"—",status:"No email",resend:""},
+
+  // Batch 2 — Douglas, Midleton, Bray, Cavan
+  {score:31,name:"The Porterhouse Bray",loc:"Bray",email:"phtemplebar@theporterhouse.ie",status:"Sent",resend:"655e71ee-970e-4968-ac84-170219b63de4"},
+  {score:39,name:"Al Boschetto",loc:"Bray",email:"info@alboschetto.ie",status:"Sent",resend:"37b7d1a9-2b6b-4214-b4c8-fed953f634cc"},
+  {score:42,name:"Cavan Crystal Hotel",loc:"Cavan",email:"info@cavancrystalhotel.com",status:"Sent",resend:"3d7a1975-2c35-4931-b064-cc1800235479"},
+  {score:53,name:"Farmgate Restaurant",loc:"Midleton",email:"restaurant@farmgate.ie",status:"Sent",resend:"342d5132-55bc-413c-aca8-aff65d7de073"},
+  {score:55,name:"Farnham Estate",loc:"Cavan",email:"info@farnhamestate.ie",status:"Sent",resend:"8555c202-695f-4557-a20d-20f27fd24769"},
+  {score:56,name:"Ballymaloe House Hotel",loc:"Midleton",email:"info@ballymaloehouse.com",status:"Sent",resend:"f4b04af0-025f-4fc8-a235-03013987740a"},
+  {score:57,name:"Douglas Village Shopping Centre",loc:"Douglas",email:"info@douglasvillage.ie",status:"Sent",resend:"780d1bc3-7607-4e33-9576-43cae5771905"},
+  {score:60,name:"Surf &amp; Turf",loc:"Midleton",email:"surfandturfrestaurant@gmail.com",status:"Sent",resend:"289edea1-e043-4650-af33-aa6eebb041d1"},
+  {score:61,name:"Ramen",loc:"Douglas",email:"naturally@ramen.ie",status:"Sent",resend:"2a3c907e-ef06-4ef8-b41e-e2c18b45d0c0"},
+  {score:63,name:"Avoca Cafe",loc:"Bray",email:"info-avoca@avoca.com",status:"Sent",resend:"d47811bd-a4f5-4728-98a2-63214c3dbee2"},
+  {score:66,name:"Douglas Golf Club",loc:"Douglas",email:"info@douglasgolfclub.ie",status:"Sent",resend:"3e73211f-1840-4d31-8727-144570e69307"},
+  {score:67,name:"Cork Golf Club",loc:"Douglas",email:"info@corkgolfclub.ie",status:"Sent",resend:"fb673629-a5ca-4dd2-8451-e2886c0d9c0c"},
+  {score:70,name:"Market Lane",loc:"Douglas",email:"info@marketlane.ie",status:"Sent",resend:"7ea74c90-a341-4c8a-aba6-ebc0b4cae567"},
+  {score:70,name:"Quinlans Seafood Bar",loc:"Douglas",email:"cork@quinlansfish.com",status:"Sent",resend:"94687a0a-e24a-4443-a6c0-27e31967846e"},
+  {score:74,name:"Ballymaloe Cookery School",loc:"Midleton",email:"info@cookingisfun.ie",status:"Sent",resend:"dc5037f8-4dc8-4b68-90cb-d0c1b2e4e8bf"},
+  {score:75,name:"Hotel Kilmore",loc:"Cavan",email:"info@hotelkilmore.ie",status:"Sent",resend:"fc27018a-1835-4b1b-8648-783087111f99"},
+  {score:58,name:"KC &amp; Sons",loc:"Douglas",email:"—",status:"No email",resend:""}
 ];
 
 const tbody = document.getElementById('rows');
