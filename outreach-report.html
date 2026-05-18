@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DS Studios — Outreach Report (Private)</title>
+<style>
+  :root {
+    --bg: #f5f3ef;
+    --card: #fffcf7;
+    --accent: #2a5c7a;
+    --green: #2e7d32;
+    --orange: #e65100;
+    --red: #c62828;
+    --gray: #757575;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: #1a1a1a;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin: 0 0 4px;
+    color: var(--accent);
+  }
+  .subtitle {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  .stats {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  .stat-card {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 14px 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.08);
+    flex: 1;
+    min-width: 100px;
+  }
+  .stat-card .num {
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+  }
+  .stat-card .label {
+    font-size: 0.8rem;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+  .stat-card.green .num { color: var(--green); }
+  .stat-card.orange .num { color: var(--orange); }
+  .stat-card.red .num { color: var(--red); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,.08);
+  }
+  th {
+    text-align: left;
+    padding: 10px 12px;
+    background: var(--accent);
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+  td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+    vertical-align: top;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:hover { background: #f9f6f0; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .badge.sent { background: #e8f5e9; color: var(--green); }
+  .badge.skip { background: #fff3e0; color: var(--orange); }
+  .badge.warn { background: #ffebee; color: var(--red); }
+  .score { font-weight: 600; }
+  .email { color: var(--accent); font-size: 0.82rem; word-break: break-all; }
+  .footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--gray);
+  }
+  .note {
+    background: #fff8e1;
+    border-left: 3px solid #ffa000;
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 16px;
+    font-size: 0.85rem;
+    color: #333;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>DS Studios — Site Report Outreach</h1>
+<p class="subtitle">West of Ireland batch • Generated 18 May 2026</p>
+
+<div class="note">
+  <strong>⚠️ Private monitoring page.</strong>
+  50 lowest-scoring businesses targeted from Westport, Castlebar, Galway &amp; Sligo (scores 22–100).
+  Emails sent <strong>from</strong> <code>audit@sitescorereports.info</code> via Resend.
+  From name: <em>Site Reports by DS Studios</em>.
+  Reply-To: <code>dscullywebdesign@gmail.com</code>.
+</div>
+
+<div class="stats">
+  <div class="stat-card green">
+    <span class="num">44</span>
+    <span class="label">Sent</span>
+  </div>
+  <div class="stat-card orange">
+    <span class="num">4</span>
+    <span class="label">Skipped (dead)</span>
+  </div>
+  <div class="stat-card red">
+    <span class="num">2</span>
+    <span class="label">No Email Found</span>
+  </div>
+  <div class="stat-card">
+    <span class="num">50</span>
+    <span class="label">Targeted</span>
+  </div>
+</div>
+
+<table>
+<thead>
+<tr>
+  <th>#</th>
+  <th>Score</th>
+  <th>Business</th>
+  <th>Location</th>
+  <th>Email</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody id="rows">
+</tbody>
+</table>
+
+<div class="footer">
+  DS Studios • Private outreach tracking • Contact David at dscullywebdesign@gmail.com
+</div>
+
+</div>
+
+<script>
+const data = [
+  {score:22,name:"Westport Heights Hotel",loc:"Westport",email:"info@westporthotelgroup.ie",status:"Sent",resend:"b3592f1d-7013-40bd-96ef-3f1be856c7e4"},
+  {score:34,name:"Hotel Westport",loc:"Westport",email:"reservations@hotelwestport.ie",status:"Sent",resend:"ef955ada-81e9-4d6f-9c58-9c473e862e70"},
+  {score:39,name:"Ard Bia at Nimmos Galway",loc:"Galway",email:"ardbiagalway@gmail.com",status:"Sent",resend:"2f4ebbb9-ac09-46d3-bd2d-bc0b881f9cdf"},
+  {score:41,name:"The White Hag Brewing Sligo",loc:"Sligo",email:"bob@thewhitehag.com",status:"Sent",resend:"099b572d-2b73-485d-8fda-120c190c98a8"},
+  {score:42,name:"Le Chéile Westport",loc:"Westport",email:"caroldoyle@lecheile.ie",status:"Sent",resend:"a74fde5c-7056-4516-a54b-b55a19d19209"},
+  {score:44,name:"Clarke's Pharmacy Sligo",loc:"Sligo",email:"clarkes.kilcolgan@healthmail.ie",status:"Sent",resend:"fc963d7b-a500-4d08-9a1d-37e2a3ee76d9"},
+  {score:45,name:"Morton's Galway",loc:"Galway",email:"info@mortons.ie",status:"Sent",resend:"a0010e95-8e90-49f6-b6e3-fc975bb57cce"},
+  {score:47,name:"Brennan's Pharmacy Sligo",loc:"Sligo",email:"brennans.pharmacy@healthmail.ie",status:"Sent",resend:"2f3c3dea-a3f6-4e4b-8b94-32cdb7718f9b"},
+  {score:48,name:"Model Niland Gallery Sligo",loc:"Sligo",email:"info@themodel.ie",status:"Sent",resend:"63c1dec0-72aa-4b73-bdc7-f3edf9f5c2be"},
+  {score:50,name:"The Linenhall Arts Centre",loc:"Castlebar",email:"info@linenhall.com",status:"Sent",resend:"19b90b4e-9bce-4961-a03c-dc3e326ca0b1"},
+  {score:52,name:"JJ O'Malley's Westport",loc:"Westport",email:"info@jjomalleys.com",status:"Sent",resend:"9dd8dd30-17b0-4693-bd53-f87e9d54c28e"},
+  {score:54,name:"Charlie Byrne's Bookshop Galway",loc:"Galway",email:"info@charliebyrne.ie",status:"Sent",resend:"6860f7fa-f726-4d52-b425-e71d34d1b8b0"},
+  {score:54,name:"Connolly's Pharmacy Sligo",loc:"Sligo",email:"conpharm1@gmail.com",status:"Sent",resend:"527db2b7-c71a-47ce-91c7-23137d7c0b2b"},
+  {score:56,name:"Flipside Sligo",loc:"Sligo",email:"hello@flipside.ie",status:"Sent",resend:"30bdc27d-3019-4e3d-a287-7ece4b5ac79e"},
+  {score:57,name:"Belleek Pottery Sligo",loc:"Sligo",email:"takethetour@belleek.ie",status:"Sent",resend:"88be3696-660e-45ba-8ee8-e0debc23d6c5"},
+  {score:58,name:"Arch Bar Castlebar",loc:"Castlebar",email:"thearchbar66@gmail.com",status:"Sent",resend:"90fe8f68-4a69-4a3e-ada6-69713d6a5cb4"},
+  {score:58,name:"Handsome Burger Galway",loc:"Galway",email:"hello@handsomeburger.com",status:"Sent",resend:"55ee7a13-cbb8-440d-9263-6e60ee6b2a43"},
+  {score:59,name:"Kelly's Kitchen Westport",loc:"Westport",email:"info@kellyskitchen.ie",status:"Sent",resend:"0a6a7d9b-7ca1-4955-949e-5a14220adb90"},
+  {score:59,name:"Hargadons Pub Sligo",loc:"Sligo",email:"eat@hargadons.com",status:"Sent",resend:"8d2f3f14-808e-4075-ab82-75237afb69cc"},
+  {score:60,name:"Elmwood Coffee Castlebar",loc:"Castlebar",email:"elmwood@elmwood.ie",status:"Sent",resend:"b6f401b4-8ca6-44e8-be50-ee9128140189"},
+  {score:60,name:"The Diamond Coast Hotel",loc:"Sligo",email:"info@diamondcoast.ie",status:"Sent",resend:"e3b507d2-04a4-45b1-81e3-40dd53d75dee"},
+  {score:61,name:"Sage Restaurant Westport",loc:"Westport",email:"sagewestport@yahoo.ie",status:"Sent",resend:"467bae41-7eeb-4485-a008-dfc27972e8df"},
+  {score:62,name:"Dempsey's Pharmacy Castlebar",loc:"Castlebar",email:"dempseys@allcarepharmacy.ie",status:"Sent",resend:"f25ce7ea-9fff-4a35-907a-c83742073b0c"},
+  {score:63,name:"Sheridan's Cheesemongers Galway",loc:"Galway",email:"info@sheridans.ie",status:"Sent",resend:"84f8673a-a8e8-4dc4-89f2-9419279bb23d"},
+  {score:64,name:"Jenny's Boutique Westport",loc:"Westport",email:"customerservice@jennys.ie",status:"Sent",resend:"45e902f0-a273-402f-8de3-08eb01ea935d"},
+  {score:64,name:"Salthill Hotel",loc:"Galway",email:"info@salthillhotel.com",status:"Sent",resend:"9b0ffc40-d54b-44a4-95ff-2d0257bcdb74"},
+  {score:66,name:"Eclectic Store Westport",loc:"Westport",email:"info@eclectic.ie",status:"Sent",resend:"57d138d7-87b3-4e54-a100-5674820aff70"},
+  {score:66,name:"Kelly's Pharmacy Westport",loc:"Westport",email:"info@kellyspharmacy.ie",status:"Sent",resend:"2398087c-bddc-4c47-8357-c535d88b0e13"},
+  {score:66,name:"The Hardiman Hotel",loc:"Galway",email:"info@thehardiman.ie",status:"Sent",resend:"ba2651a8-5bd1-4235-a9f3-237219809d42"},
+  {score:68,name:"Cuisine de France Galway",loc:"Galway",email:"myhr@aryzta.com",status:"Sent",resend:"4f588daa-5182-4aa3-bc98-96fcf1051f3a"},
+  {score:69,name:"McCambridge's Galway",loc:"Galway",email:"sales@mccambridges.com",status:"Sent",resend:"3f4d6b23-dff0-46af-9f2e-074d0468a4cf"},
+  {score:69,name:"Thomas Moran's Pharmacy Galway",loc:"Galway",email:"moransonline23@gmail.com",status:"Sent",resend:"2ab6d29d-6cf9-43ae-ac94-91b63f531fb9"},
+  {score:70,name:"Oranmore Lodge Hotel",loc:"Galway",email:"info@oranmorelodge.ie",status:"Sent",resend:"e183a838-10d8-4e4a-97df-02a864b3e873"},
+  {score:71,name:"The Helm Restaurant Westport",loc:"Westport",email:"thehelmwestport@gmail.com",status:"Sent",resend:"2dbbd749-49d4-4ce1-bc6f-060a36df8189"},
+  {score:72,name:"Westport House",loc:"Westport",email:"info@westportestate.ie",status:"Sent",resend:"d047e4e2-3db2-4861-a330-6adfbcf506d1"},
+  {score:72,name:"The Wyatt Hotel",loc:"Westport",email:"info@wyatthotel.com",status:"Sent",resend:"b41abc42-ec7f-48b5-9a82-6c879211fcb3"},
+  {score:73,name:"Conways Pharmacy Castlebar",loc:"Castlebar",email:"conways.whitehall@healthmail.ie",status:"Sent",resend:"029214be-55d1-449f-89f0-008febf43f22"},
+  {score:74,name:"Swan Bar Castlebar",loc:"Castlebar",email:"swanbarcarrick@gmail.com",status:"Sent",resend:"619b2676-5dee-45e8-b83c-c3d7ed0c41fd"},
+  {score:74,name:"The g Hotel",loc:"Galway",email:"ghotel_spa@leonardohotels.com",status:"Sent",resend:"02e5d876-38f7-423e-9796-4f6b7c6b06e9"},
+  {score:76,name:"The House Hotel",loc:"Galway",email:"info@thehousehotel.ie",status:"Sent",resend:"fd963b0f-e314-4c1c-b21b-b8ed3d6c55e3"},
+  {score:77,name:"Cawleys Gift Shop Castlebar",loc:"Castlebar",email:"colette.cawley@cawleys.ie",status:"Sent",resend:"874faa82-5853-4d92-a916-85aefe616a4f"},
+  {score:79,name:"Castlecourt Hotel",loc:"Westport",email:"info@castlecourthotel.ie",status:"Sent",resend:"f2bdebc4-7fe0-45b1-aabb-8a7ec1455fba"},
+  {score:58,name:"Mews Restaurant Westport",loc:"Westport",email:"info@mewsrestaurant.ie",status:"Skipped (timeout)",resend:""},
+  {score:58,name:"Sam's Bar Castlebar",loc:"Castlebar",email:"info@samsbar.ie",status:"Skipped (timeout)",resend:""},
+  {score:63,name:"Galmont Hotel & Spa",loc:"Galway",email:"reservations@thegalmont.com",status:"Skipped (HTTP 410)",resend:""},
+  {score:71,name:"Radisson Blu Hotel & Spa Sligo",loc:"Sligo",email:"info.sligo@radissonblu.com",status:"Skipped (HTTP 403)",resend:""},
+  {score:55,name:"The Dough Bros Galway",loc:"Galway",email:"—",status:"No email",resend:""},
+  {score:56,name:"Sligo Art Gallery",loc:"Sligo",email:"—",status:"No email",resend:""}
+];
+
+const tbody = document.getElementById('rows');
+data.sort((a,b) => a.score - b.score || a.name.localeCompare(b.name));
+data.forEach((r, i) => {
+  const tr = document.createElement('tr');
+  let badgeClass = 'sent';
+  let badgeText = 'Sent';
+  if (r.status.startsWith('Skip') || r.status.startsWith('Skipped')) {
+    badgeClass = 'skip';
+    badgeText = 'Skipped';
+    if (r.status.includes('403')) badgeText = 'Blocked';
+    if (r.status.includes('410')) badgeText = 'Gone';
+    if (r.status.includes('timeout')) badgeText = 'Timeout';
+  } else if (r.status === 'No email') {
+    badgeClass = 'warn';
+    badgeText = 'No Email';
+  }
+  tr.innerHTML = `
+    <td>${i+1}</td>
+    <td class="score">${r.score}</td>
+    <td>${r.name}</td>
+    <td>${r.loc}</td>
+    <td class="email">${r.email}</td>
+    <td><span class="badge ${badgeClass}">${badgeText}</span></td>
+  `;
+  tbody.appendChild(tr);
+});
+</script>
+</body>
+</html>
