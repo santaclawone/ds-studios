@@ -78,6 +78,8 @@ body{font-family:'Inter',-apple-system,sans-serif;background:#0d1117;color:#e6ed
     <button class="nav-btn" id="prevBtn">←</button>
     <div class="dots" id="dots"></div>
     <button class="nav-btn" id="nextBtn">→</button>
+    <button class="nav-btn" id="emailBtn" title="Copy Email" style="font-size:11px;width:auto;padding:0 12px;border-radius:20px;background:#1e3a2e;border-color:#2ea043;">📋 Email</button>
+    <button class="nav-btn" id="openBtn" title="Open Site / Search" style="font-size:11px;width:auto;padding:0 10px;border-radius:20px;">🔗 Site</button>
   </div>
 </div>
 
@@ -289,7 +291,7 @@ const HUNTER_DATA = [
     "id": 10,
     "business": "Flanagan's Pub",
     "type": "Pub",
-    "url": "http://www.flanaganspub.ie",
+    "url": null,
     "location": "Claremorris",
     "score": 0,
     "design": "Website does not resolve (DNS failure).",
@@ -309,7 +311,7 @@ const HUNTER_DATA = [
     "id": 11,
     "business": "McCallig Bros",
     "type": "Hardware Store / DIY Wholesalers",
-    "url": "No website found",
+    "url": null,
     "location": "Claremorris",
     "score": 0,
     "design": "No website - only directory listings (Yelp, GoldenPages, Construction Ireland).",
@@ -328,7 +330,7 @@ const HUNTER_DATA = [
     "id": 12,
     "business": "The Square Cafe",
     "type": "Cafe",
-    "url": "No website found",
+    "url": null,
     "location": "Claremorris",
     "score": 0,
     "design": "No website - Facebook page only.",
@@ -2180,6 +2182,45 @@ function buildHunterCard(data) {
   return h;
 }
 
+
+// ===== EMAIL GENERATION =====
+function generateEmail(d) {
+  const name = d.business;
+  const loc = d.location;
+  const score = d.score;
+
+  if (score === 0) {
+    const subject = encodeURIComponent(name + ' \u2014 Noticed you don\'t have a website yet');
+    const body = encodeURIComponent(
+      'Hi there,\n\n' +
+      'I was looking at businesses in ' + loc + ' and noticed ' + name + ' doesn\'t have a website yet. In 2026, that means you\'re invisible to most of your potential customers \u2014 especially visitors and new residents who search online first.\n\n' +
+      'We\'re taking on 5 new clients this month at DS Studios, and I think you\'d be a great fit. We build simple, beautiful websites that actually work for local businesses \u2014 not over-engineered nonsense.\n\n' +
+      'Would you be open to a quick chat about what a website could do for ' + name + '?\n\n' +
+      'Best,\nDavid Scully\nDS Studios\nhttps://dsstudios.ie'
+    );
+    return { subject: decodeURIComponent(subject), body: decodeURIComponent(body) };
+  }
+
+  // Has website
+  var issues = [];
+  if (d.tech.length) issues.push('Technical: ' + d.tech.join(', '));
+  if (d.visual.length) issues.push('Visual: ' + d.visual.slice(0, 2).join(', '));
+  if (d.bizGaps.length) issues.push('Business: ' + d.bizGaps.slice(0, 2).join(', '));
+  var issueSummary = issues.slice(0, 2).join(' | ');
+  var site = d.url ? d.url.replace(/^https?:\/\//, '') : 'their site';
+
+  var subject = encodeURIComponent(name + ' \u2014 Quick site audit, score ' + score + '/100');
+  var body = encodeURIComponent(
+    'Hi there,\n\n' +
+    'I was taking a look at ' + site + ' recently and ran a quick audit. It scored ' + score + '/100. Here are a few things I noticed:\n\n' +
+    issueSummary + '\n\n' +
+    'We\'re taking on 5 new clients this month at DS Studios and offering free consultations to local businesses. Happy to walk through what I found and show you what a top-scoring site looks like.\n\n' +
+    'Worth 10 minutes?\n\n' +
+    'Best,\nDavid Scully\nDS Studios\nhttps://dsstudios.ie'
+  );
+  return { subject: decodeURIComponent(subject), body: decodeURIComponent(body) };
+}
+
 // ===== INIT =====
 (function(){
   const all = HUNTER_DATA;
@@ -2259,6 +2300,40 @@ function buildHunterCard(data) {
 
   update();
 })();
+
+  // Email copy button
+  document.getElementById('emailBtn').addEventListener('click', function() {
+    var d = all[cur];
+    var email = generateEmail(d);
+    navigator.clipboard.writeText(email.body).then(function() {
+      showToast('\u2709 Email copied for ' + d.business);
+    }).catch(function() {
+      var mailto = 'mailto:?subject=' + encodeURIComponent(email.subject) + '&body=' + encodeURIComponent(email.body);
+      window.open(mailto, '_blank');
+    });
+  });
+
+  // Open site / search button
+  document.getElementById('openBtn').addEventListener('click', function() {
+    var d = all[cur];
+    if (d.score > 0 && d.url && d.url.indexOf('http') === 0) {
+      window.open(d.url, '_blank');
+    } else {
+      window.open('https://google.com/search?q=' + encodeURIComponent(d.business + ' ' + d.location), '_blank');
+    }
+  });
+
+  // Toast notification
+  var toastEl = document.createElement('div');
+  toastEl.id = 'toast';
+  toastEl.style.cssText = 'position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:#1f2937;color:#e6edf3;padding:8px 18px;border-radius:20px;font-size:12px;font-weight:600;border:1px solid #30363d;opacity:0;transition:opacity .3s;z-index:999;pointer-events:none;white-space:nowrap';
+  document.body.appendChild(toastEl);
+  function showToast(msg) {
+    toastEl.textContent = msg;
+    toastEl.style.opacity = '1';
+    setTimeout(function() { toastEl.style.opacity = '0'; }, 2000);
+  }
+
 </script>
 </body>
 </html>
