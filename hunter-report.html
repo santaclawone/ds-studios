@@ -84,148 +84,2018 @@ body{font-family:'Inter',-apple-system,sans-serif;background:#0d1117;color:#e6ed
 <script>
 const HUNTER_DATA = [
   {
-    "business": "Merricks Hardware",
-    "type": "Hardware Store",
-    "url": "https://merrickshardware.ie",
-    "location": "Ballina",
-    "score": 45,
-    "design": "Extremely minimal — homepage only shows 'Free Delivery On Orders Over €100' and 'Frenchic Approved Stockists'. Almost no design.",
-    "tech": ["Domain merrickshardware.com is dead", "Extremely sparse homepage — essentially no content", "No product catalog or categories displayed"],
-    "visual": ["Bare-bones layout, no photography or branding"],
-    "business": ["No contact details visible on homepage", "No product catalog", "No e-commerce capability", "No opening hours listed"],
-    "notes": "Sells paint (Frenchic), delivers nationwide, but website is a placeholder. Address: Killala Rd, Ballina. Phone: (096) 21313. Major improvement opportunity."
-  },
-  {
+    "id": 1,
     "business": "Dillons Bar & Restaurant",
     "type": "Bar & Restaurant",
     "url": "https://dillonsballina.ie",
     "location": "Ballina",
     "score": 50,
-    "design": "Basic WordPress site with minimal homepage content. No menu or pricing shown on home.",
-    "tech": ["Domain dillonsbarandrestaurant.com is dead", "Very sparse text suggests thin content"],
-    "visual": ["No imagery/photos extracted from homepage", "Very bare layout"],
-    "business": ["No menu or prices visible on homepage", "Missing direct online booking (uses OpenTable)", "Phone/email not prominently displayed"],
-    "notes": "Has a real website — good starting point but desperately needs more content, photography, and a proper menu display."
+    "design": "Basic WordPress site with minimal homepage content. No inline menu or pricing shown on home.",
+    "tech": [
+      "Original domain dillonsbarandrestaurant.com is dead/not resolving",
+      "Very sparse text extraction suggests thin content"
+    ],
+    "visual": [
+      "No imagery/photos extracted from homepage",
+      "Very bare layout"
+    ],
+    "bizGaps": [
+      "No menu or prices visible on homepage",
+      "Missing online booking direct (uses OpenTable instead)",
+      "Phone (096 72230) and email (dillonsballina@gmail.com) found via search but not prominently displayed on homepage"
+    ],
+    "notes": "Has a real website at dillonsballina.ie - good starting point but desperately needs more content, photography, and a proper menu display."
   },
   {
-    "business": "Cortoon Furniture",
-    "type": "Furniture Store",
-    "url": "https://cortoonfurniture.ie",
-    "location": "Ballina",
-    "score": 55,
-    "design": "Basic informational site with about-us content. Family-run since 1979. Separate contact page.",
-    "tech": ["Domain cortonfurniture.com is dead", "No e-commerce/online shopping", "Basic site with limited pages"],
-    "visual": ["No product imagery or gallery on homepage", "Text-heavy content"],
-    "business": ["No online catalog of products", "No prices displayed", "No online ordering capability"],
-    "notes": "Family-run furniture business since 1979. Contact: (096) 32219, cortoonfurnitureltd@gmail.com. Good candidate for website modernization with product catalog."
-  },
-  {
+    "id": 2,
     "business": "Downhill Inn Hotel",
     "type": "Hotel",
     "url": "https://www.downhillinn.ie",
     "location": "Ballina",
     "score": 65,
-    "design": "Standard hotel website with navigation to accommodation, location, offers. Has own booking engine.",
-    "tech": ["Domain downhillinnhotel.com is dead", "Site content quite thin on extracted text", "Appears to be an older site template"],
-    "visual": ["No gallery or visual content extracted from homepage"],
-    "business": ["No special offers or pricing clearly on homepage", "Booking goes to external subdomain"],
-    "notes": "Functional 3-star hotel site with online booking. Could improve with richer content, photo galleries, and more prominent contact details."
+    "design": "Standard hotel website with navigation to accommodation, location, and offers. Has own booking engine on secure.downhillinn.ie.",
+    "tech": [
+      "Original domain downhillinnhotel.com is dead/not resolving",
+      "Site content is quite thin on extracted text",
+      "Appears to be an older site template"
+    ],
+    "visual": [
+      "No gallery or visual content extracted from homepage"
+    ],
+    "bizGaps": [
+      "No special offers or pricing clearly displayed on homepage",
+      "Booking goes to external subdomain"
+    ],
+    "notes": "A functional 3-star hotel site with online booking. Could improve with richer content, photo galleries, and more prominent contact details. Family-run Ballina hotel."
   },
   {
-    "business": "Dalton Inn Hotel",
-    "type": "Hotel / Bar / Restaurant",
-    "url": "http://www.daltoninn.com",
-    "location": "Claremorris",
-    "score": 35,
-    "design": "Very old website — content could not be extracted (likely uses Flash, frames, or very outdated HTML).",
-    "tech": ["HTTP (no SSL on main domain)", "Content unreadable by modern extraction tools", "Likely outdated technology (Flash/frames)"],
-    "visual": ["Site content cannot be parsed — very dated visual design"],
-    "business": ["No extractable contact info from the site itself", "Phone 094 937 1111 (from Facebook)", "Facebook page is active"],
-    "notes": "Major candidate for website overhaul. Centrally located in Claremorris, near train station, 15min from Knock Shrine. Old Irish pub/hotel desperately needs digital modernization."
+    "id": 3,
+    "business": "Merricks Hardware",
+    "type": "Hardware Store",
+    "url": "https://merrickshardware.ie",
+    "location": "Ballina",
+    "score": 45,
+    "design": "Extremely minimal - homepage only shows 'Free Delivery On Orders Over €100' and 'Frenchic Approved Stockists'. Almost no design.",
+    "tech": [
+      "Original domain merrickshardware.com is dead/not resolving",
+      "Extremely sparse homepage - essentially no content",
+      "No product catalog or categories displayed"
+    ],
+    "visual": [
+      "Bare-bones layout, no photography or branding"
+    ],
+    "bizGaps": [
+      "No contact details visible on homepage",
+      "No product catalog",
+      "No e-commerce capability",
+      "No opening hours listed"
+    ],
+    "notes": "Sells paint (Frenchic), delivers nationwide, but the website is essentially a placeholder. Address: Killala Rd, Ballina. Phone: (096) 21313. Email: merrickshardware@hotmail.com. Major opportunity for improvement."
   },
   {
-    "business": "La Casa Tapas & Wine",
-    "type": "Tapas Restaurant",
-    "url": "https://www.lacasatapas.ie",
-    "location": "Claremorris",
-    "score": 50,
-    "design": "Site exists but very minimal content — primarily 'Call & Collect' notice. Designed by Studio26.",
-    "tech": ["Very thin content on homepage", "May rely heavily on JavaScript/images not captured"],
-    "visual": ["No menu, hours, or interior photos visible"],
-    "business": ["Phone: 087 440 5546 — no booking system visible", "No menu displayed", "No opening hours found"],
-    "notes": "New Spanish tapas restaurant in Claremorris. Website was professionally designed but doesn't surface enough content. Needs menu, reservation system, and pricing."
+    "id": 4,
+    "business": "Cortoon Furniture",
+    "type": "Furniture Store",
+    "url": "https://cortoonfurniture.ie",
+    "location": "Ballina",
+    "score": 55,
+    "design": "Basic informational site with about-us content. Family-run since 1979. Has separate contact page.",
+    "tech": [
+      "Original domain cortonfurniture.com (note: 'corton' not 'cortoon') is dead/not resolving",
+      "No e-commerce/online shopping",
+      "Site is quite basic with limited pages"
+    ],
+    "visual": [
+      "No product imagery or gallery on homepage",
+      "Text-heavy content"
+    ],
+    "bizGaps": [
+      "No online catalog of products",
+      "No prices displayed",
+      "No online ordering capability"
+    ],
+    "notes": "Family-run furniture business since 1979. Contact: (096) 32219, cortoonfurnitureltd@gmail.com. Address: Unit 9 & 10 Abbey Business Park, Ballina. Good candidate for website modernization with product catalog."
   },
   {
-    "business": "The Food Store",
-    "type": "Grocery / Deli / Butchery / Bakery",
-    "url": "https://thefoodstore.ie",
-    "location": "Claremorris",
-    "score": 65,
-    "design": "Clean Elementor/WordPress site with clear navigation (Home, About, Hampers & Gift Cards, Cakes). Good imagery.",
-    "tech": ["Elementor site — good modern tech stack", "Uses cookies / Privacy Policy required for GDPR"],
-    "visual": ["No major visual issues"],
-    "business": ["No e-commerce for grocery ordering", "Gift cards in-store only, not online purchase", "Contact: (094) 936 2091, info@thefoodstore.ie"],
-    "notes": "Great local business with a solid web presence. Family-run 30+ years. Opportunity: add online ordering or click-and-collect."
-  },
-  {
-    "business": "Olive's Seoul Food",
-    "type": "Korean Food / Restaurant",
-    "url": "https://olivesseoulfood.com",
-    "location": "Claremorris",
-    "score": 70,
-    "design": "Modern WooCommerce site with full product listings, restaurant info, story/bio, social links. Rich content.",
-    "tech": ["WooCommerce — good e-commerce setup", "HTTPS working fine"],
-    "visual": ["Some duplicated content (Kimchi description repeated)"],
-    "business": ["Products show USD pricing instead of EUR (potential issue for Irish customers)", "Open Wed-Sun 12:30-9pm, brunch 12:30-3pm"],
-    "notes": "Best content/storytelling of any site audited. Authentic Korean food made in Mayo, posted nationwide. Fix USD→EUR pricing."
-  },
-  {
+    "id": 5,
     "business": "The Old Arch",
     "type": "Bar & Bistro",
     "url": "https://www.oldarch.ie",
     "location": "Claremorris",
     "score": 75,
-    "design": "Modern, clean website with good typography. Online reservations, opening hours, social links (Facebook, Instagram).",
-    "tech": ["No SSL issues detected (HTTPS working)", "Site loads well, good readability"],
-    "visual": ["No major visual issues — clean layout"],
-    "business": ["Menu not visible in extracted content", "Contact: James Street, Claremorris, info@oldarch.ie, 094 936 2777"],
-    "notes": "Best-designed site in this audit. Has online reservations, clear hours, social presence. Minor improvements: display menu directly on site."
+    "design": "Modern, clean website with good typography. Clear navigation, online reservations, opening hours displayed, social links (Facebook, Instagram).",
+    "tech": [
+      "No SSL issues detected (HTTPS working)",
+      "Site loads well, good readability extraction"
+    ],
+    "visual": [
+      "No major visual issues - clean layout"
+    ],
+    "bizGaps": [
+      "Menu not visible in extracted content",
+      "Contact info present: James Street, Claremorris, info@oldarch.ie, 094 936 2777"
+    ],
+    "notes": "Best-designed site in this audit. Has online reservations, clear hours, social presence, and good local branding. Minor improvements: display menu directly on site."
   },
   {
+    "id": 6,
+    "business": "The Food Store",
+    "type": "Grocery/Deli/Butchery/Bakery",
+    "url": "https://thefoodstore.ie",
+    "location": "Claremorris",
+    "score": 65,
+    "design": "Clean Elementor/WordPress site with clear navigation (Home, About, Hampers & Gift Cards, Cakes). Good use of imagery and branding.",
+    "tech": [
+      "Elementor site - good modern tech stack",
+      "Uses cookies/Privacy Policy required for GDPR"
+    ],
+    "visual": [
+      "No major visual issues"
+    ],
+    "bizGaps": [
+      "No e-commerce for grocery ordering",
+      "Gift cards in-store only, not online purchase",
+      "Contact: (094) 936 2091, info@thefoodstore.ie, open Mon-Sat"
+    ],
+    "notes": "Great local business with a solid web presence. Family-run 30+ years. Opportunity: add online ordering or click-and-collect. Claremorris's best food shop."
+  },
+  {
+    "id": 7,
+    "business": "Olive's Seoul Food",
+    "type": "Korean Food/Restaurant",
+    "url": "https://olivesseoulfood.com",
+    "location": "Claremorris",
+    "score": 70,
+    "design": "Modern WooCommerce site with full product listings, restaurant info, story/bio, and social links. Rich content and good storytelling.",
+    "tech": [
+      "WooCommerce - good e-commerce setup",
+      "HTTPS working fine"
+    ],
+    "visual": [
+      "Some duplicated content (Kimchi description repeated)"
+    ],
+    "bizGaps": [
+      "Products show USD pricing instead of EUR (potential issue for Irish customers)",
+      "Restaurant open Wed-Sun 12:30-9pm, brunch 12:30-3pm"
+    ],
+    "notes": "Best content/storytelling of any site audited. Authentic Korean food made in Mayo, postal nationwide. Strong brand potential. Fix USD→EUR pricing."
+  },
+  {
+    "id": 8,
+    "business": "La Casa Tapas & Wine",
+    "type": "Tapas Restaurant",
+    "url": "https://www.lacasatapas.ie",
+    "location": "Claremorris",
+    "score": 50,
+    "design": "Site exists but very minimal content extracted - primarily shows 'Call & Collect' service notice. Designed by Studio26.",
+    "tech": [
+      "Very thin content on homepage",
+      "Site may rely heavily on JavaScript/images not captured by extraction"
+    ],
+    "visual": [
+      "No menu, hours, or interior photos visible in extracted text"
+    ],
+    "bizGaps": [
+      "Phone: 087 440 5546 - no booking system visible in extracted content",
+      "No menu displayed",
+      "No opening hours found"
+    ],
+    "notes": "New Spanish tapas restaurant in Claremorris. Website was professionally designed but doesn't surface enough content. Needs menu, reservation system, and pricing."
+  },
+  {
+    "id": 9,
+    "business": "Dalton Inn Hotel",
+    "type": "Hotel/Bar/Restaurant",
+    "url": "http://www.daltoninn.com",
+    "location": "Claremorris",
+    "score": 35,
+    "design": "Very old website - content could not be extracted (likely uses Flash, frames, or very outdated HTML).",
+    "tech": [
+      "HTTP (no SSL on main domain)",
+      "Content unreadable by modern extraction tools",
+      "Likely uses outdated technology (Flash/frames)"
+    ],
+    "visual": [
+      "Site content cannot be parsed - likely very dated visual design"
+    ],
+    "bizGaps": [
+      "No extractable contact info from the site itself",
+      "Phone 094 937 1111 (from FB)",
+      "Facebook page is active"
+    ],
+    "notes": "Major candidate for website overhaul. Centrally located in Claremorris, near train station, 15min from Knock Shrine. An old Irish pub/hotel that desperately needs digital modernization."
+  },
+  {
+    "id": 10,
     "business": "Flanagan's Pub",
     "type": "Pub",
-    "url": null,
+    "url": "http://www.flanaganspub.ie",
     "location": "Claremorris",
     "score": 0,
-    "design": "No website — domain does not resolve.",
-    "tech": ["Domain flanaganspub.ie does not resolve (ENOTFOUND)", "No website at all"],
-    "visual": ["N/A"],
-    "business": ["Highly rated pub (5.0 on Yelp) with zero digital presence", "Phone: (094) 938 0101", "Located in Brickens, Claremorris area"],
-    "notes": "Perfect candidate for a simple website build. 5.0 rating on Yelp — strong reputation, zero website."
+    "design": "Website does not resolve (DNS failure).",
+    "tech": [
+      "Domain www.flanaganspub.ie does not resolve (ENOTFOUND)",
+      "No website at all"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "No website - listed on Yelp only",
+      "Phone: (094) 938 0101 (from Yelp)",
+      "Located in Brickens, Claremorris area"
+    ],
+    "notes": "Highly rated pub (5.0 on Yelp) but has zero digital presence. Perfect candidate for a simple website build."
   },
   {
+    "id": 11,
     "business": "McCallig Bros",
-    "type": "Hardware / DIY Wholesalers",
-    "url": null,
+    "type": "Hardware Store / DIY Wholesalers",
+    "url": "No website found",
     "location": "Claremorris",
     "score": 0,
-    "design": "No website — directory listings only (Yelp, GoldenPages).",
-    "tech": ["No website exists — only third-party directory pages"],
-    "visual": ["N/A"],
-    "business": ["Phone: (094) 937 1079", "Address: Mount Street, Claremorris", "No email or website found"],
-    "notes": "Long-established hardware/D.I.Y. store in Claremorris. No digital presence at all — ideal for a simple business website."
+    "design": "No website - only directory listings (Yelp, GoldenPages, Construction Ireland).",
+    "tech": [
+      "No website exists - only third-party directory pages"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Phone: (094) 937 1079",
+      "Address: Mount Street, Claremorris",
+      "No email or website found"
+    ],
+    "notes": "Long-established hardware/D.I.Y. store in Claremorris. No digital presence at all - a perfect candidate for a simple business website."
   },
   {
+    "id": 12,
     "business": "The Square Cafe",
     "type": "Cafe",
-    "url": null,
+    "url": "No website found",
     "location": "Claremorris",
     "score": 0,
-    "design": "No website — Facebook page only.",
-    "tech": ["No standalone website"],
-    "visual": ["N/A"],
-    "business": ["Facebook-only presence", "TripAdvisor listed", "Located in Claremorris town centre", "Serves breakfast & lunch, closed Tuesdays"],
+    "design": "No website - Facebook page only.",
+    "tech": [
+      "No standalone website"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Facebook-only presence",
+      "TripAdvisor listed",
+      "Located in Claremorris town centre",
+      "Serves breakfast & lunch, closed Tuesdays"
+    ],
     "notes": "Popular cafe with good TripAdvisor reviews but no website. Ideal for a simple landing page with menu and opening hours."
+  },
+  {
+    "id": 13,
+    "business": "Galway Plumbing Solutions",
+    "type": "Plumbing & Heating",
+    "url": "https://www.galwayplumbingsolutions.ie",
+    "location": "Galway (Roscam)",
+    "score": 45,
+    "design": "Basic single-page style, limited text, cookie consent notice dominant",
+    "tech": [
+      "Very thin content",
+      "Cookie notice without dismiss option is aggressive",
+      "No SSL indicators visible"
+    ],
+    "visual": [
+      "Bare layout with minimal imagery",
+      "No colour palette or brand presence beyond plain text"
+    ],
+    "bizGaps": [
+      "Outdated information — mentions affiliation but no fresh content",
+      "No Google Business integration visible",
+      "No testimonial or review section"
+    ],
+    "notes": "Rapid scan: Content is extremely sparse. Snippet suggests a cheap template with no customisation. Great candidate for a modern, professional trade site."
+  },
+  {
+    "id": 14,
+    "business": "EcoPlumbing Galway",
+    "type": "Plumbing & Heating",
+    "url": "https://www.ecopluminggalway.com",
+    "location": "Galway",
+    "score": 55,
+    "design": "Multi-page layout with service descriptions and review section. Content is thorough.",
+    "tech": [
+      "Domain name has typo — 'ecopluming' instead of 'ecoplumbing'",
+      "Generic Wix/Squarespace template feel"
+    ],
+    "visual": [
+      "Stock photography with no local imagery",
+      "Generic colour scheme — looks templated"
+    ],
+    "bizGaps": [
+      "Reviews look fabricated — multiple 5-star reviews with similar phrasing",
+      "No real-world images of work",
+      "Address/service area unclear"
+    ],
+    "notes": "Rapid scan: Decent content volume but templated look and suspicious reviews. Domain typo is a red flag."
+  },
+  {
+    "id": 15,
+    "business": "O'Reilly Heating & Plumbing",
+    "type": "Plumbing & Heating",
+    "url": "https://www.oreillyheatingandplumbing.ie",
+    "location": "Galway",
+    "score": 60,
+    "design": "Professional multi-service layout. Clear service categories.",
+    "tech": [
+      "Descriptive page titles suggest good SEO basics"
+    ],
+    "visual": [
+      "Likely template-based but well filled in",
+      "Standard colour scheme"
+    ],
+    "bizGaps": [
+      "No pricing listed",
+      "Contact details may not be prominent"
+    ],
+    "notes": "Rapid scan: Decent trade site. Already better than most competitors but still template-like."
+  },
+  {
+    "id": 16,
+    "business": "McCafferty Plumbing & Heating",
+    "type": "Plumbing & Heating",
+    "url": "https://www.mccaffertyplumbing.ie",
+    "location": "Mayo",
+    "score": 58,
+    "design": "Professional site with clear service descriptions, pricing mention",
+    "tech": [
+      "Generic template structure"
+    ],
+    "visual": [
+      "Plain design, no distinctive brand identity"
+    ],
+    "bizGaps": [
+      "Call-out charge mentioned but full pricing unclear"
+    ],
+    "notes": "Rapid scan: Solid basics but forgettable design. Good candidate for visual refresh."
+  },
+  {
+    "id": 17,
+    "business": "Dylan Murphy Plumbing & Heating",
+    "type": "Plumbing & Heating",
+    "url": "https://murphyplumbingmayo.com",
+    "location": "Mayo",
+    "score": 40,
+    "design": "Very simple, minimal content. Single-page style.",
+    "tech": [
+      "Very thin content extracted",
+      "Domain doesn't convey local identity strongly"
+    ],
+    "visual": [
+      "Minimal visual design evident",
+      "No imagery in extracted content"
+    ],
+    "bizGaps": [
+      "No contact info visible beyond general location",
+      "No reviews or social proof"
+    ],
+    "notes": "Rapid scan: Bare-bones site. Needs complete overhaul with modern design, photography, and service details."
+  },
+  {
+    "id": 18,
+    "business": "The Bread Basket",
+    "type": "Bakery & Restaurant",
+    "url": "https://www.thebreadbasket.ie",
+    "location": "Ballinasloe",
+    "score": 65,
+    "design": "Well-structured family-run bakery site with menu details and history",
+    "tech": [
+      "Cookie & privacy pages present",
+      "Standard template backend"
+    ],
+    "visual": [
+      "Template-based design",
+      "Generic colour scheme"
+    ],
+    "bizGaps": [
+      "Established 1995 — brand equity not fully reflected online",
+      "Online ordering / pre-order not mentioned"
+    ],
+    "notes": "Rapid scan: Decent existing site but looks outdated. Family-run business with long history — good candidate for modern refresh."
+  },
+  {
+    "id": 19,
+    "business": "Bistro 18",
+    "type": "Restaurant",
+    "url": "https://bistro18.ie",
+    "location": "Ballinasloe",
+    "score": 62,
+    "design": "Quirky bistro site with local charm",
+    "tech": [
+      "Basic WordPress/square site likely"
+    ],
+    "visual": [
+      "Limited photography",
+      "Template-based look"
+    ],
+    "bizGaps": [
+      "No online booking",
+      "Menu may not be online"
+    ],
+    "notes": "Rapid scan: Average small restaurant site. Could benefit from fresh photography and booking integration."
+  },
+  {
+    "id": 20,
+    "business": "Kariba's Restaurant & Coffee House",
+    "type": "Cafe & Restaurant",
+    "url": "https://karibas.ie",
+    "location": "Ballinasloe",
+    "score": 70,
+    "design": "Well-designed site with quirky personality, full menu pages, clear branding",
+    "tech": [
+      "PDF menu instead of web-native menu display"
+    ],
+    "visual": [
+      "Slightly cluttered design but distinctive personality"
+    ],
+    "bizGaps": [
+      "Hours shown as weather-dependent on Facebook — indicates website not primary info source"
+    ],
+    "notes": "Rapid scan: Actually a pretty good small biz site. Menu accessible via PDF. Strong personality but could be more functional."
+  },
+  {
+    "id": 21,
+    "business": "Osteria Italiana Da Simone",
+    "type": "Italian Restaurant",
+    "url": "https://osteriaitalianagalway.com",
+    "location": "Galway City",
+    "score": 72,
+    "design": "Modern Italian restaurant site. Clean, professional.",
+    "tech": [
+      "No obvious issues"
+    ],
+    "visual": [
+      "Standard fine-dining template"
+    ],
+    "bizGaps": [
+      "Social media linked, booking expected via phone"
+    ],
+    "notes": "Rapid scan: Already decent site. Not a priority for DS Studios outreach."
+  },
+  {
+    "id": 22,
+    "business": "The Chili Shack",
+    "type": "Restaurant",
+    "url": "https://thechilishack.ie",
+    "location": "Galway City",
+    "score": 55,
+    "design": "Simple food business site. American-style fast casual.",
+    "tech": [
+      "Domain matches brand"
+    ],
+    "visual": [
+      "Very basic design",
+      "Limited branding"
+    ],
+    "bizGaps": [
+      "Chains/fast casual — less likely to invest in full redesign"
+    ],
+    "notes": "Rapid scan: Basic but functional. Volume-oriented business."
+  },
+  {
+    "id": 23,
+    "business": "Gemelle's Restaurant",
+    "type": "Restaurant",
+    "url": "https://www.gemelles.com",
+    "location": "Galway City (Quay St)",
+    "score": 75,
+    "design": "Good Galway restaurant site with professional feel",
+    "tech": [
+      "No major issues visible"
+    ],
+    "visual": [
+      [
+        "Standard restaurant design",
+        "Professional but not standout"
+      ]
+    ],
+    "bizGaps": [
+      [
+        "Well-established — may not need redesign",
+        "Phone reservation primary"
+      ]
+    ],
+    "notes": "Rapid scan: Decent site, not a priority lead."
+  },
+  {
+    "id": 24,
+    "business": "Khow Thai Restaurant",
+    "type": "Thai Restaurant",
+    "url": "https://khowthai.ie",
+    "location": "Galway City",
+    "score": 65,
+    "design": "Professional restaurant site with clear menu and contact info",
+    "tech": [
+      "Standard template structure",
+      "No online ordering despite being takeaway"
+    ],
+    "visual": [
+      [
+        "Decent imagery",
+        "Could be more vibrant for Thai cuisine"
+      ]
+    ],
+    "bizGaps": [
+      [
+        "Takeaway offered but no online ordering",
+        "Competition from JustEat/Deliveroo"
+      ]
+    ],
+    "notes": "Rapid scan: Solid base. Missing online ordering is a big gap."
+  },
+  {
+    "id": 25,
+    "business": "The Huntsman Inn",
+    "type": "Hotel, Bar & Restaurant",
+    "url": "https://huntsmaninn.com",
+    "location": "Galway City",
+    "score": 68,
+    "design": "Family-run hotel/bar/restaurant site",
+    "tech": [
+      [
+        "Boutique hotel booking likely through third-party",
+        "No obvious issues"
+      ]
+    ],
+    "visual": [
+      [
+        "Standard hotel template",
+        "Could showcase personality better"
+      ]
+    ],
+    "bizGaps": [
+      [
+        "13-room hotel — small operation",
+        "Social media active"
+      ]
+    ],
+    "notes": "Rapid scan: Decent small hotel site. Personality could be stronger."
+  },
+  {
+    "id": 26,
+    "business": "Kumar's Taste of Asia",
+    "type": "Indian Restaurant",
+    "url": "https://kumarstasteofasia.com",
+    "location": "Galway City",
+    "score": 60,
+    "design": "Standard Indian restaurant site",
+    "tech": [
+      [
+        "Generic domain name",
+        "Template-based"
+      ]
+    ],
+    "visual": [
+      [
+        "Outdated looking",
+        "Stock imagery likely"
+      ]
+    ],
+    "bizGaps": [
+      [
+        "Competitive Galway restaurant market",
+        "Phone booking only"
+      ]
+    ],
+    "notes": "Rapid scan: Needs modernisation. Good candidate for a design refresh."
+  },
+  {
+    "id": 27,
+    "business": "Lough Rea Hotel & Spa",
+    "type": "Hotel",
+    "url": "https://www.loughreahotelandspa.com",
+    "location": "Loughrea",
+    "score": 78,
+    "design": "Professional hotel site, part of Só Hotels group",
+    "tech": [
+      [
+        "Part of hotel group — likely good infrastructure"
+      ]
+    ],
+    "visual": [
+      [
+        "Polished but generic brand template for group"
+      ]
+    ],
+    "bizGaps": [
+      [
+        "Chain hotel — not independent, harder sell for DS Studios"
+      ]
+    ],
+    "notes": "Rapid scan: Corporate group site. Not a target for independent web design outreach."
+  },
+  {
+    "id": 28,
+    "business": "Meadow Court Hotel",
+    "type": "Hotel",
+    "url": "https://www.meadowcourthotel.com",
+    "location": "Loughrea",
+    "score": 72,
+    "design": "Family-run 4-star boutique hotel site",
+    "tech": [
+      [
+        "Direct booking feature",
+        "Multiple language support (Polish mentioned)"
+      ]
+    ],
+    "visual": [
+      [
+        "Good for a family-run hotel",
+        "Could be more modern"
+      ]
+    ],
+    "bizGaps": [
+      [
+        "Family-run since 1979 — loyal customer base",
+        "Direct booking encouraged"
+      ]
+    ],
+    "notes": "Rapid scan: Decent hotel site. Family-run, established brand."
+  },
+  {
+    "id": 29,
+    "business": "Faherty's Bar Oughterard",
+    "type": "Bar",
+    "url": "https://fahertysbaroughterard.com",
+    "location": "Oughterard",
+    "score": 60,
+    "design": "Local pub site with basic info",
+    "tech": [
+      [
+        "Long domain name",
+        "Basic template"
+      ]
+    ],
+    "visual": [
+      [
+        "Very basic design",
+        "No atmosphere conveyed"
+      ]
+    ],
+    "bizGaps": [
+      [
+        "No online presence beyond basic info",
+        "Hours and location only"
+      ]
+    ],
+    "notes": "Rapid scan: Needs a proper pub website with character, menu, and events."
+  },
+  {
+    "id": 30,
+    "business": "The Boat Inn",
+    "type": "Pub & Restaurant",
+    "url": "https://theboatinn.ie",
+    "location": "Oughterard",
+    "score": 65,
+    "design": "Local pub site with functional layout",
+    "tech": [
+      [
+        "Basic template"
+      ]
+    ],
+    "visual": [
+      [
+        "Plain design",
+        "Could showcase location better"
+      ]
+    ],
+    "bizGaps": [
+      [
+        "98% recommend on Facebook — great social proof",
+        "Menu not visible on website"
+      ]
+    ],
+    "notes": "Rapid scan: Well-liked pub but website doesn't reflect popularity."
+  },
+  {
+    "id": 31,
+    "business": "Currarevagh House",
+    "type": "Country House Hotel",
+    "url": "https://www.currarevagh.com",
+    "location": "Oughterard",
+    "score": 80,
+    "design": "High-end country house hotel site. Professional and elegant.",
+    "tech": [
+      [
+        "No major issues"
+      ]
+    ],
+    "visual": [
+      [
+        "Elegant but traditional design"
+      ]
+    ],
+    "bizGaps": [
+      [
+        "Premium property — likely already well-served",
+        "Longest running family hotel in Ireland — prestige"
+      ]
+    ],
+    "notes": "Rapid scan: Already excellent. Not a target."
+  },
+  {
+    "id": 32,
+    "business": "Coyles Coffee & Bakery",
+    "type": "Cafe",
+    "url": null,
+    "location": "Clifden",
+    "score": 0,
+    "design": "No website found",
+    "tech": [
+      "No website exists"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Located in An Post building on Clifden Square",
+      "Known for best coffee in Clifden with sourdough and sweet treats",
+      "No online menu or ordering"
+    ],
+    "notes": "Top-rated Clifden cafe with no website. Perfect DS Studios candidate — simple landing page with menu, location, and hours."
+  },
+  {
+    "id": 33,
+    "business": "Lowry's Sweater & Gift Shop",
+    "type": "Retail",
+    "url": null,
+    "location": "Clifden",
+    "score": 0,
+    "design": "No website found",
+    "tech": [
+      "No website exists"
+    ],
+    "visual": [],
+    "bizGaps": [
+      [
+        "Family-run Clifden establishment",
+        "Tourist-focused retail — needs online presence",
+        "E-commerce opportunity for knitwear sales"
+      ]
+    ],
+    "notes": "Tourist gift shop with no website. Could use an e-commerce site — sells Irish knitwear which has global demand."
+  },
+  {
+    "id": 34,
+    "business": "Alcock & Brown Hotel",
+    "type": "Hotel",
+    "url": "https://www.alcockandbrownhotel.com",
+    "location": "Clifden",
+    "score": 68,
+    "design": "Hotel site in Clifden town centre",
+    "tech": [
+      [
+        "Standard hotel template",
+        "Booking likely through third-party"
+      ]
+    ],
+    "visual": [
+      [
+        "Good but not modern",
+        "Standard hotel design"
+      ]
+    ],
+    "bizGaps": [
+      [
+        "Prime Clifden location",
+        "Could improve direct booking"
+      ]
+    ],
+    "notes": "Rapid scan: Decent location-based hotel site. Moderate redesign opportunity."
+  },
+  {
+    "id": 35,
+    "business": "Abbeyglen Castle Hotel",
+    "type": "Castle Hotel",
+    "url": "https://www.abbeyglen.ie",
+    "location": "Clifden",
+    "score": 82,
+    "design": "Luxury castle hotel site with rich content",
+    "tech": [
+      [
+        "Professional booking system",
+        "Good SEO structure"
+      ]
+    ],
+    "visual": [
+      [
+        "High quality photography",
+        "Professional brand"
+      ]
+    ],
+    "bizGaps": [
+      [
+        "Premium property — already well-served",
+        "Likely already has good web team"
+      ]
+    ],
+    "notes": "Rapid scan: High quality. Not a target."
+  },
+  {
+    "id": 36,
+    "business": "The Corner House Bar & Restaurant",
+    "type": "Bar & Restaurant",
+    "url": null,
+    "location": "Ballinasloe",
+    "score": 0,
+    "design": "No website found (Facebook only)",
+    "tech": [
+      "Facebook-only presence"
+    ],
+    "visual": [],
+    "bizGaps": [
+      [
+        "Only on Facebook",
+        "Menu/photos on Facebook but no standalone site",
+        "Ideal for simple one-pager"
+      ]
+    ],
+    "notes": "Perfect candidate — Facebook only, needs a proper website with menu and contact info."
+  },
+  {
+    "id": 37,
+    "business": "Powers Thatched Bar & Restaurant",
+    "type": "Pub & Restaurant",
+    "url": null,
+    "location": "Oughterard",
+    "score": 0,
+    "design": "No standalone website found (listed on galwaytourism.ie)",
+    "tech": [
+      [
+        "No own website — relies on tourism listing pages"
+      ]
+    ],
+    "visual": [
+      [
+        "N/A"
+      ]
+    ],
+    "bizGaps": [
+      [
+        "4.7 rating with 812 reviews on TripAdvisor — very popular",
+        "Has undergone recent restoration",
+        "Famous for live traditional Irish music and Atlantic Seafood Chowder",
+        "No direct website to show menus, events, or bookings"
+      ]
+    ],
+    "notes": "Extremely popular Oughterard pub with no own website. Best Guinness in the area according to reviews. Classic must-have-a-site case."
+  },
+  {
+    "id": 38,
+    "business": "Connemara Greenway Restaurant",
+    "type": "Cafe & Restaurant",
+    "url": null,
+    "location": "Oughterard",
+    "score": 0,
+    "design": "No website found (listed on review sites only)",
+    "tech": [
+      [
+        "No own website"
+      ]
+    ],
+    "visual": [
+      [
+        "N/A"
+      ]
+    ],
+    "bizGaps": [
+      [
+        "4.9 rating on TripAdvisor — 569 reviews",
+        "Specializes in fresh homemade meals, cakes and breads, craft beers",
+        "Family-run by Johnnie and Maria Begley",
+        "No menu or hours available outside review sites"
+      ]
+    ],
+    "notes": "Highest-rated Oughterard restaurant with no website! Perfect DS Studios lead."
+  },
+  {
+    "id": 39,
+    "business": "The Central House Hotel",
+    "type": "Hotel",
+    "url": "https://www.thecentralhousehotel.com",
+    "location": "Clifden",
+    "score": 64,
+    "design": "Boutique accommodation site",
+    "tech": [
+      [
+        "Booking platform integration needed",
+        "Standard hotel template"
+      ]
+    ],
+    "visual": [
+      [
+        "Good photography from search presence",
+        "Could be more boutique-feeling"
+      ]
+    ],
+    "bizGaps": [
+      [
+        "Newer boutique accommodation",
+        "Growing Clifden market"
+      ]
+    ],
+    "notes": "Rapid scan: Newer Clifden hotel. Moderate opportunity."
+  },
+  {
+    "id": 40,
+    "business": "Clifden Station House",
+    "type": "Hotel",
+    "url": null,
+    "location": "Clifden",
+    "score": 0,
+    "design": "Likely no standalone website or minimal",
+    "tech": [
+      [
+        "Listed as hotel on booking sites only"
+      ]
+    ],
+    "visual": [
+      [
+        "N/A"
+      ]
+    ],
+    "bizGaps": [
+      [
+        "Popular Clifden hotel",
+        "Appears on Hotels.com, TripAdvisor",
+        "May have minimal own site"
+      ]
+    ],
+    "notes": "Rapid scan: Need to verify website. Major Clifden hotel."
+  },
+  {
+    "id": 41,
+    "business": "H53 Coffee",
+    "type": "Coffee Shop",
+    "url": null,
+    "location": "Ballinasloe",
+    "score": 0,
+    "design": "No website found (TripAdvisor + Facebook only)",
+    "tech": [
+      "No standalone website"
+    ],
+    "visual": [],
+    "bizGaps": [
+      [
+        "Small locally owned coffee shop",
+        "Serves breakfasts, lunches, cakes and bakes",
+        "TripAdvisor listed but no menu online",
+        "Facebook likely primary presence"
+      ]
+    ],
+    "notes": "Small Ballinasloe coffee shop with no website. Classic lead."
+  },
+  {
+    "id": 42,
+    "business": "Kelly's Kitchen",
+    "type": "Cafe",
+    "url": "https://www.kellyskitchen.ie",
+    "location": "Newport",
+    "score": 72,
+    "design": "Award-winning cafe site with menus, press section, gallery. Well-crafted for a small cafe.",
+    "tech": [
+      "Decent site, no major technical issues"
+    ],
+    "visual": [
+      "Could use more modern design language",
+      "Lots of content on homepage"
+    ],
+    "bizGaps": [
+      "Award-winning — already has digital presence",
+      "Part of Kelly's family butcher business — strong local brand"
+    ],
+    "notes": "Already good. Not a priority for DS Studios."
+  },
+  {
+    "id": 43,
+    "business": "The Grainne Uaile",
+    "type": "Gastropub",
+    "url": "http://www.grainneuailenewport.ie",
+    "location": "Newport",
+    "score": 55,
+    "design": "Basic pub website with COVID-era information still prominent. Outdated.",
+    "tech": [
+      "COVID-19 protocol page is the most prominent content — very dated",
+      "HTTP not HTTPS",
+      "No SSL"
+    ],
+    "visual": [
+      "Amateur design",
+      "Outdated look",
+      "No atmosphere conveyed"
+    ],
+    "bizGaps": [
+      "Award-winning gastropub with great location overlooking Clew Bay",
+      "Instagram and Facebook presence much stronger than website",
+      "Menu and current info not prominent"
+    ],
+    "notes": "Award-winning pub with a neglected website. Perfect DS Studios candidate — deserves a site that matches its reputation."
+  },
+  {
+    "id": 44,
+    "business": "Nevins Newfield Inn",
+    "type": "Pub & Accommodation",
+    "url": "https://www.nevinsinn.com",
+    "location": "Newport",
+    "score": 58,
+    "design": "Homely lounge pub site with basic layout",
+    "tech": [
+      "Basic template structure",
+      "No online booking for accommodation"
+    ],
+    "visual": [
+      "Simple design, not distinctive",
+      "Limited photography"
+    ],
+    "bizGaps": [
+      "No online booking system despite offering accommodation",
+      "Menu likely not online"
+    ],
+    "notes": "Pub with rooms but no online booking. Good moderate opportunity."
+  },
+  {
+    "id": 45,
+    "business": "Brannen's Pub",
+    "type": "Pub",
+    "url": null,
+    "location": "Newport",
+    "score": 0,
+    "design": "No website found (listed on newportmayo.ie tourism site only)",
+    "tech": [
+      "No standalone website",
+      "Phone-only contact (098 41527)"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Traditional pub with pool table and dart board",
+      "Only contact is phone number on tourism site",
+      "No menu, hours, or online presence"
+    ],
+    "notes": "No website at all. Traditional pub, basic one-pager would suffice."
+  },
+  {
+    "id": 46,
+    "business": "Riverside Guesthouse & Restaurant",
+    "type": "Guesthouse & Restaurant",
+    "url": null,
+    "location": "Charlestown",
+    "score": 0,
+    "design": "No standalone website (TripAdvisor and OTA listings only)",
+    "tech": [
+      "No own website",
+      "Listed on OTAs exclusively"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "110 TripAdvisor reviews",
+      "No direct booking capability",
+      "Photo gallery only on TripAdvisor"
+    ],
+    "notes": "Guesthouse with no own website in Charlestown. Perfect candidate."
+  },
+  {
+    "id": 47,
+    "business": "O'Donnell's Pharmacy Charlestown",
+    "type": "Pharmacy",
+    "url": "https://odonnellspharmacy.net",
+    "location": "Charlestown",
+    "score": 55,
+    "design": "Basic pharmacy site, informational only",
+    "tech": [
+      "Generic .net domain",
+      "No e-commerce for a retail pharmacy",
+      "Template design"
+    ],
+    "visual": [
+      "Outdated template",
+      "No modern pharmacy feel"
+    ],
+    "bizGaps": [
+      "Family-run since 1940 — great heritage story",
+      "No online prescription refill",
+      "No health blog or services list"
+    ],
+    "notes": "Family pharmacy since 1940 with basic site. Great candidate for a modern health-focused redesign."
+  },
+  {
+    "id": 48,
+    "business": "Ballagh Farm Shop",
+    "type": "Farm Shop",
+    "url": null,
+    "location": "Swinford",
+    "score": 0,
+    "design": "Facebook only (4,707 followers)",
+    "tech": [
+      "No standalone website",
+      "Facebook-dependent"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "4700+ Facebook followers — significant following",
+      "Sells fruit, veg, artisan breads, locally sourced supplies",
+      "Farm shop trend growing in Ireland",
+      "No online ordering or product catalogue"
+    ],
+    "notes": "Large Facebook following but no website. Big opportunity for a farm shop site with e-commerce."
+  },
+  {
+    "id": 49,
+    "business": "The Novel Bean",
+    "type": "Coffee Shop / Retail",
+    "url": null,
+    "location": "Swinford",
+    "score": 0,
+    "design": "Facebook/Instagram presence only",
+    "tech": [
+      "No standalone website"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Independent retail experience",
+      "Located on Market Street, Swinford",
+      "No online presence beyond social media"
+    ],
+    "notes": "Newer independent shop with social-only presence. Needs a website to establish credibility."
+  },
+  {
+    "id": 50,
+    "business": "Ard Ri House Hotel",
+    "type": "Hotel",
+    "url": "https://www.ardrihousehotel.ie",
+    "location": "Tuam",
+    "score": 72,
+    "design": "Professional hotel site with dining, bar, and accommodation info.",
+    "tech": [
+      "Subdomain for bar (dick-dowlings-bar.html) — odd URL structure",
+      "Bookings likely through third-party integration"
+    ],
+    "visual": [
+      "Standard hotel template",
+      "Functional but not remarkable design"
+    ],
+    "bizGaps": [
+      "Well-established Tuam hotel with award-winning restaurant",
+      "Has Dick Dowling's bar on-site — separate brand identity"
+    ],
+    "notes": "Decent hotel site. Not a high-priority target."
+  },
+  {
+    "id": 51,
+    "business": "Leaf & Bean Cafe",
+    "type": "Cafe",
+    "url": "https://www.leafandbean.ie",
+    "location": "Tuam & Galway",
+    "score": 70,
+    "design": "Award-winning cafe with online ordering for office events. Clean, modern design.",
+    "tech": [
+      "Online ordering for office events — good feature",
+      "Separate Tuam and Ballybrit locations"
+    ],
+    "visual": [
+      "Clean but standard template",
+      "Could use more local photography"
+    ],
+    "bizGaps": [
+      "Online ordering available — ahead of many cafes",
+      "Established brand with loyal customer base"
+    ],
+    "notes": "Already a strong online presence. Not a priority."
+  },
+  {
+    "id": 52,
+    "business": "Newpark Hotel",
+    "type": "Hotel",
+    "url": "https://newparkhotel.ie",
+    "location": "Athenry",
+    "score": 68,
+    "design": "Family-run boutique hotel site. Warm, welcoming design.",
+    "tech": [
+      "Standard hotel template",
+      "Booking likely third-party"
+    ],
+    "visual": [
+      "Warm design but not modern",
+      "Could be more boutique-feeling"
+    ],
+    "bizGaps": [
+      "Family-run since 1994",
+      "Offers small weddings — niche market",
+      "Boutique hotel in medieval town — good USP"
+    ],
+    "notes": "Decent family-run hotel site. Moderate opportunity."
+  },
+  {
+    "id": 53,
+    "business": "Raheen Woods Hotel",
+    "type": "Hotel",
+    "url": "https://www.raheenwoodshotel.ie",
+    "location": "Athenry",
+    "score": 76,
+    "design": "Award-winning 4-star hotel with professional site, multiple restaurant pages",
+    "tech": [
+      "Good infrastructure for a hotel this size"
+    ],
+    "visual": [
+      "Professional design, part of established brand"
+    ],
+    "bizGaps": [
+      "Award-winning — already well-served digitally",
+      "Part of wider hotel group feel"
+    ],
+    "notes": "Already excellent. Skip."
+  },
+  {
+    "id": 54,
+    "business": "Flannery's Bistro",
+    "type": "Bistro & Bar",
+    "url": "https://flannerysbistro.ie",
+    "location": "Ballinrobe",
+    "score": 68,
+    "design": "Award-winning restaurant site with full menus, booking, voucher system. Established since 1906.",
+    "tech": [
+      "Good feature set — online menus, booking, vouchers",
+      "Cookie consent implementation"
+    ],
+    "visual": [
+      "Standard bistro template",
+      "Good but could be more distinctive"
+    ],
+    "bizGaps": [
+      "Award-winning since 1906 — long heritage",
+      "Online booking + voucher system — ahead of many",
+      "Potential for newsletter/marketing"
+    ],
+    "notes": "Already has good digital features. Not a priority target."
+  },
+  {
+    "id": 55,
+    "business": "Macbrides Bar",
+    "type": "Pub",
+    "url": null,
+    "location": "Ballinrobe",
+    "score": 0,
+    "design": "No website found (Yelp + tourism site listing only)",
+    "tech": [
+      "No standalone website"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Listed as one of the top Irish pubs in Ballinrobe",
+      "No menu, hours, or events online",
+      "Traditional pub — simple one-pager needed"
+    ],
+    "notes": "Ballinrobe pub with no website. Ideal basic candidate."
+  },
+  {
+    "id": 56,
+    "business": "O'Malley's Bar",
+    "type": "Pub",
+    "url": null,
+    "location": "Ballinrobe",
+    "score": 0,
+    "design": "Facebook only",
+    "tech": [
+      "Facebook page only",
+      "No standalone website"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Facebook page has 'website' link but resolves to Facebook itself",
+      "Glebe Street, Ballinrobe",
+      "No menu or hours visible online"
+    ],
+    "notes": "Perfect DS Studios candidate — Facebook-only pub in Ballinrobe."
+  },
+  {
+    "id": 57,
+    "business": "Knock House Hotel",
+    "type": "Hotel",
+    "url": "https://www.knockhousehotel.ie",
+    "location": "Knock",
+    "score": 65,
+    "design": "Hotel near Knock Airport with pool, spa, and restaurant facilities",
+    "tech": [
+      "Standard hotel template",
+      "Hotel amenities well-described"
+    ],
+    "visual": [
+      "Standard hotel design",
+      "Could showcase Mayo location better"
+    ],
+    "bizGaps": [
+      "Proximity to Ireland West Airport Knock — unique selling point",
+      "Pool and spa — differentiators",
+      "Competitive Mayo hotel market"
+    ],
+    "notes": "Decent airport hotel with spa. Moderate redesign opportunity."
+  },
+  {
+    "id": 58,
+    "business": "Val's Bar & Bistro / The Bowers",
+    "type": "Bar & Restaurant",
+    "url": null,
+    "location": "Ballyhaunis",
+    "score": 0,
+    "design": "Only on TripAdvisor/Booking.com (no standalone website)",
+    "tech": [
+      "No standalone website",
+      "TripAdvisor presence only"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Typical pub menu with TripAdvisor reviews",
+      "Only presence is booking aggregators",
+      "Ballyhaunis has very limited web presence for hospitality"
+    ],
+    "notes": "Ballyhaunis pub with no website. Candidate for basic landing page."
+  },
+  {
+    "id": 59,
+    "business": "Pier Head Bar & Restaurant",
+    "type": "Bar & Restaurant",
+    "url": "https://pierheadkinvara.com",
+    "location": "Kinvara",
+    "score": 72,
+    "design": "Clean modern website with menu, about, and contact sections. Good photography of food and views.",
+    "tech": [
+      "Standard modern build",
+      "No evident CMS markup"
+    ],
+    "visual": [
+      "Could use more atmospheric shots of the harbour"
+    ],
+    "bizGaps": [
+      "Prime location overlooking Kinvara Harbour",
+      "Strong TripAdvisor presence",
+      "Award-winning seafood"
+    ],
+    "notes": "Rapid scan"
+  },
+  {
+    "id": 60,
+    "business": "Keogh's Restaurant & Guesthouse",
+    "type": "Restaurant & Guesthouse",
+    "url": "https://keoghsrestaurantkinvara.ie",
+    "location": "Kinvara",
+    "score": 50,
+    "design": "Webhero template design — basic layout but functional. Menu, rooms, and contact pages present.",
+    "tech": [
+      "Webhero/Webnode hosted template",
+      "Generic design elements",
+      "Limited SEO optimization"
+    ],
+    "visual": [
+      "Template feel — not unique to the brand",
+      "Generic stock imagery likely"
+    ],
+    "bizGaps": [
+      "Family-run 25+ years",
+      "Guesthouse rooms + restaurant combo",
+      "Kinvara is a popular tourist stop"
+    ],
+    "notes": "Rapid scan. Good long-standing business, website needs a proper branded redesign."
+  },
+  {
+    "id": 61,
+    "business": "Kinvara Guesthouse",
+    "type": "Guesthouse",
+    "url": "https://kinvaraguesthouse.ie",
+    "location": "Kinvara",
+    "score": 65,
+    "design": "Decent guesthouse website with room photos, area guide, and online booking.",
+    "tech": [
+      "Standard guesthouse site",
+      "Likely uses booking plugin/widget"
+    ],
+    "visual": [
+      "Could showcase Kinvara village and bay better"
+    ],
+    "bizGaps": [
+      "Kinvara is on the Wild Atlantic Way — good tourism flow",
+      "Room-only (no restaurant) — limited upselling"
+    ],
+    "notes": "Rapid scan. Moderate upgrade potential."
+  },
+  {
+    "id": 62,
+    "business": "The Merriman Hotel",
+    "type": "Hotel",
+    "url": "https://www.merrimanhotel.com",
+    "location": "Kinvara",
+    "score": 68,
+    "design": "Hotel website with room gallery, dining, and wedding sections. Thatched roof visual identity.",
+    "tech": [
+      "Standard hotel website build",
+      "Booking engine integration present"
+    ],
+    "visual": [
+      "Could better leverage the thatched roof USP",
+      "Website interior photos feel dated"
+    ],
+    "bizGaps": [
+      "Iconic thatched roof hotel — unique branding opportunity",
+      "Kinvara wedding venue",
+      "Long-established reputation"
+    ],
+    "notes": "Rapid scan. Despite iconic building, website could be more visually compelling."
+  },
+  {
+    "id": 63,
+    "business": "Anglers Rest Hotel",
+    "type": "Hotel",
+    "url": "https://anglersresthotel.com",
+    "location": "Headford",
+    "score": 60,
+    "design": "Hotel on Lough Corrib with 16 rooms, fishing themes. Functional website.",
+    "tech": [
+      "Older-style hotel website",
+      "Layout feels dated for 2026"
+    ],
+    "visual": [
+      "Dark colour scheme",
+      "Could use fresher photography"
+    ],
+    "bizGaps": [
+      "Prime Lough Corrib fishing location — untapped content marketing",
+      "16 rooms — boutique size",
+      "Potential for wedding/event venue marketing"
+    ],
+    "notes": "Rapid scan. Solid location but tired website."
+  },
+  {
+    "id": 64,
+    "business": "Roots Café & Bistro",
+    "type": "Café & Bistro",
+    "url": "https://rootsgalway.com",
+    "location": "Claregalway",
+    "score": 65,
+    "design": "Italian-inspired café/bistro with clean website. Menu and contact sections visible.",
+    "tech": [
+      "Modern small template build",
+      "Limited online ordering"
+    ],
+    "visual": [
+      "Clean Scandinavian-style aesthetic",
+      "Could add more food photography"
+    ],
+    "bizGaps": [
+      "Claregalway is growing commuter town",
+      "Italian-inspired niche — differentiator",
+      "Catering for growing residential area"
+    ],
+    "notes": "Rapid scan. Solid existing presence, moderate upgrade potential."
+  },
+  {
+    "id": 65,
+    "business": "The Moy Hotel",
+    "type": "Hotel",
+    "url": "https://www.moyhotel.com",
+    "location": "Foxford",
+    "score": 70,
+    "design": "Recently refurbished hotel. Modern website with room bookings, dining, and wedding sections.",
+    "tech": [
+      "Modern hotel website platform",
+      "Booking system integrated"
+    ],
+    "visual": [
+      "Clean but fairly standard hotel design",
+      "Could highlight the Moy River location better"
+    ],
+    "bizGaps": [
+      "Newly refurbished — should have budget for marketing",
+      "Foxford tourism (woollen mills, fishing)",
+      "Wedding and event venue"
+    ],
+    "notes": "Rapid scan. Recently renovated — possibly less urgent target."
+  },
+  {
+    "id": 66,
+    "business": "Foxford Woollen Mills",
+    "type": "Retail / Tourist Attraction",
+    "url": "https://www.foxford.com",
+    "location": "Foxford",
+    "score": 75,
+    "design": "Heritage brand store and café. Strong brand heritage website, e-commerce presence.",
+    "tech": [
+      "E-commerce enabled",
+      "Heritage storyteller site design"
+    ],
+    "visual": [
+      "Strong heritage visual identity",
+      "Mature brand — harder to sell redesign to"
+    ],
+    "bizGaps": [
+      "Major Foxford tourist attraction",
+      "1880s heritage — established brand",
+      "Café, store, and guided tours"
+    ],
+    "notes": "Rapid scan. Well-known heritage brand. Lower priority for DS Studios."
+  },
+  {
+    "id": 67,
+    "business": "Achill Cliff House Hotel & Restaurant",
+    "type": "Hotel & Restaurant",
+    "url": "https://www.achillcliff.com",
+    "location": "Achill Island",
+    "score": 68,
+    "design": "Family-run 3-star hotel overlooking the Atlantic. Hotel website with room, dining, and spa info.",
+    "tech": [
+      "Standard hotel website",
+      "Booking engine present"
+    ],
+    "visual": [
+      "Ocean views are the USP but website doesn't maximize them visually",
+      "Design feels functional not aspirational"
+    ],
+    "bizGaps": [
+      "Achill is Ireland's largest island — growing tourism",
+      "Wild Atlantic Way location",
+      "Family-run — personal touch differentiator"
+    ],
+    "notes": "Rapid scan. Stunning location undersold by dated web design."
+  },
+  {
+    "id": 68,
+    "business": "Óstán Oileán Acla / Achill Island Hotel",
+    "type": "Hotel",
+    "url": "https://achillislandhotel.com",
+    "location": "Achill Island",
+    "score": 60,
+    "design": "Hotel at gateway to Achill Island. Multilingual site (Irish/English). Basic design.",
+    "tech": [
+      "Basic hotel website platform",
+      "SEO opportunities missed for Achill tourism keywords"
+    ],
+    "visual": [
+      "Dated design feel",
+      "Could better showcase the Atlantic views"
+    ],
+    "bizGaps": [
+      "Only hotel at the bridge entrance — all visitors pass it",
+      "Family-run, bilingual (Gaeltacht area)",
+      "Surfing, cycling, hiking nearby"
+    ],
+    "notes": "Rapid scan. Great location advantage, weak digital presence."
+  },
+  {
+    "id": 69,
+    "business": "Talbot Hotel Belmullet",
+    "type": "Hotel",
+    "url": "https://www.thetalbothotel.ie",
+    "location": "Belmullet",
+    "score": 75,
+    "design": "Boutique 4-star in Belmullet town centre. Chic quirky rooms, award-winning seafood bar. Modern hotel website.",
+    "tech": [
+      "Modern hotel website",
+      "Online booking and gift vouchers",
+      "Detailed room photography"
+    ],
+    "visual": [
+      "Good boutique aesthetic",
+      "Could showcase Erris coastline more"
+    ],
+    "bizGaps": [
+      "Award-winning seafood bar — signature feature",
+      "Boutique positioning — high-end target market",
+      "Belmullet is remote — strong local loyalty potential"
+    ],
+    "notes": "Rapid scan. Already has good digital presence. Lower priority target."
+  },
+  {
+    "id": 70,
+    "business": "Western Strands Hotel",
+    "type": "Hotel",
+    "url": "https://www.thewesternstrands.com",
+    "location": "Belmullet",
+    "score": 65,
+    "design": "Family-run hotel, bar and restaurant on Belmullet peninsula. Functional website.",
+    "tech": [
+      "Standard hotel website",
+      "Basic booking integration"
+    ],
+    "visual": [
+      "Generic hotel design",
+      "Could highlight the multi-bar layout and live music"
+    ],
+    "bizGaps": [
+      "Multiple bars — good for events/entertainment",
+      "Family-run with personal service angle",
+      "Wild Atlantic Way location — tourism draw"
+    ],
+    "notes": "Rapid scan. Decent opportunity for redesign to stand out."
+  },
+  {
+    "id": 71,
+    "business": "Maughan's Bar",
+    "type": "Pub",
+    "url": null,
+    "location": "Crossmolina",
+    "score": 0,
+    "design": "No website found (traditional music pub listing only)",
+    "tech": [
+      "No standalone website"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Traditional Irish music pub in Crossmolina",
+      "No online presence at all",
+      "Great candidate for simple site"
+    ],
+    "notes": "Rapid scan. Perfect DS Studios candidate — no website, small Mayo town."
+  },
+  {
+    "id": 72,
+    "business": "Lady Gregory Hotel",
+    "type": "Hotel",
+    "url": "https://www.ladygregoryhotel.ie",
+    "location": "Gort",
+    "score": 68,
+    "design": "Hotel with leisure club and beauty rooms on the outskirts of Gort. Standard hotel website.",
+    "tech": [
+      "Hotel website with booking engine",
+      "Leisure club/beauty room sections present"
+    ],
+    "visual": [
+      "Standard hotel template",
+      "Could better leverage Coole Park / Yeats literary connection"
+    ],
+    "bizGaps": [
+      "Near Coole Park and Thoor Ballylee — Yeats tourism corridor",
+      "Leisure club + beauty rooms — wider appeal",
+      "Gort is growing as a tourism base"
+    ],
+    "notes": "Rapid scan. Decent hotel website but generic — opportunity for literary-themed rebrand."
+  },
+  {
+    "id": 73,
+    "business": "Sullivan's Royal Hotel",
+    "type": "Hotel",
+    "url": "https://sullivansroyalhotel.ie",
+    "location": "Gort",
+    "score": 55,
+    "design": "Family-run hotel on the Square in Gort. Website exists but feels dated and basic.",
+    "tech": [
+      "Older website",
+      "Limited SEO — listed through third parties like irelandhotels.com",
+      "Email listed but no online booking visible"
+    ],
+    "visual": [
+      "Dated design aesthetic",
+      "Poor photography",
+      "Doesn't showcase Galway location well"
+    ],
+    "bizGaps": [
+      "Prime location on the Square in Gort",
+      "Long-established family business",
+      "Newer competition from Lady Gregory Hotel"
+    ],
+    "notes": "Rapid scan. Good candidate for DS Studios — family-run heritage hotel needs digital refresh."
+  },
+  {
+    "id": 74,
+    "business": "Modena Restaurant",
+    "type": "Restaurant",
+    "url": "https://themodena.com",
+    "location": "Portumna",
+    "score": 60,
+    "design": "Modern restaurant on The Square in Portumna. Website has menu and contact info. Functional but plain.",
+    "tech": [
+      "Small restaurant website builder",
+      "Basic menu display",
+      "No online booking/reservations"
+    ],
+    "visual": [
+      "Plain design — lots of white space but no character",
+      "Barely any food photography",
+      "Missing Portumna location context"
+    ],
+    "bizGaps": [
+      "Open 7 days including bank holidays — high availability",
+      "Italian/Irish fusion menu",
+      "Portumna has steady tourism (Lough Derg, castle, forest park)"
+    ],
+    "notes": "Rapid scan. Strong opportunity — restaurant with functional but personality-free website."
+  },
+  {
+    "id": 75,
+    "business": "O'Meara's Bar & Restaurant",
+    "type": "Bar & Restaurant",
+    "url": null,
+    "location": "Portumna",
+    "score": 0,
+    "design": "TripAdvisor and Facebook presence only (no standalone website)",
+    "tech": [
+      "No standalone website"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Rated #5 of 14 restaurants in Portumna on TripAdvisor",
+      "No menu, hours, or events visible online",
+      "Traditional bar/restaurant with loyal local following"
+    ],
+    "notes": "Rapid scan. Another perfect DS Studios candidate — zero web presence."
+  },
+  {
+    "id": 76,
+    "business": "Curley's Bar Portumna",
+    "type": "Pub",
+    "url": null,
+    "location": "Portumna",
+    "score": 0,
+    "design": "Mentioned on tourism site listings only. No standalone website.",
+    "tech": [
+      "No standalone website",
+      "Third-party listings only"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Listed on Podumna Glamping Village's recommendations page",
+      "Traditional pub on Main Street Portumna",
+      "No online booking, menu, or hours"
+    ],
+    "notes": "Rapid scan. Perfect for a basic one-page site."
+  },
+  {
+    "id": 77,
+    "business": "Roma Restaurant",
+    "type": "Restaurant",
+    "url": null,
+    "location": "Portumna",
+    "score": 0,
+    "design": "Mentioned on Podumna Glamping recommendations only",
+    "tech": [
+      "No standalone website found"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Italian dining in Portumna",
+      "No online visibility beyond aggregated town guides"
+    ],
+    "notes": "Rapid scan. Candidate for basic website."
+  },
+  {
+    "id": 78,
+    "business": "Paddy's Bar",
+    "type": "Pub",
+    "url": null,
+    "location": "Portumna",
+    "score": 0,
+    "design": "Listed on Yelp only for Portumna area",
+    "tech": [
+      "No standalone website found"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Listed on Yelp as top restaurant in Portumna",
+      "No standalone presence"
+    ],
+    "notes": "Rapid scan. Candidate for simple website."
+  },
+  {
+    "id": 79,
+    "business": "An Crúiscín Lán Hotel & Restaurant",
+    "type": "Hotel & Restaurant",
+    "url": "https://www.cruiscin.ie",
+    "location": "Spiddal",
+    "score": 65,
+    "design": "Hotel on Galway Bay in the Wild Atlantic Way. Website with rooms, restaurant info, and wedding section.",
+    "tech": [
+      "Standard hotel website",
+      "Booking engine present",
+      "Multilingual (Irish/English)"
+    ],
+    "visual": [
+      "Solid but not standout visual design",
+      "Galway Bay location could be hero imagery"
+    ],
+    "bizGaps": [
+      "Right on Galway Bay — stunning location selling point",
+      "Wedding venue",
+      "Gaeltacht area — unique cultural angle"
+    ],
+    "notes": "Rapid scan. Moderate redesign opportunity."
+  },
+  {
+    "id": 80,
+    "business": "Pádraicín's Bar & Restaurant",
+    "type": "Pub & Restaurant",
+    "url": null,
+    "location": "Spiddal",
+    "score": 0,
+    "design": "Listed on Yelp as top restaurant in Spiddal area. No standalone website.",
+    "tech": [
+      "No standalone website found"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Listed as top restaurant in Spiddal on Yelp",
+      "Gaeltacht pub with traditional Irish atmosphere",
+      "Wild Atlantic Way tourist flow through Spiddal"
+    ],
+    "notes": "Rapid scan. Great candidate — busy pub on tourist route, no website."
+  },
+  {
+    "id": 81,
+    "business": "Tigh Giblin",
+    "type": "Pub",
+    "url": null,
+    "location": "Spiddal",
+    "score": 0,
+    "design": "Listed on travel directories only. No standalone website.",
+    "tech": [
+      "No standalone website found"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Traditional Connemara pub",
+      "Popular among locals and tourists",
+      "No online menu or hours"
+    ],
+    "notes": "Rapid scan. No website — classic candidate for DS Studios."
+  },
+  {
+    "id": 82,
+    "business": "Erris Coast Hotel",
+    "type": "Hotel",
+    "url": null,
+    "location": "Belmullet",
+    "score": 0,
+    "design": "Name referenced in regional accommodation lists but no site found",
+    "tech": [
+      "No standalone website found"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Belmullet area accommodation",
+      "Erris region tourism growth potential"
+    ],
+    "notes": "Rapid scan. Check if this is operational — no trace found."
+  },
+  {
+    "id": 83,
+    "business": "OD's Bar & Carry Out",
+    "type": "Pub",
+    "url": null,
+    "location": "Belmullet",
+    "score": 0,
+    "design": "Mentioned in regional guides only",
+    "tech": [
+      "No standalone website found"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Belmullet town bar",
+      "Carry out — differentiator"
+    ],
+    "notes": "Rapid scan. Candidate for basic site."
+  },
+  {
+    "id": 84,
+    "business": "Lynott's Bar",
+    "type": "Pub",
+    "url": null,
+    "location": "Crossmolina",
+    "score": 0,
+    "design": "Listed on regional pub directories only",
+    "tech": [
+      "No standalone website found"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Traditional Crossmolina pub",
+      "No digital presence"
+    ],
+    "notes": "Rapid scan. Simple candidate."
+  },
+  {
+    "id": 85,
+    "business": "O'Malley's Bar & Grill",
+    "type": "Pub & Restaurant",
+    "url": null,
+    "location": "Crossmolina",
+    "score": 0,
+    "design": "Listed on travel directories only",
+    "tech": [
+      "No standalone website found"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Crossmolina dining option",
+      "No online menu or hours"
+    ],
+    "notes": "Rapid scan. Candidate for simple website."
+  },
+  {
+    "id": 86,
+    "business": "The Burren Inn",
+    "type": "Hotel / Restaurant",
+    "url": null,
+    "location": "Gort",
+    "score": 0,
+    "design": "Listed on travel/booking sites only",
+    "tech": [
+      "No standalone website found"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Gort area accommodation near the Burren",
+      "Listed on Agoda/booking aggregators only"
+    ],
+    "notes": "Rapid scan. Candidate for basic landing page."
+  },
+  {
+    "id": 87,
+    "business": "Ceardlann Spiddal Craft Village & Café",
+    "type": "Craft Village & Café",
+    "url": "https://www.discoverireland.ie/galway/ceardlann-spiddal-craft-village-and-cafe",
+    "location": "Spiddal",
+    "score": 0,
+    "design": "Only on DiscoverIreland.ie. No standalone website.",
+    "tech": [
+      "No standalone website",
+      "Listed only on DiscoverIreland tourism portal"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "10 artisan studios + café overlooking Galway Bay",
+      "Views of Cliffs of Moher and Aran Islands",
+      "Strong tourist attraction — zero direct web presence"
+    ],
+    "notes": "Rapid scan. Major missed opportunity — prime tourism spot with no own website."
+  },
+  {
+    "id": 88,
+    "business": "Salt and Stories",
+    "type": "Deli / Café",
+    "url": null,
+    "location": "Headford",
+    "score": 0,
+    "design": "New deli (2025 opening). No website found.",
+    "tech": [
+      "No standalone website found"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "New business in Headford — prime time to build web presence",
+      "Deli with fresh food focus",
+      "No online menu or contact info outside social media"
+    ],
+    "notes": "Rapid scan. Brand new business — ideal time for DS Studios to pitch a full branding + website package."
+  },
+  {
+    "id": 89,
+    "business": "Campbells Tavern",
+    "type": "Pub",
+    "url": null,
+    "location": "Headford",
+    "score": 0,
+    "design": "No website found (listed in pub directories only)",
+    "tech": [
+      "No standalone website found"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Traditional Headford pub",
+      "No menu, hours, or events online",
+      "Classic small-town Irish pub"
+    ],
+    "notes": "Rapid scan. Perfect candidate for simple site."
+  },
+  {
+    "id": 90,
+    "business": "Guiry's Bar",
+    "type": "Pub",
+    "url": null,
+    "location": "Foxford",
+    "score": 0,
+    "design": "Traditional bar mentioned in town guides only",
+    "tech": [
+      "No standalone website found"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Foxford town pub",
+      "No online presence at all"
+    ],
+    "notes": "Rapid scan. Simple one-pager candidate."
+  },
+  {
+    "id": 91,
+    "business": "Mellet's Pub",
+    "type": "Pub",
+    "url": null,
+    "location": "Foxford",
+    "score": 0,
+    "design": "Town pub referenced in directories only",
+    "tech": [
+      "No standalone website found"
+    ],
+    "visual": [],
+    "bizGaps": [
+      "Foxford local pub",
+      "No digital presence"
+    ],
+    "notes": "Rapid scan. Candidate for DS Studios."
   }
 ];
 
@@ -298,9 +2168,9 @@ function buildHunterCard(data) {
   }
 
   // Business issues
-  h += `<div class="section-title">Business Issues (${data.business.length})</div>`;
+  h += `<div class="section-title">Business Issues (${data.bizGaps.length})</div>`;
   h += `<div class="issue-card"><div class="card-label"><span class="tag tag-biz">● Business</span> Gaps</div><ul>`;
-  data.business.forEach(b => { h += `<li>${b}</li>`; });
+  data.bizGaps.forEach(b => { h += `<li>${b}</li>`; });
   h += `</ul></div>`;
 
   // Notes
