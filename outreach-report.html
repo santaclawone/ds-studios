@@ -122,12 +122,13 @@
 <div class="container">
 
 <h1>DS Studios — Site Report Outreach</h1>
-<p class="subtitle">Batch 1 (West of Ireland) + Batch 2 (Douglas, Midleton, Bray, Cavan) • Generated 18 May 2026</p>
+<p class="subtitle">Batch 1 (West of Ireland) + Batch 2 (Douglas, Midleton, Bray, Cavan) + Batch 3 (Hunter-Verified West of Ireland) • Generated 19 May 2026</p>
 
 <div class="note">
   <strong>⚠️ Private monitoring page.</strong>
   <strong>Batch 1:</strong> 50 lowest-scoring businesses from Westport, Castlebar, Galway &amp; Sligo (scores 22–100).<br>
   <strong>Batch 2:</strong> 17 businesses from Douglas (7), Midleton (4), Bray (3), Cavan (3).<br>
+  <strong>Batch 3:</strong> 62 businesses audited via real browser (Playwright) with mobile checks — 36 sent, 14 no email found, 12 blocked.<br>
   Emails sent <strong>from</strong> <code>audit@sitescorereports.info</code> via Resend.
   From name: <em>Site Reports by DS Studios</em>.
   Reply-To: <code>dscullywebdesign@gmail.com</code>.
@@ -135,7 +136,7 @@
 
 <div class="stats">
   <div class="stat-card green">
-    <span class="num">60</span>
+    <span class="num">96</span>
     <span class="label">Sent</span>
   </div>
   <div class="stat-card orange">
@@ -143,11 +144,11 @@
     <span class="label">Skipped</span>
   </div>
   <div class="stat-card red">
-    <span class="num">3</span>
+    <span class="num">17</span>
     <span class="label">No Email Found</span>
   </div>
   <div class="stat-card">
-    <span class="num">68</span>
+    <span class="num">130</span>
     <span class="label">Targeted</span>
   </div>
 </div>
@@ -241,7 +242,74 @@ const data = [
   {score:70,name:"Quinlans Seafood Bar",loc:"Douglas",email:"cork@quinlansfish.com",status:"Sent",resend:"94687a0a-e24a-4443-a6c0-27e31967846e"},
   {score:74,name:"Ballymaloe Cookery School",loc:"Midleton",email:"info@cookingisfun.ie",status:"Sent",resend:"dc5037f8-4dc8-4b68-90cb-d0c1b2e4e8bf"},
   {score:75,name:"Hotel Kilmore",loc:"Cavan",email:"info@hotelkilmore.ie",status:"Sent",resend:"fc27018a-1835-4b1b-8648-783087111f99"},
-  {score:58,name:"KC &amp; Sons",loc:"Douglas",email:"—",status:"No email",resend:""}
+  {score:58,name:"KC &amp; Sons",loc:"Douglas",email:"—",status:"No email",resend:""},
+
+  // Batch 3 — Hunter-Verified (Playwright real-browser audits) — 19 May 2026
+  // Sent (36)
+  {score:65,name:"Downhill Inn Hotel",loc:"Ballina",email:"info@downhillinn.ie",status:"Sent",resend:"cc4efd26-8528-48f9-9e81-dab7c2948e0f"},
+  {score:55,name:"Cortoon Furniture",loc:"Ballina",email:"cortoonfurnitureltd@gmail.com",status:"Sent",resend:"b392e8b2-ae3e-4705-8298-5328720914f2"},
+  {score:75,name:"The Old Arch",loc:"Claremorris",email:"info@oldarch.ie",status:"Sent",resend:"a1239b42-4bb6-464b-ae18-15c3eff6f1ae"},
+  {score:65,name:"The Food Store",loc:"Claremorris",email:"info@thefoodstore.ie",status:"Sent",resend:"839c5494-514f-452a-bba4-7835c653b5e6"},
+  {score:50,name:"La Casa Tapas & Wine",loc:"Claremorris",email:"infolacasatapas@gmail.com",status:"Sent",resend:"d296a44f-827f-42a3-a736-b677c8e80947"},
+  {score:35,name:"Dalton Inn Hotel",loc:"Claremorris",email:"info@daltoninn.com",status:"Sent",resend:"1eb65e30-b248-4466-bfcc-949957bec836"},
+  {score:45,name:"Galway Plumbing Solutions",loc:"Galway (Roscam)",email:"info@galwayplumbingsolutions.ie",status:"Sent",resend:"bb53b0ba-020d-4a73-8bdd-0562295bb64b"},
+  {score:60,name:"O'Reilly Heating & Plumbing",loc:"Galway",email:"info@oreillyheatingandplumbing.ie",status:"Sent",resend:"f2ad8dfa-ac99-4cc4-b579-963346064606"},
+  {score:65,name:"The Bread Basket",loc:"Ballinasloe",email:"info@thebreadbasket.ie",status:"Sent",resend:"fa924194-4137-4ca8-affb-102ec499d701"},
+  {score:62,name:"Bistro 18",loc:"Ballinasloe",email:"info@bistro18.ie",status:"Sent",resend:"81fa4840-921f-4538-9a82-8d40fffad21d"},
+  {score:70,name:"Kariba's Restaurant & Coffee House",loc:"Ballinasloe",email:"info@karibas.ie",status:"Sent",resend:"9d2adff0-2db3-4a82-add9-e29f25a9e54c"},
+  {score:78,name:"Lough Rea Hotel & Spa",loc:"Loughrea",email:"info@loughreahotelandspa.com",status:"Sent",resend:"61b95066-017a-4f54-8c8a-0468f89d5eb1"},
+  {score:72,name:"Meadow Court Hotel",loc:"Loughrea",email:"info@meadowcourthotel.com",status:"Sent",resend:"b406b0a0-3370-417c-a8e4-f2670116557c"},
+  {score:80,name:"Currarevagh House",loc:"Oughterard",email:"rooms@currarevagh.com",status:"Sent",resend:"e80df205-6699-4a7c-8b41-0a24120981db"},
+  {score:68,name:"Alcock & Brown Hotel",loc:"Clifden",email:"info@alcockandbrownhotel.com",status:"Sent",resend:"8e6855ca-c363-4b37-a956-f97721b5cbc0"},
+  {score:82,name:"Abbeyglen Castle Hotel",loc:"Clifden",email:"info@abbeyglen.ie",status:"Sent",resend:"ece47b4e-d47c-4964-a67e-d7d7cbf32eea"},
+  {score:64,name:"The Central House Hotel",loc:"Clifden",email:"chhclifden@gmail.com",status:"Sent",resend:"4bd116c4-3f3f-4ba3-95c7-3daa59e23c36"},
+  {score:58,name:"Nevins Newfield Inn",loc:"Newport",email:"info@nevinsinn.com",status:"Sent",resend:"55d74673-8844-4602-8cb9-0335849e6e67"},
+  {score:72,name:"Ard Ri House Hotel",loc:"Tuam",email:"info@ardrihousehotel.ie",status:"Sent",resend:"405ca4bb-0aa4-470f-b1d2-d812212e572f"},
+  {score:70,name:"Leaf & Bean Cafe",loc:"Tuam & Galway",email:"hello@leafandbean.ie",status:"Sent",resend:"c5953c69-7709-4e57-bdca-391eb4553e99"},
+  {score:68,name:"Newpark Hotel",loc:"Athenry",email:"info@newparkhotel.ie",status:"Sent",resend:"a868e23f-4483-4bc5-929d-f1909ae1f318"},
+  {score:76,name:"Raheen Woods Hotel",loc:"Athenry",email:"info@raheenwoodshotel.ie",status:"Sent",resend:"80d57d8d-f8c8-4c18-83b8-9008c8b41e1b"},
+  {score:68,name:"Flannery's Bistro",loc:"Ballinrobe",email:"flannerysbistro@gmail.com",status:"Sent",resend:"8868ce07-40a8-47e1-a93c-9f503c7a4492"},
+  {score:50,name:"Keogh's Restaurant & Guesthouse",loc:"Kinvara",email:"info@keoghsrestaurantkinvara.ie",status:"Sent",resend:"75f61c11-37b6-4233-a157-0ab4128ef4b5"},
+  {score:60,name:"Anglers Rest Hotel",loc:"Headford",email:"anglersresthotelheadford@gmail.com",status:"Sent",resend:"eec9fcd7-7153-4486-945e-1c3aeb9e740b"},
+  {score:65,name:"Roots Café & Bistro",loc:"Claregalway",email:"info@rootscafebistro.ie",status:"Sent",resend:"76da2734-e5f7-4d56-8ace-c2d4183d24db"},
+  {score:70,name:"The Moy Hotel",loc:"Foxford",email:"reception@moyhotel.com",status:"Sent",resend:"c5e2f834-95a9-4fc7-a83a-305c669bf506"},
+  {score:68,name:"Achill Cliff House Hotel & Restaurant",loc:"Achill Island",email:"info@achillcliff.com",status:"Sent",resend:"5a0a2457-c178-4b5c-80f7-89955f9592cf"},
+  {score:60,name:"Óstán Oileán Acla / Achill Island Hotel",loc:"Achill Island",email:"achillislandhotel@gmail.com",status:"Sent",resend:"366a137d-ef42-408a-a197-104656f468bd"},
+  {score:75,name:"Talbot Hotel Belmullet",loc:"Belmullet",email:"info@thetalbothotel.ie",status:"Sent",resend:"04dbab6a-b062-4b3a-8183-856dab665445"},
+  {score:65,name:"Western Strands Hotel",loc:"Belmullet",email:"info@thewesternstrands.com",status:"Sent",resend:"8ba00f57-f466-4839-9edb-3b58ed911ca6"},
+  {score:55,name:"Sullivan's Royal Hotel",loc:"Gort",email:"office@sullivansroyalhotel.ie",status:"Sent",resend:"ff5efc11-f034-43e6-871e-1bc6738edf42"},
+  {score:65,name:"An Crúiscín Lán Hotel & Restaurant",loc:"Spiddal",email:"ancruiscinlanhotel@gmail.com",status:"Sent",resend:"4e69b645-e57d-4df3-84e6-4de0b766ebea"},
+  {score:10,name:"Teach O'Hora Bar & Off-Licence",loc:"Kiltimagh, Co. Mayo",email:"tourism@ird-kiltimagh.ie",status:"Sent",resend:"eb852f15-8f4f-4865-b58b-0deeacc495c0"},
+  {score:20,name:"Kiltimagh (First Choice) Credit Union",loc:"Kiltimagh, Co. Mayo",email:"it_support@fccu.ie",status:"Sent",resend:"cbbc9279-0179-4bc2-818f-5cec354bdb09"},
+  {score:25,name:"Curley's totalhealth Pharmacy",loc:"Ballyhaunis, Co. Mayo",email:"info@totalhealth.ie",status:"Sent",resend:"f2234727-78b3-4085-ada9-0df216be48cf"},
+  // No email found (14)
+  {score:50,name:"Dillons Bar & Restaurant",loc:"Ballina",email:"—",status:"No email",resend:""},
+  {score:45,name:"Merricks Hardware",loc:"Ballina",email:"—",status:"No email",resend:""},
+  {score:70,name:"Olive's Seoul Food",loc:"Claremorris",email:"—",status:"No email",resend:""},
+  {score:40,name:"Dylan Murphy Plumbing & Heating",loc:"Mayo",email:"—",status:"No email",resend:""},
+  {score:72,name:"Osteria Italiana Da Simone",loc:"Galway City",email:"—",status:"No email",resend:""},
+  {score:75,name:"Gemelle's Restaurant",loc:"Galway City (Quay St)",email:"—",status:"No email",resend:""},
+  {score:65,name:"Khow Thai Restaurant",loc:"Galway City",email:"—",status:"No email",resend:""},
+  {score:68,name:"The Huntsman Inn",loc:"Galway City",email:"—",status:"No email",resend:""},
+  {score:60,name:"Kumar's Taste of Asia",loc:"Galway City",email:"—",status:"No email",resend:""},
+  {score:60,name:"Faherty's Bar Oughterard",loc:"Oughterard",email:"—",status:"No email",resend:""},
+  {score:55,name:"The Grainne Uaile",loc:"Newport",email:"—",status:"No email",resend:""},
+  {score:72,name:"Pier Head Bar & Restaurant",loc:"Kinvara",email:"—",status:"No email",resend:""},
+  {score:75,name:"Foxford Woollen Mills",loc:"Foxford",email:"—",status:"No email",resend:""},
+  {score:68,name:"Lady Gregory Hotel",loc:"Gort",email:"—",status:"No email",resend:""},
+  // Blocked/offline (12)
+  {score:55,name:"EcoPlumbing Galway",loc:"Galway",email:"—",status:"Blocked (timeout)",resend:""},
+  {score:58,name:"McCafferty Plumbing & Heating",loc:"Mayo",email:"—",status:"Blocked (timeout)",resend:""},
+  {score:55,name:"The Chili Shack",loc:"Galway City",email:"—",status:"Blocked (DNS)",resend:""},
+  {score:65,name:"The Boat Inn",loc:"Oughterard",email:"—",status:"Blocked (DNS)",resend:""},
+  {score:72,name:"Kelly's Kitchen",loc:"Newport",email:"—",status:"Blocked (timeout)",resend:""},
+  {score:55,name:"O'Donnell's Pharmacy Charlestown",loc:"Charlestown",email:"—",status:"Blocked (timeout)",resend:""},
+  {score:65,name:"Knock House Hotel",loc:"Knock",email:"—",status:"Blocked (timeout)",resend:""},
+  {score:65,name:"Kinvara Guesthouse",loc:"Kinvara",email:"—",status:"Blocked (connection)",resend:""},
+  {score:68,name:"The Merriman Hotel",loc:"Kinvara",email:"—",status:"Blocked (cert)",resend:""},
+  {score:60,name:"Modena Restaurant",loc:"Portumna",email:"—",status:"Blocked (cert)",resend:""},
+  {score:5,name:"Dalgan Restaurant & Gastro Bar",loc:"Ballyhaunis, Co. Mayo",email:"—",status:"Blocked (DNS)",resend:""},
+  {score:5,name:"Flanagan's Pub",loc:"Brickens, Ballyhaunis, Co. Mayo",email:"—",status:"Blocked (DNS)",resend:""}
 ];
 
 const tbody = document.getElementById('rows');
@@ -250,7 +318,10 @@ data.forEach((r, i) => {
   const tr = document.createElement('tr');
   let badgeClass = 'sent';
   let badgeText = 'Sent';
-  if (r.status.startsWith('Skip') || r.status.startsWith('Skipped')) {
+  if (r.status.startsWith('Blocked')) {
+    badgeClass = 'warn';
+    badgeText = 'Blocked';
+  } else if (r.status.startsWith('Skip') || r.status.startsWith('Skipped')) {
     badgeClass = 'skip';
     badgeText = 'Skipped';
     if (r.status.includes('403')) badgeText = 'Blocked';
